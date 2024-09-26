@@ -24,6 +24,7 @@ public class SNCreativeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
 
                         output.accept(SNBlocks.IRON_MUSHROOM);
+                        output.accept(SNBlocks.GOLD_MUSHROOM);
                         output.accept(SNBlocks.FERTILIZED_MYCELIUM);
 
                     })

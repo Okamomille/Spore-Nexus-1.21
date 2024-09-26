@@ -20,6 +20,7 @@ public class SNBlockTagProvider extends BlockTagsProvider {
     protected void addTags(HolderLookup.Provider provider) {
 
         this.tag(BlockTags.MINEABLE_WITH_AXE)
-                .add(SNBlocks.IRON_MUSHROOM.get());
+                .add(SNBlocks.IRON_MUSHROOM.get())
+                .add(SNBlocks.GOLD_MUSHROOM.get());
     }
 }

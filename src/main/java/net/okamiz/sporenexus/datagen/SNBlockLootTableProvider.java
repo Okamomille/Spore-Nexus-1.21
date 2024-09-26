@@ -33,6 +33,7 @@ public class SNBlockLootTableProvider extends BlockLootSubProvider {
     protected void generate() {
 
         dropSelf(SNBlocks.IRON_MUSHROOM.get());
+        dropSelf(SNBlocks.GOLD_MUSHROOM.get());
         dropSelf(SNBlocks.FERTILIZED_MYCELIUM.get());
 
 
