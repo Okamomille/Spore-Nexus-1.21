@@ -1,12 +1,14 @@
 package net.okamiz.sporenexus;
 
+import net.okamiz.sporenexus.block.SNBlocks;
+import net.okamiz.sporenexus.item.SNCreativeTabs;
+import net.okamiz.sporenexus.item.SNItems;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.Blocks;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
@@ -38,7 +40,9 @@ public class SporeNexusMod {
         modEventBus.addListener(this::commonSetup);
 
 
-
+        SNCreativeTabs.register(modEventBus);
+        SNBlocks.register(modEventBus);
+        SNItems.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.
