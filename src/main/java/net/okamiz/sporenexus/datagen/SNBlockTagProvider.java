@@ -22,6 +22,7 @@ public class SNBlockTagProvider extends BlockTagsProvider {
         this.tag(BlockTags.MINEABLE_WITH_AXE)
                 .add(SNBlocks.COAL_MUSHROOM.get())
                 .add(SNBlocks.LAPIS_LAZULI_MUSHROOM.get())
+                .add(SNBlocks.QUARTZ_MUSHROOM.get())
                 .add(SNBlocks.IRON_MUSHROOM.get())
                 .add(SNBlocks.COPPER_MUSHROOM.get())
                 .add(SNBlocks.GOLD_MUSHROOM.get())
