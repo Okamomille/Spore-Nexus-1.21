@@ -23,6 +23,7 @@ public class SNCreativeTabs {
                     .icon(() -> new ItemStack(SNBlocks.IRON_MUSHROOM))
                     .displayItems((itemDisplayParameters, output) -> {
 
+                        output.accept(SNBlocks.COAL_MUSHROOM);
                         output.accept(SNBlocks.IRON_MUSHROOM);
                         output.accept(SNBlocks.GOLD_MUSHROOM);
                         output.accept(SNBlocks.FERTILIZED_MYCELIUM);

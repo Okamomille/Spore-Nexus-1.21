@@ -1,4 +1,5 @@
-// 1.21.1	2024-09-26T21:21:52.5065754	Loot Tables
+// 1.21.1	2024-09-26T21:36:06.3868729	Loot Tables
+b7f9f4f21d78502f73f618e961250edb251cdf0a data/sporenexus/loot_table/blocks/coal_mushroom.json
 41c0677941333cdf4da39a11d911556022d57b07 data/sporenexus/loot_table/blocks/fertilized_mycelium.json
 d64374adb32a1c0a81583b3a02a84dbf01291f66 data/sporenexus/loot_table/blocks/gold_mushroom.json
 1be42f0e5b13ef505866ea5e7e5329cd95f3c000 data/sporenexus/loot_table/blocks/iron_mushroom.json

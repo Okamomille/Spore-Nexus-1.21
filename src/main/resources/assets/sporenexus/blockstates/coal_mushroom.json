@@ -1,0 +1,25 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "sporenexus:block/coal_mushroom"
+    },
+    "age=1": {
+      "model": "sporenexus:block/coal_mushroom"
+    },
+    "age=2": {
+      "model": "sporenexus:block/coal_mushroom"
+    },
+    "age=3": {
+      "model": "sporenexus:block/coal_mushroom_medium"
+    },
+    "age=4": {
+      "model": "sporenexus:block/coal_mushroom_medium"
+    },
+    "age=5": {
+      "model": "sporenexus:block/coal_mushroom_medium"
+    },
+    "age=6": {
+      "model": "sporenexus:block/coal_mushroom_big"
+    }
+  }
+}

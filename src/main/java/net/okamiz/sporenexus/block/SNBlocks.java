@@ -20,7 +20,11 @@ import java.util.function.Supplier;
 public class SNBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(SporeNexusMod.MOD_ID);
 
-
+    public static final DeferredBlock<Block> COAL_MUSHROOM = registerBlock("coal_mushroom",
+            () -> new ResourcesMushroomBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MUSHROOM_STEM)
+                    .noOcclusion()
+                    .randomTicks()
+                    .pushReaction(PushReaction.DESTROY), Items.COAL));
     public static final DeferredBlock<Block> IRON_MUSHROOM = registerBlock("iron_mushroom",
             () -> new ResourcesMushroomBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MUSHROOM_STEM)
                     .noOcclusion()
