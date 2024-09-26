@@ -37,6 +37,12 @@ public class SNBlocks {
                     .randomTicks()
                     .pushReaction(PushReaction.DESTROY), Items.RAW_GOLD));
 
+    public static final DeferredBlock<Block> DIAMOND_MUSHROOM = registerBlock("diamond_mushroom",
+            () -> new ResourcesMushroomBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MUSHROOM_STEM)
+                    .noOcclusion()
+                    .randomTicks()
+                    .pushReaction(PushReaction.DESTROY), Items.DIAMOND));
+
     public static final DeferredBlock<Block> FERTILIZED_MYCELIUM = registerBlock("fertilized_mycelium",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.MYCELIUM)));
 
