@@ -2,7 +2,6 @@ package net.okamiz.sporenexus.block;
 
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -36,6 +35,12 @@ public class SNBlocks {
                     .noOcclusion()
                     .randomTicks()
                     .pushReaction(PushReaction.DESTROY), Items.RAW_IRON));
+
+    public static final DeferredBlock<Block> COPPER_MUSHROOM = registerBlock("copper_mushroom",
+            () -> new ResourcesMushroomBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MUSHROOM_STEM)
+                    .noOcclusion()
+                    .randomTicks()
+                    .pushReaction(PushReaction.DESTROY), Items.RAW_COPPER));
 
     public static final DeferredBlock<Block> GOLD_MUSHROOM = registerBlock("gold_mushroom",
             () -> new ResourcesMushroomBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MUSHROOM_STEM)

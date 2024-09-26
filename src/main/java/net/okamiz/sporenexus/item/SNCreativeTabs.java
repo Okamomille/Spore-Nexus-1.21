@@ -4,7 +4,6 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.level.block.Blocks;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.okamiz.sporenexus.SporeNexusMod;
@@ -26,6 +25,7 @@ public class SNCreativeTabs {
                         output.accept(SNBlocks.COAL_MUSHROOM);
                         output.accept(SNBlocks.LAPIS_LAZULI_MUSHROOM);
                         output.accept(SNBlocks.IRON_MUSHROOM);
+                        output.accept(SNBlocks.COPPER_MUSHROOM);
                         output.accept(SNBlocks.GOLD_MUSHROOM);
                         output.accept(SNBlocks.DIAMOND_MUSHROOM);
                         output.accept(SNBlocks.EMERALD_MUSHROOM);
