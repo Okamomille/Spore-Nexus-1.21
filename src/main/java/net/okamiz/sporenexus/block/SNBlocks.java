@@ -25,6 +25,12 @@ public class SNBlocks {
                     .noOcclusion()
                     .randomTicks()
                     .pushReaction(PushReaction.DESTROY), Items.COAL));
+
+    public static final DeferredBlock<Block> LAPIS_LAZULI_MUSHROOM = registerBlock("lapis_lazuli_mushroom",
+            () -> new ResourcesMushroomBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MUSHROOM_STEM)
+                    .noOcclusion()
+                    .randomTicks()
+                    .pushReaction(PushReaction.DESTROY), Items.LAPIS_LAZULI));
     public static final DeferredBlock<Block> IRON_MUSHROOM = registerBlock("iron_mushroom",
             () -> new ResourcesMushroomBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MUSHROOM_STEM)
                     .noOcclusion()
@@ -42,6 +48,12 @@ public class SNBlocks {
                     .noOcclusion()
                     .randomTicks()
                     .pushReaction(PushReaction.DESTROY), Items.DIAMOND));
+
+    public static final DeferredBlock<Block> EMERALD_MUSHROOM = registerBlock("emerald_mushroom",
+            () -> new ResourcesMushroomBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MUSHROOM_STEM)
+                    .noOcclusion()
+                    .randomTicks()
+                    .pushReaction(PushReaction.DESTROY), Items.EMERALD));
 
     public static final DeferredBlock<Block> FERTILIZED_MYCELIUM = registerBlock("fertilized_mycelium",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.MYCELIUM)));

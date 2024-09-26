@@ -67,7 +67,7 @@ public class ResourcesMushroomBlock extends CropBlock {
 
     @Override
     protected ItemLike getBaseSeedId() {
-        return SNBlocks.IRON_MUSHROOM;
+        return this.asBlock();
     }
 
     @Override

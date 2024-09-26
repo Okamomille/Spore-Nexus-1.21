@@ -1,8 +1,10 @@
 {
   "values": [
     "sporenexus:coal_mushroom",
+    "sporenexus:lapis_lazuli_mushroom",
     "sporenexus:iron_mushroom",
     "sporenexus:gold_mushroom",
-    "sporenexus:diamond_mushroom"
+    "sporenexus:diamond_mushroom",
+    "sporenexus:emerald_mushroom"
   ]
 }
