@@ -4,7 +4,9 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
+import net.okamiz.sporenexus.block.SNBlocks;
 import net.okamiz.sporenexus.item.SNItems;
 
 import java.util.concurrent.CompletableFuture;
@@ -19,6 +21,8 @@ public class SNRecipeProvider extends RecipeProvider implements IConditionBuilde
     protected void buildRecipes(RecipeOutput recipeOutput) {
 
 
+        // MUSHROOM SPORES
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,SNItems.MUSHROOM_SPORES, 1)
                         .requires(Items.BROWN_MUSHROOM)
                         .unlockedBy("has_brown_mushroom", has(Items.BROWN_MUSHROOM))
@@ -30,6 +34,23 @@ public class SNRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .save(recipeOutput, "spores_from_red_mushroom");
 
 
+        //FERTILIZED MYCELIUM
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SNBlocks.FERTILIZED_MYCELIUM, 1)
+                .pattern("SSS")
+                .pattern("SMS")
+                .pattern("SSS")
+                .define('S', SNItems.MUSHROOM_SPORES)
+                .define('M', Blocks.MYCELIUM)
+                .unlockedBy("has_mushroom_spores", has(SNItems.MUSHROOM_SPORES))
+                .unlockedBy("has_mycelium", has(Blocks.MYCELIUM))
+                .save(recipeOutput);
+
+
+
+
+
+        // FRAGMENTS TO ORES
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.COAL, 1)
                 .pattern("FF")

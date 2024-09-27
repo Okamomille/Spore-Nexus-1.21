@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "M": {
+      "item": "minecraft:mycelium"
+    },
+    "S": {
+      "item": "sporenexus:mushroom_spores"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "SMS",
+    "SSS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sporenexus:fertilized_mycelium"
+  }
+}

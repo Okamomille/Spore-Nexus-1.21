@@ -1,4 +1,4 @@
-// 1.21.1	2024-09-27T13:07:23.5463007	Recipes
+// 1.21.1	2024-09-27T14:26:15.9458072	Recipes
 120912153324295343d3d9e21bd4d8ba8e9473cf data/minecraft/advancement/recipes/misc/coal_from_fragments.json
 a1b246d22941927d77142bbf1e185e64be0799e4 data/minecraft/advancement/recipes/misc/copper_from_fragments.json
 0fdf0ff9cc662c2ee45d384ca7bc7fc4e2b82935 data/minecraft/advancement/recipes/misc/diamond_from_fragments.json
@@ -23,3 +23,5 @@ fcc904a2215e486a73e32df8ca3009768793fe91 data/minecraft/recipe/quartz_from_fragm
 4867ee82029ec229325d744a9d6a395ecd5dfb2e data/minecraft/recipe/redstone_from_fragments.json
 698b09b584c24297d29dcc64e0dd583757d186c4 data/minecraft/recipe/spores_from_brown_mushroom.json
 4dc4330c27438cae3e4411006b20b11d68633a60 data/minecraft/recipe/spores_from_red_mushroom.json
+114d207be5dd74635658c1df50e60708d1ede979 data/sporenexus/advancement/recipes/misc/fertilized_mycelium.json
+68196555e442c5de2b30566f8aa6f9728df92a38 data/sporenexus/recipe/fertilized_mycelium.json
