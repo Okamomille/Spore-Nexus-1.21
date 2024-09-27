@@ -19,6 +19,7 @@ public class SNBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels() {
 
         blockWithItem(SNBlocks.FERTILIZED_MYCELIUM);
+        blockWithItem(SNBlocks.ENRICHED_MYCELIUM);
 
     }
 

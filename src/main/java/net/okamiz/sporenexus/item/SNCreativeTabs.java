@@ -47,7 +47,9 @@ public class SNCreativeTabs {
                         output.accept(SNBlocks.DIAMOND_MUSHROOM);
                         output.accept(SNBlocks.EMERALD_MUSHROOM);
                         output.accept(SNBlocks.NETHERITE_MUSHROOM);
+
                         output.accept(SNBlocks.FERTILIZED_MYCELIUM);
+                        output.accept(SNBlocks.ENRICHED_MYCELIUM);
 
                     })
                     .build());

@@ -46,7 +46,10 @@ public class SNRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .save(recipeOutput, "nexus_fungus_from_red_mushroom");
 
 
-        //FERTILIZED MYCELIUM
+
+
+
+        //MYCELIUMS
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SNBlocks.FERTILIZED_MYCELIUM, 1)
                 .pattern("SSS")
@@ -57,6 +60,19 @@ public class SNRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .unlockedBy("has_mushroom_spores", has(SNItems.MUSHROOM_SPORES))
                 .unlockedBy("has_mycelium", has(Blocks.MYCELIUM))
                 .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SNBlocks.ENRICHED_MYCELIUM, 1)
+                .pattern("SSS")
+                .pattern("SMS")
+                .pattern("SSS")
+                .define('S', SNItems.FUNGAL_ESSENCE)
+                .define('M', SNBlocks.FERTILIZED_MYCELIUM)
+                .unlockedBy("has_fertilized_mycelium", has(SNBlocks.FERTILIZED_MYCELIUM))
+                .unlockedBy("has_fungal_essence", has(SNItems.FUNGAL_ESSENCE))
+                .save(recipeOutput);
+
+
+
 
         //RESOURCES MUSHROOMS
 

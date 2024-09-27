@@ -20,6 +20,7 @@
 
 
   "block.sporenexus.fertilized_mycelium": "Fertilized Mycelium",
+  "block.sporenexus.enriched_mycelium": "Enriched Mycelium",
 
   "block.sporenexus.coal_mushroom": "Coal Mushroom",
   "block.sporenexus.lapis_lazuli_mushroom": "Lapis Lazuli Mushroom",
@@ -33,7 +34,10 @@
   "block.sporenexus.netherite_mushroom": "Netherite Mushroom",
 
 
-  "tooltip.sporenexus.wipitem" : "§7No Use for now (WIP)"
+  "tooltip.sporenexus.wipitem" : "§7No Use for now (WIP)",
+  "tooltip.sporenexus.ore_mushroom_line1" : "§eFragments drop count : 1-3",
+  "tooltip.sporenexus.ore_mushroom_line2" : "§dFungal Essence drop chance : 50%",
+  "tooltip.sporenexus.enriched_mycelium" : "§7Resources Mushrooms grows 25% faster when planted on this soil"
 
 
 

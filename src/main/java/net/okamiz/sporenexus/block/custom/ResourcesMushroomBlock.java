@@ -2,14 +2,18 @@ package net.okamiz.sporenexus.block.custom;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.network.chat.Component;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.Mth;
 import net.minecraft.util.ParticleUtils;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.Level;
@@ -24,7 +28,9 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.okamiz.sporenexus.block.SNBlocks;
 import net.okamiz.sporenexus.item.SNItems;
+import net.okamiz.sporenexus.util.SNTags;
 
+import java.util.List;
 import java.util.Random;
 
 public class ResourcesMushroomBlock extends CropBlock {
@@ -64,7 +70,7 @@ public class ResourcesMushroomBlock extends CropBlock {
 
     @Override
     protected boolean mayPlaceOn(BlockState state, BlockGetter level, BlockPos pos) {
-        return state.getBlock().defaultBlockState().is(SNBlocks.FERTILIZED_MYCELIUM);
+        return state.getBlock().defaultBlockState().is(SNTags.Blocks.MYCELIUM_SOILS);
     }
 
 
@@ -120,8 +126,14 @@ public class ResourcesMushroomBlock extends CropBlock {
 
 
     private void drop(Level level, BlockPos pos){
+        Random random = new Random();
+        int fungalEssenceDropCount = random.nextInt(2);
 
-        level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(SNItems.FUNGAL_ESSENCE.get())));
+        if(fungalEssenceDropCount == 0){
+            level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(SNItems.FUNGAL_ESSENCE.get())));
+        }
+
+
     }
 
     private void dropFragments(Level level, BlockPos pos){
@@ -160,5 +172,67 @@ public class ResourcesMushroomBlock extends CropBlock {
     }
 
 
+    @Override
+    protected void randomTick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
+        if (!level.isAreaLoaded(pos, 1)) return; // Forge: prevent loading unloaded chunks when checking neighbor's light
+        if (level.getRawBrightness(pos, 0) >= 9) {
+            int age = this.getAge(state);
+            if (age < this.getMaxAge()) {
+                float growthSpeed = getGrowthSpeed(state, level, pos);
+                if (net.neoforged.neoforge.common.CommonHooks.canCropGrow(level, pos, state, random.nextInt((int)(25.0F / growthSpeed) + 1) == 0)) {
+                    level.setBlock(pos, this.getStateForAge(age + 1), 2);
+                    net.neoforged.neoforge.common.CommonHooks.fireCropGrowPost(level, pos, state);
+                }
+            }
+        }
+    }
 
+
+    protected static float getGrowthSpeed(BlockState blockState, BlockGetter blockGetter, BlockPos pos) {
+        Block block = blockState.getBlock();
+        float growthSpeed = 1.0F;
+        BlockPos groundBlockPos = pos.below();
+
+                float additiveGrowthSpeed = 0.0F;
+                BlockState groundBlockState = blockGetter.getBlockState(groundBlockPos);
+
+                if (groundBlockState.getBlock() instanceof FertilizedMycelium) {
+                    additiveGrowthSpeed = 2.0F;
+                }
+                if (groundBlockState.getBlock() instanceof EnrichedMycelium) {
+                    additiveGrowthSpeed = 4.0F;
+                }
+
+                growthSpeed += additiveGrowthSpeed;
+
+
+        BlockPos posNorth = pos.north();
+        BlockPos posSouth = pos.south();
+        BlockPos posWest = pos.west();
+        BlockPos posEast = pos.east();
+        boolean isBlockEastOrWest = blockGetter.getBlockState(posWest).is(block) || blockGetter.getBlockState(posEast).is(block);
+        boolean isBlockNorthOrSouth = blockGetter.getBlockState(posNorth).is(block) || blockGetter.getBlockState(posSouth).is(block);
+        if (isBlockEastOrWest && isBlockNorthOrSouth) {
+            growthSpeed /= 2.0F;
+        } else {
+            boolean isAnyThisBlockAround = blockGetter.getBlockState(posWest.north()).is(block)
+                    || blockGetter.getBlockState(posEast.north()).is(block)
+                    || blockGetter.getBlockState(posEast.south()).is(block)
+                    || blockGetter.getBlockState(posWest.south()).is(block);
+            if (isAnyThisBlockAround) {
+                growthSpeed /= 2.0F;
+            }
+        }
+
+        return growthSpeed;
+    }
+
+    @Override
+    public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+
+                tooltipComponents.add(Component.translatable("tooltip.sporenexus.ore_mushroom_line1"));
+                tooltipComponents.add(Component.translatable("tooltip.sporenexus.ore_mushroom_line2"));
+
+        super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+    }
 }

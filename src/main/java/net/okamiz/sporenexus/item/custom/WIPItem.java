@@ -15,8 +15,8 @@ public class WIPItem extends Item {
 
     @Override
     public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
-
         tooltipComponents.add(Component.translatable("tooltip.sporenexus.wipitem"));
+
 
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }

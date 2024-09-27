@@ -7,6 +7,7 @@ import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.okamiz.sporenexus.SporeNexusMod;
 import net.okamiz.sporenexus.block.SNBlocks;
+import net.okamiz.sporenexus.util.SNTags;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
@@ -30,5 +31,9 @@ public class SNBlockTagProvider extends BlockTagsProvider {
                 .add(SNBlocks.DIAMOND_MUSHROOM.get())
                 .add(SNBlocks.EMERALD_MUSHROOM.get())
                 .add(SNBlocks.NETHERITE_MUSHROOM.get());
+
+        this.tag(SNTags.Blocks.MYCELIUM_SOILS)
+                .add(SNBlocks.FERTILIZED_MYCELIUM.get())
+                .add(SNBlocks.ENRICHED_MYCELIUM.get());
     }
 }

@@ -1,8 +1,9 @@
-// 1.21.1	2024-09-27T11:44:40.9383382	Loot Tables
+// 1.21.1	2024-09-27T15:34:43.737885	Loot Tables
 b7f9f4f21d78502f73f618e961250edb251cdf0a data/sporenexus/loot_table/blocks/coal_mushroom.json
 c9ed5a9c0d3d669bc607d2ce208f6fdf067d58d9 data/sporenexus/loot_table/blocks/copper_mushroom.json
 1025d9d59e14da677944df5b2335ebedcb0ab51d data/sporenexus/loot_table/blocks/diamond_mushroom.json
 e95420ff7d313d8054f56a9a483f120dc816a2e6 data/sporenexus/loot_table/blocks/emerald_mushroom.json
+cbe8a3d3412bbff46fff5bb7994bae897222310b data/sporenexus/loot_table/blocks/enriched_mycelium.json
 41c0677941333cdf4da39a11d911556022d57b07 data/sporenexus/loot_table/blocks/fertilized_mycelium.json
 d64374adb32a1c0a81583b3a02a84dbf01291f66 data/sporenexus/loot_table/blocks/gold_mushroom.json
 1be42f0e5b13ef505866ea5e7e5329cd95f3c000 data/sporenexus/loot_table/blocks/iron_mushroom.json

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "M": {
+      "item": "sporenexus:fertilized_mycelium"
+    },
+    "S": {
+      "item": "sporenexus:fungal_essence"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "SMS",
+    "SSS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sporenexus:enriched_mycelium"
+  }
+}

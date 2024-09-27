@@ -11,6 +11,8 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.okamiz.sporenexus.SporeNexusMod;
+import net.okamiz.sporenexus.block.custom.EnrichedMycelium;
+import net.okamiz.sporenexus.block.custom.FertilizedMycelium;
 import net.okamiz.sporenexus.block.custom.ResourcesMushroomBlock;
 import net.okamiz.sporenexus.item.SNItems;
 
@@ -54,7 +56,9 @@ public class SNBlocks {
 
 
     public static final DeferredBlock<Block> FERTILIZED_MYCELIUM = registerBlock("fertilized_mycelium",
-            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.MYCELIUM)));
+            () -> new FertilizedMycelium(BlockBehaviour.Properties.ofFullCopy(Blocks.MYCELIUM)));
+    public static final DeferredBlock<Block> ENRICHED_MYCELIUM = registerBlock("enriched_mycelium",
+            () -> new EnrichedMycelium(BlockBehaviour.Properties.ofFullCopy(Blocks.MYCELIUM)));
 
 
     private static <T extends Block>DeferredBlock<T> registerBlock(String name, Supplier<T> block){
