@@ -3,6 +3,7 @@
 
 
   "item.sporenexus.mushroom_cap": "Mushroom Cap",
+  "item.sporenexus.fungal_essence": "Fungal Essence",
 
   "item.sporenexus.coal_fragments": "Coal Fragments",
   "item.sporenexus.lapis_lazuli_fragments": "Lapis Lazuli Fragments",
@@ -27,7 +28,10 @@
   "block.sporenexus.gold_mushroom": "Gold Mushroom",
   "block.sporenexus.diamond_mushroom": "Diamond Mushroom",
   "block.sporenexus.emerald_mushroom": "Emerald Mushroom",
-  "block.sporenexus.netherite_mushroom": "Netherite Mushroom"
+  "block.sporenexus.netherite_mushroom": "Netherite Mushroom",
+
+
+  "tooltip.sporenexus.wipitem" : "§7No Use for now (WIP)"
 
 
 

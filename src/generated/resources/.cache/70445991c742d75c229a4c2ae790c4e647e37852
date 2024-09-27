@@ -1,8 +1,9 @@
-// 1.21.1	2024-09-27T11:44:40.9393382	Item Models: sporenexus
+// 1.21.1	2024-09-27T12:06:34.2573773	Item Models: sporenexus
 b1a400ae75c0d9e499c7c305265339e38cae0352 assets/sporenexus/models/item/coal_fragments.json
 c6078c2acd9a53e199bf71ee945412bea38cc2ff assets/sporenexus/models/item/copper_fragments.json
 5f77781d3ea78f9ce3239faee1b059758ad80aab assets/sporenexus/models/item/diamond_fragments.json
 def1e94bad54c14214e7fe460dc6474cf295ecf4 assets/sporenexus/models/item/emerald_fragments.json
+15427e2f5da5dd3c666008ab07e30c43f00221db assets/sporenexus/models/item/fungal_essence.json
 3da242de5572771039335491988f0c1aeedbd14e assets/sporenexus/models/item/gold_fragments.json
 602d580bbe7ac4e2cdb9acb3b65c9b5cba289f3e assets/sporenexus/models/item/iron_fragments.json
 9e599a6d6be680d0d3158e494bf25387046e6d99 assets/sporenexus/models/item/lapis_lazuli_fragments.json

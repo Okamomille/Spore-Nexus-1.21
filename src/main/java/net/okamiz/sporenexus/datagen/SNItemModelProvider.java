@@ -18,6 +18,7 @@ public class SNItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
 
         basicItem(SNItems.MUSHROOM_CAP.get());
+        basicItem(SNItems.FUNGAL_ESSENCE.get());
         basicItem(SNItems.COAL_FRAGMENTS.get());
         basicItem(SNItems.LAPIS_LAZULI_FRAGMENTS.get());
         basicItem(SNItems.QUARTZ_FRAGMENTS.get());

@@ -23,6 +23,7 @@ public class SNCreativeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
 
                         output.accept(SNItems.MUSHROOM_CAP);
+                        output.accept(SNItems.FUNGAL_ESSENCE);
                         output.accept(SNItems.COAL_FRAGMENTS);
                         output.accept(SNItems.LAPIS_LAZULI_FRAGMENTS);
                         output.accept(SNItems.QUARTZ_FRAGMENTS);
