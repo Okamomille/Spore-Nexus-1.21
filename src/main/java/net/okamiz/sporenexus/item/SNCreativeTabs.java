@@ -22,6 +22,17 @@ public class SNCreativeTabs {
                     .icon(() -> new ItemStack(SNBlocks.IRON_MUSHROOM))
                     .displayItems((itemDisplayParameters, output) -> {
 
+                        output.accept(SNItems.MUSHROOM_CAP);
+                        output.accept(SNItems.COAL_FRAGMENTS);
+                        output.accept(SNItems.LAPIS_LAZULI_FRAGMENTS);
+                        output.accept(SNItems.QUARTZ_FRAGMENTS);
+                        output.accept(SNItems.IRON_FRAGMENTS);
+                        output.accept(SNItems.COPPER_FRAGMENTS);
+                        output.accept(SNItems.GOLD_FRAGMENTS);
+                        output.accept(SNItems.DIAMOND_FRAGMENTS);
+                        output.accept(SNItems.EMERALD_FRAGMENTS);
+                        output.accept(SNItems.NETHERITE_FRAGMENTS);
+
                         output.accept(SNBlocks.COAL_MUSHROOM);
                         output.accept(SNBlocks.LAPIS_LAZULI_MUSHROOM);
                         output.accept(SNBlocks.QUARTZ_MUSHROOM);

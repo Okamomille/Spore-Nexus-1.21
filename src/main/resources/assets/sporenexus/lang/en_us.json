@@ -2,7 +2,17 @@
   "itemgroup.sporenexus.sporenexus_tab": "Spore Nexus",
 
 
-  "item.sporenexus.example_item": "Example Item",
+  "item.sporenexus.mushroom_cap": "Mushroom Cap",
+
+  "item.sporenexus.coal_fragments": "Coal Fragments",
+  "item.sporenexus.lapis_lazuli_fragments": "Lapis Lazuli Fragments",
+  "item.sporenexus.quartz_fragments": "Quartz Fragments",
+  "item.sporenexus.iron_fragments": "Iron Fragments",
+  "item.sporenexus.copper_fragments": "Copper Fragments",
+  "item.sporenexus.gold_fragments": "Gold Fragments",
+  "item.sporenexus.diamond_fragments": "Diamond Fragments",
+  "item.sporenexus.emerald_fragments": "Emerald Fragments",
+  "item.sporenexus.netherite_fragments": "Netherite Fragments",
 
 
   "block.sporenexus.fertilized_mycelium": "Fertilized Mycelium",
