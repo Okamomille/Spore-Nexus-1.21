@@ -40,9 +40,9 @@ public class SporeNexusMod {
         modEventBus.addListener(this::commonSetup);
 
 
-        SNCreativeTabs.register(modEventBus);
-        SNBlocks.register(modEventBus);
         SNItems.register(modEventBus);
+        SNBlocks.register(modEventBus);
+        SNCreativeTabs.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.

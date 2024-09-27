@@ -9,6 +9,7 @@ import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.Level;
@@ -21,6 +22,7 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.okamiz.sporenexus.block.SNBlocks;
+import net.okamiz.sporenexus.item.SNItems;
 
 import java.util.Random;
 
@@ -92,7 +94,37 @@ public class ResourcesMushroomBlock extends CropBlock {
                 Random random = new Random();
 
                 for (int i = 0; i < random.nextInt(1, 3); i++) {
-                    level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(this.drop)));
+
+                    if(drop != null){
+                        if(drop == Items.COAL){
+                            level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(SNItems.COAL_FRAGMENTS.get())));
+                        }
+                        if(drop == Items.LAPIS_LAZULI){
+                            level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(SNItems.LAPIS_LAZULI_FRAGMENTS.get())));
+                        }
+                        if(drop == Items.QUARTZ){
+                            level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(SNItems.QUARTZ_FRAGMENTS.get())));
+                        }
+                        if(drop == Items.RAW_IRON){
+                            level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(SNItems.IRON_FRAGMENTS.get())));
+                        }
+                        if(drop == Items.RAW_COPPER){
+                            level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(SNItems.COPPER_FRAGMENTS.get())));
+                        }
+                        if(drop == Items.RAW_GOLD){
+                            level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(SNItems.GOLD_FRAGMENTS.get())));
+                        }
+                        if(drop == Items.DIAMOND){
+                            level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(SNItems.DIAMOND_FRAGMENTS.get())));
+                        }
+                        if(drop == Items.EMERALD){
+                            level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(SNItems.EMERALD_FRAGMENTS.get())));
+                        }
+                        if(drop == Items.NETHERITE_SCRAP){
+                            level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(SNItems.NETHERITE_FRAGMENTS.get())));
+                        }
+                    }
+
                 }
                 return InteractionResult.SUCCESS;
             }else{
