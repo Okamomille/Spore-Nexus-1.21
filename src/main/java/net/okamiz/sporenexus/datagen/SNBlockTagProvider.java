@@ -27,6 +27,7 @@ public class SNBlockTagProvider extends BlockTagsProvider {
                 .add(SNBlocks.COPPER_MUSHROOM.get())
                 .add(SNBlocks.GOLD_MUSHROOM.get())
                 .add(SNBlocks.DIAMOND_MUSHROOM.get())
-                .add(SNBlocks.EMERALD_MUSHROOM.get());
+                .add(SNBlocks.EMERALD_MUSHROOM.get())
+                .add(SNBlocks.NETHERITE_MUSHROOM.get());
     }
 }
