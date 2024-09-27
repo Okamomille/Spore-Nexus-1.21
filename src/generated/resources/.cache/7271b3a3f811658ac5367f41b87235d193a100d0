@@ -1,3 +1,4 @@
-// 1.21.1	2024-09-27T15:47:14.4155543	Tags for minecraft:block mod id sporenexus
+// 1.21.1	2024-09-27T15:54:51.9852933	Tags for minecraft:block mod id sporenexus
 dcf67783c0dfd15438d1c84a3691db0bfbb1e768 data/minecraft/tags/block/mineable/axe.json
 ddd78b76c07ac3bb21a9b831bb9e03dd1cb6b41e data/sporenexus/tags/block/mycelium_soils.json
+dcf67783c0dfd15438d1c84a3691db0bfbb1e768 data/sporenexus/tags/block/resources_mushrooms.json

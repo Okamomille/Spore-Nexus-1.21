@@ -32,6 +32,18 @@ public class SNBlockTagProvider extends BlockTagsProvider {
                 .add(SNBlocks.EMERALD_MUSHROOM.get())
                 .add(SNBlocks.NETHERITE_MUSHROOM.get());
 
+        this.tag(SNTags.Blocks.RESOURCES_MUSHROOMS)
+                .add(SNBlocks.COAL_MUSHROOM.get())
+                .add(SNBlocks.LAPIS_LAZULI_MUSHROOM.get())
+                .add(SNBlocks.QUARTZ_MUSHROOM.get())
+                .add(SNBlocks.REDSTONE_MUSHROOM.get())
+                .add(SNBlocks.IRON_MUSHROOM.get())
+                .add(SNBlocks.COPPER_MUSHROOM.get())
+                .add(SNBlocks.GOLD_MUSHROOM.get())
+                .add(SNBlocks.DIAMOND_MUSHROOM.get())
+                .add(SNBlocks.EMERALD_MUSHROOM.get())
+                .add(SNBlocks.NETHERITE_MUSHROOM.get());
+
         this.tag(SNTags.Blocks.MYCELIUM_SOILS)
                 .add(SNBlocks.FERTILIZED_MYCELIUM.get())
                 .add(SNBlocks.ENRICHED_MYCELIUM.get());
