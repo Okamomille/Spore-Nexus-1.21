@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_lapis_lazuli": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:lapis_lazuli"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_nexus_fungus": {
+      "conditions": {
+        "items": [
+          {
+            "items": "sporenexus:nexus_fungus"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "sporenexus:lapis_lazuli_mushroom"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_nexus_fungus",
+      "has_lapis_lazuli"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "sporenexus:lapis_lazuli_mushroom"
+    ]
+  }
+}

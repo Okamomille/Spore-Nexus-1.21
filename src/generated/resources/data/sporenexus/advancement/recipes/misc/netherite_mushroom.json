@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_netherite": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:netherite_scrap"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_nexus_fungus": {
+      "conditions": {
+        "items": [
+          {
+            "items": "sporenexus:nexus_fungus"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "sporenexus:netherite_mushroom"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_nexus_fungus",
+      "has_netherite"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "sporenexus:netherite_mushroom"
+    ]
+  }
+}

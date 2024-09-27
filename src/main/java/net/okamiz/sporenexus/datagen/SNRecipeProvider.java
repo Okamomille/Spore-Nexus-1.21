@@ -33,6 +33,18 @@ public class SNRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .unlockedBy("has_red_mushroom", has(Items.RED_MUSHROOM))
                 .save(recipeOutput, "spores_from_red_mushroom");
 
+        // NEXUS FUNGUS
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,SNItems.NEXUS_FUNGUS, 1)
+                .requires(Items.BROWN_MUSHROOM, 9)
+                .unlockedBy("has_brown_mushroom", has(Items.BROWN_MUSHROOM))
+                .save(recipeOutput, "nexus_fungus_from_brown_mushroom");
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,SNItems.NEXUS_FUNGUS, 1)
+                .requires(Items.RED_MUSHROOM, 9)
+                .unlockedBy("has_red_mushroom", has(Items.RED_MUSHROOM))
+                .save(recipeOutput, "nexus_fungus_from_red_mushroom");
+
 
         //FERTILIZED MYCELIUM
 
@@ -46,7 +58,107 @@ public class SNRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .unlockedBy("has_mycelium", has(Blocks.MYCELIUM))
                 .save(recipeOutput);
 
+        //RESOURCES MUSHROOMS
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SNBlocks.COAL_MUSHROOM, 1)
+                .pattern("XXX")
+                .pattern("XOX")
+                .pattern("XXX")
+                .define('X', Items.COAL)
+                .define('O', SNItems.NEXUS_FUNGUS)
+                .unlockedBy("has_nexus_fungus", has(SNItems.NEXUS_FUNGUS))
+                .unlockedBy("has_coal", has(Items.COAL))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SNBlocks.LAPIS_LAZULI_MUSHROOM, 1)
+                .pattern("XXX")
+                .pattern("XOX")
+                .pattern("XXX")
+                .define('X', Items.LAPIS_LAZULI)
+                .define('O', SNItems.NEXUS_FUNGUS)
+                .unlockedBy("has_nexus_fungus", has(SNItems.NEXUS_FUNGUS))
+                .unlockedBy("has_lapis_lazuli", has(Items.LAPIS_LAZULI))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SNBlocks.QUARTZ_MUSHROOM, 1)
+                .pattern("XXX")
+                .pattern("XOX")
+                .pattern("XXX")
+                .define('X', Items.QUARTZ)
+                .define('O', SNItems.NEXUS_FUNGUS)
+                .unlockedBy("has_nexus_fungus", has(SNItems.NEXUS_FUNGUS))
+                .unlockedBy("has_quartz", has(Items.QUARTZ))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SNBlocks.REDSTONE_MUSHROOM, 1)
+                .pattern("XXX")
+                .pattern("XOX")
+                .pattern("XXX")
+                .define('X', Items.REDSTONE)
+                .define('O', SNItems.NEXUS_FUNGUS)
+                .unlockedBy("has_nexus_fungus", has(SNItems.NEXUS_FUNGUS))
+                .unlockedBy("has_redstone", has(Items.REDSTONE))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SNBlocks.IRON_MUSHROOM, 1)
+                .pattern("XXX")
+                .pattern("XOX")
+                .pattern("XXX")
+                .define('X', Items.IRON_INGOT)
+                .define('O', SNItems.NEXUS_FUNGUS)
+                .unlockedBy("has_nexus_fungus", has(SNItems.NEXUS_FUNGUS))
+                .unlockedBy("has_iron", has(Items.IRON_INGOT))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SNBlocks.COPPER_MUSHROOM, 1)
+                .pattern("XXX")
+                .pattern("XOX")
+                .pattern("XXX")
+                .define('X', Items.COPPER_INGOT)
+                .define('O', SNItems.NEXUS_FUNGUS)
+                .unlockedBy("has_nexus_fungus", has(SNItems.NEXUS_FUNGUS))
+                .unlockedBy("has_copper", has(Items.COPPER_INGOT))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SNBlocks.GOLD_MUSHROOM, 1)
+                .pattern("XXX")
+                .pattern("XOX")
+                .pattern("XXX")
+                .define('X', Items.GOLD_INGOT)
+                .define('O', SNItems.NEXUS_FUNGUS)
+                .unlockedBy("has_nexus_fungus", has(SNItems.NEXUS_FUNGUS))
+                .unlockedBy("has_gold", has(Items.GOLD_INGOT))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SNBlocks.DIAMOND_MUSHROOM, 1)
+                .pattern("XXX")
+                .pattern("XOX")
+                .pattern("XXX")
+                .define('X', Items.DIAMOND)
+                .define('O', SNItems.NEXUS_FUNGUS)
+                .unlockedBy("has_nexus_fungus", has(SNItems.NEXUS_FUNGUS))
+                .unlockedBy("has_diamond", has(Items.DIAMOND))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SNBlocks.EMERALD_MUSHROOM, 1)
+                .pattern("XXX")
+                .pattern("XOX")
+                .pattern("XXX")
+                .define('X', Items.EMERALD)
+                .define('O', SNItems.NEXUS_FUNGUS)
+                .unlockedBy("has_nexus_fungus", has(SNItems.NEXUS_FUNGUS))
+                .unlockedBy("has_emerald", has(Items.EMERALD))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SNBlocks.NETHERITE_MUSHROOM, 1)
+                .pattern("XXX")
+                .pattern("XOX")
+                .pattern("XXX")
+                .define('X', Items.NETHERITE_SCRAP)
+                .define('O', SNItems.NEXUS_FUNGUS)
+                .unlockedBy("has_nexus_fungus", has(SNItems.NEXUS_FUNGUS))
+                .unlockedBy("has_netherite", has(Items.NETHERITE_SCRAP))
+                .save(recipeOutput);
 
 
 

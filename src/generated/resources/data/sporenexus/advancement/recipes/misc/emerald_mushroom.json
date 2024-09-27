@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_emerald": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:emerald"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_nexus_fungus": {
+      "conditions": {
+        "items": [
+          {
+            "items": "sporenexus:nexus_fungus"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "sporenexus:emerald_mushroom"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_nexus_fungus",
+      "has_emerald"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "sporenexus:emerald_mushroom"
+    ]
+  }
+}
