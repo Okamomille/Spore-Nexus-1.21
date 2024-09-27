@@ -1,4 +1,4 @@
-// 1.21.1	2024-09-27T11:09:39.0906565	Recipes
+// 1.21.1	2024-09-27T11:44:40.9403382	Recipes
 120912153324295343d3d9e21bd4d8ba8e9473cf data/minecraft/advancement/recipes/misc/coal_from_fragments.json
 a1b246d22941927d77142bbf1e185e64be0799e4 data/minecraft/advancement/recipes/misc/copper_from_fragments.json
 0fdf0ff9cc662c2ee45d384ca7bc7fc4e2b82935 data/minecraft/advancement/recipes/misc/diamond_from_fragments.json
@@ -8,6 +8,7 @@ a1b246d22941927d77142bbf1e185e64be0799e4 data/minecraft/advancement/recipes/misc
 7b099ecc85d1831b0d2e0f73089adc91a14084f8 data/minecraft/advancement/recipes/misc/lapis_lazuli_from_fragments.json
 27846f7dd0f8959ce323256e1235e2fabf8906ce data/minecraft/advancement/recipes/misc/netherite_from_fragments.json
 2ff0fa45add1df8b0701d39c61eb42ccc9036990 data/minecraft/advancement/recipes/misc/quartz_from_fragments.json
+7c84242246519d271a620e5b0c96f31ec365c305 data/minecraft/advancement/recipes/misc/redstone_from_fragments.json
 ee25b8570133f98b3b0b6f5c0b86feb0fd1286a5 data/minecraft/recipe/coal_from_fragments.json
 636ed48e576391f940cb48dd0c1517326d13a485 data/minecraft/recipe/copper_from_fragments.json
 255aa1733e5c94f6451b91bf2d2485d0201256aa data/minecraft/recipe/diamond_from_fragments.json
@@ -17,3 +18,4 @@ a52c4e55440ca6b6bb446125fd1f2a5b99c8937a data/minecraft/recipe/emerald_from_frag
 877e6c1cce12a493fed0b9f13e8e2f841c73962c data/minecraft/recipe/lapis_lazuli_from_fragments.json
 d4347ccb41837d298050bc940fc5c6f8be0eb169 data/minecraft/recipe/netherite_from_fragments.json
 fcc904a2215e486a73e32df8ca3009768793fe91 data/minecraft/recipe/quartz_from_fragments.json
+4867ee82029ec229325d744a9d6a395ecd5dfb2e data/minecraft/recipe/redstone_from_fragments.json

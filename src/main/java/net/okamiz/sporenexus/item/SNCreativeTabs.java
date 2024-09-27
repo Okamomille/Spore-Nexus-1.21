@@ -26,6 +26,7 @@ public class SNCreativeTabs {
                         output.accept(SNItems.COAL_FRAGMENTS);
                         output.accept(SNItems.LAPIS_LAZULI_FRAGMENTS);
                         output.accept(SNItems.QUARTZ_FRAGMENTS);
+                        output.accept(SNItems.REDSTONE_FRAGMENTS);
                         output.accept(SNItems.IRON_FRAGMENTS);
                         output.accept(SNItems.COPPER_FRAGMENTS);
                         output.accept(SNItems.GOLD_FRAGMENTS);
@@ -36,6 +37,7 @@ public class SNCreativeTabs {
                         output.accept(SNBlocks.COAL_MUSHROOM);
                         output.accept(SNBlocks.LAPIS_LAZULI_MUSHROOM);
                         output.accept(SNBlocks.QUARTZ_MUSHROOM);
+                        output.accept(SNBlocks.REDSTONE_MUSHROOM);
                         output.accept(SNBlocks.IRON_MUSHROOM);
                         output.accept(SNBlocks.COPPER_MUSHROOM);
                         output.accept(SNBlocks.GOLD_MUSHROOM);

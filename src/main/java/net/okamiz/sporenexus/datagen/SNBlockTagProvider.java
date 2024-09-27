@@ -23,6 +23,7 @@ public class SNBlockTagProvider extends BlockTagsProvider {
                 .add(SNBlocks.COAL_MUSHROOM.get())
                 .add(SNBlocks.LAPIS_LAZULI_MUSHROOM.get())
                 .add(SNBlocks.QUARTZ_MUSHROOM.get())
+                .add(SNBlocks.REDSTONE_MUSHROOM.get())
                 .add(SNBlocks.IRON_MUSHROOM.get())
                 .add(SNBlocks.COPPER_MUSHROOM.get())
                 .add(SNBlocks.GOLD_MUSHROOM.get())

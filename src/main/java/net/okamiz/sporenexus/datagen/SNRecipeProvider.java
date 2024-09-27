@@ -40,6 +40,13 @@ public class SNRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .unlockedBy("has_quartz_fragments", has(SNItems.QUARTZ_FRAGMENTS))
                 .save(recipeOutput, "quartz_from_fragments");
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.REDSTONE, 1)
+                .pattern("FF")
+                .pattern("FF")
+                .define('F', SNItems.REDSTONE_FRAGMENTS)
+                .unlockedBy("has_redstone_fragments", has(SNItems.REDSTONE_FRAGMENTS))
+                .save(recipeOutput, "redstone_from_fragments");
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.LAPIS_LAZULI, 1)
                 .pattern("FF")
                 .pattern("FF")

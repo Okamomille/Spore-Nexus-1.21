@@ -28,6 +28,9 @@ public class SNBlocks {
     public static final DeferredBlock<Block> QUARTZ_MUSHROOM = registerBlock("quartz_mushroom",
             () -> new ResourcesMushroomBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MUSHROOM_STEM)
                     .noOcclusion().randomTicks().pushReaction(PushReaction.DESTROY), Items.QUARTZ));
+    public static final DeferredBlock<Block> REDSTONE_MUSHROOM = registerBlock("redstone_mushroom",
+            () -> new ResourcesMushroomBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MUSHROOM_STEM)
+                    .noOcclusion().randomTicks().pushReaction(PushReaction.DESTROY), Items.REDSTONE));
     public static final DeferredBlock<Block> IRON_MUSHROOM = registerBlock("iron_mushroom",
             () -> new ResourcesMushroomBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MUSHROOM_STEM)
                     .noOcclusion().randomTicks().pushReaction(PushReaction.DESTROY), Items.RAW_IRON));
