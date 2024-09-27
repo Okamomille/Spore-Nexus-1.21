@@ -22,6 +22,7 @@ public class SNCreativeTabs {
                     .icon(() -> new ItemStack(SNBlocks.IRON_MUSHROOM))
                     .displayItems((itemDisplayParameters, output) -> {
 
+                        output.accept(SNItems.MUSHROOM_SPORES);
                         output.accept(SNItems.MUSHROOM_CAP);
                         output.accept(SNItems.FUNGAL_ESSENCE);
                         output.accept(SNItems.COAL_FRAGMENTS);

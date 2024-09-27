@@ -1,4 +1,4 @@
-// 1.21.1	2024-09-27T11:44:40.9403382	Recipes
+// 1.21.1	2024-09-27T13:07:23.5463007	Recipes
 120912153324295343d3d9e21bd4d8ba8e9473cf data/minecraft/advancement/recipes/misc/coal_from_fragments.json
 a1b246d22941927d77142bbf1e185e64be0799e4 data/minecraft/advancement/recipes/misc/copper_from_fragments.json
 0fdf0ff9cc662c2ee45d384ca7bc7fc4e2b82935 data/minecraft/advancement/recipes/misc/diamond_from_fragments.json
@@ -9,6 +9,8 @@ a1b246d22941927d77142bbf1e185e64be0799e4 data/minecraft/advancement/recipes/misc
 27846f7dd0f8959ce323256e1235e2fabf8906ce data/minecraft/advancement/recipes/misc/netherite_from_fragments.json
 2ff0fa45add1df8b0701d39c61eb42ccc9036990 data/minecraft/advancement/recipes/misc/quartz_from_fragments.json
 7c84242246519d271a620e5b0c96f31ec365c305 data/minecraft/advancement/recipes/misc/redstone_from_fragments.json
+b92f766e3b8490e74159d26e31c8ef5c597517dd data/minecraft/advancement/recipes/misc/spores_from_brown_mushroom.json
+e6248a28cd920e06bd9f501a637de6485ad61dd2 data/minecraft/advancement/recipes/misc/spores_from_red_mushroom.json
 ee25b8570133f98b3b0b6f5c0b86feb0fd1286a5 data/minecraft/recipe/coal_from_fragments.json
 636ed48e576391f940cb48dd0c1517326d13a485 data/minecraft/recipe/copper_from_fragments.json
 255aa1733e5c94f6451b91bf2d2485d0201256aa data/minecraft/recipe/diamond_from_fragments.json
@@ -19,3 +21,5 @@ a52c4e55440ca6b6bb446125fd1f2a5b99c8937a data/minecraft/recipe/emerald_from_frag
 d4347ccb41837d298050bc940fc5c6f8be0eb169 data/minecraft/recipe/netherite_from_fragments.json
 fcc904a2215e486a73e32df8ca3009768793fe91 data/minecraft/recipe/quartz_from_fragments.json
 4867ee82029ec229325d744a9d6a395ecd5dfb2e data/minecraft/recipe/redstone_from_fragments.json
+698b09b584c24297d29dcc64e0dd583757d186c4 data/minecraft/recipe/spores_from_brown_mushroom.json
+4dc4330c27438cae3e4411006b20b11d68633a60 data/minecraft/recipe/spores_from_red_mushroom.json

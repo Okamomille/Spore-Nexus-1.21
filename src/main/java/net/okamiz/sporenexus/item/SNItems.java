@@ -21,6 +21,9 @@ public class SNItems {
     public static final DeferredItem<Item> FUNGAL_ESSENCE = ITEMS.registerItem("fungal_essence",
             WIPItem::new, new Item.Properties());
 
+
+    public static final DeferredItem<Item> MUSHROOM_SPORES = ITEMS.registerSimpleItem("mushroom_spores");
+
     public static final DeferredItem<Item> COAL_FRAGMENTS = ITEMS.registerSimpleItem("coal_fragments");
     public static final DeferredItem<Item> LAPIS_LAZULI_FRAGMENTS = ITEMS.registerSimpleItem("lapis_lazuli_fragments");
     public static final DeferredItem<Item> QUARTZ_FRAGMENTS = ITEMS.registerSimpleItem("quartz_fragments");

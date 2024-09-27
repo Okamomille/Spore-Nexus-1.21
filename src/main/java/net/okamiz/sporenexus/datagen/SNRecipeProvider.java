@@ -19,6 +19,18 @@ public class SNRecipeProvider extends RecipeProvider implements IConditionBuilde
     protected void buildRecipes(RecipeOutput recipeOutput) {
 
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,SNItems.MUSHROOM_SPORES, 1)
+                        .requires(Items.BROWN_MUSHROOM)
+                        .unlockedBy("has_brown_mushroom", has(Items.BROWN_MUSHROOM))
+                        .save(recipeOutput, "spores_from_brown_mushroom");
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,SNItems.MUSHROOM_SPORES, 1)
+                .requires(Items.RED_MUSHROOM)
+                .unlockedBy("has_red_mushroom", has(Items.RED_MUSHROOM))
+                .save(recipeOutput, "spores_from_red_mushroom");
+
+
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.COAL, 1)
                 .pattern("FF")
                 .pattern("FF")
