@@ -19,7 +19,7 @@ public class SNItems {
     public static final DeferredItem<Item> MUSHROOM_CAP = ITEMS.registerItem("mushroom_cap",
             WIPItem::new, new Item.Properties());
     public static final DeferredItem<Item> FUNGAL_ESSENCE = ITEMS.registerItem("fungal_essence",
-            WIPItem::new, new Item.Properties());
+            Item::new, new Item.Properties());
 
 
     public static final DeferredItem<Item> MUSHROOM_SPORES = ITEMS.registerSimpleItem("mushroom_spores");
