@@ -128,9 +128,14 @@ public class ResourcesMushroomBlock extends CropBlock {
     private void drop(Level level, BlockPos pos){
         Random random = new Random();
         int fungalEssenceDropCount = random.nextInt(2);
+        int sporeRelicDropCount = random.nextInt(100);
 
         if(fungalEssenceDropCount == 0){
             level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(SNItems.FUNGAL_ESSENCE.get())));
+        }
+
+        if(sporeRelicDropCount <= 1){
+            level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(SNItems.SPORE_RELIC.get())));
         }
 
 
@@ -242,6 +247,7 @@ public class ResourcesMushroomBlock extends CropBlock {
 
                 tooltipComponents.add(Component.translatable("tooltip.sporenexus.ore_mushroom_line1"));
                 tooltipComponents.add(Component.translatable("tooltip.sporenexus.ore_mushroom_line2"));
+                tooltipComponents.add(Component.translatable("tooltip.sporenexus.ore_mushroom_line3"));
 
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }

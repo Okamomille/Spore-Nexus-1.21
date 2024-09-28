@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_fertilized_mycelium": {
+    "has_enriched_mycelium": {
       "conditions": {
         "items": [
           {
-            "items": "sporenexus:fertilized_mycelium"
+            "items": "sporenexus:enriched_mycelium"
           }
         ]
       },
@@ -54,7 +54,7 @@
       "has_iron_ingot",
       "has_iron_bars",
       "has_iron_block",
-      "has_fertilized_mycelium"
+      "has_enriched_mycelium"
     ]
   ],
   "rewards": {

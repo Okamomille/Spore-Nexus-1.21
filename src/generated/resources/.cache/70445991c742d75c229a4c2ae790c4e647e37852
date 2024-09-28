@@ -1,4 +1,4 @@
-// 1.21.1	2024-09-27T14:37:14.9675941	Item Models: sporenexus
+// 1.21.1	2024-09-28T13:14:47.6358083	Item Models: sporenexus
 b1a400ae75c0d9e499c7c305265339e38cae0352 assets/sporenexus/models/item/coal_fragments.json
 c6078c2acd9a53e199bf71ee945412bea38cc2ff assets/sporenexus/models/item/copper_fragments.json
 5f77781d3ea78f9ce3239faee1b059758ad80aab assets/sporenexus/models/item/diamond_fragments.json
@@ -13,3 +13,4 @@ d0b8f142076bbd177de1149402672fb48cd2fb5d assets/sporenexus/models/item/netherite
 4b18027a5dda2df20d74b1908178d588f9c75256 assets/sporenexus/models/item/nexus_fungus.json
 368c6b1ede61e4b4666f88710517f43a6bb71c14 assets/sporenexus/models/item/quartz_fragments.json
 b9596314eb254592d3bd4105014bd16d82d5c124 assets/sporenexus/models/item/redstone_fragments.json
+99770bf68729fa3c2c47a06ba4cea6bef88e6285 assets/sporenexus/models/item/spore_relic.json

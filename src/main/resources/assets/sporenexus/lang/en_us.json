@@ -7,6 +7,8 @@
   "item.sporenexus.mushroom_cap": "Mushroom Cap",
   "item.sporenexus.fungal_essence": "Fungal Essence",
 
+  "item.sporenexus.spore_relic": "§aSpore Relic",
+
   "item.sporenexus.coal_fragments": "Coal Fragments",
   "item.sporenexus.lapis_lazuli_fragments": "Lapis Lazuli Fragments",
   "item.sporenexus.quartz_fragments": "Quartz Fragments",
@@ -38,9 +40,11 @@
 
 
   "tooltip.sporenexus.wipitem" : "§7No Use for now (WIP)",
+  "tooltip.sporenexus.spore_relic" : "§7No Use for now (WIP)",
 
-  "tooltip.sporenexus.ore_mushroom_line1" : "§eFragments drop count : 1-3",
-  "tooltip.sporenexus.ore_mushroom_line2" : "§dFungal Essence drop chance : 50%",
+  "tooltip.sporenexus.ore_mushroom_line1" : "§7Fragments drop count : §e1-3",
+  "tooltip.sporenexus.ore_mushroom_line2" : "§7Fungal Essence drop chance : §a50%",
+  "tooltip.sporenexus.ore_mushroom_line3" : "§7Relic drop chance : §a2%",
 
   "tooltip.sporenexus.enriched_mycelium" : "§7Growth Speed : §a125%",
   "tooltip.sporenexus.fertilized_mycelium" : "§7Growth Speed : §a100%",

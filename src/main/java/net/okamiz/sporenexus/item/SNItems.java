@@ -8,6 +8,7 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.okamiz.sporenexus.SporeNexusMod;
+import net.okamiz.sporenexus.item.custom.SporeRelicItem;
 import net.okamiz.sporenexus.item.custom.WIPItem;
 
 import java.util.function.Supplier;
@@ -20,6 +21,8 @@ public class SNItems {
             WIPItem::new, new Item.Properties());
     public static final DeferredItem<Item> FUNGAL_ESSENCE = ITEMS.registerItem("fungal_essence",
             Item::new, new Item.Properties());
+    public static final DeferredItem<Item> SPORE_RELIC = ITEMS.registerItem("spore_relic",
+            SporeRelicItem::new, new Item.Properties());
 
 
     public static final DeferredItem<Item> MUSHROOM_SPORES = ITEMS.registerSimpleItem("mushroom_spores");

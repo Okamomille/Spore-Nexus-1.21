@@ -25,6 +25,7 @@ public class SNCreativeTabs {
                         output.accept(SNItems.MUSHROOM_SPORES);
                         output.accept(SNItems.NEXUS_FUNGUS);
                         output.accept(SNItems.MUSHROOM_CAP);
+                        output.accept(SNItems.SPORE_RELIC);
                         output.accept(SNItems.FUNGAL_ESSENCE);
                         output.accept(SNItems.COAL_FRAGMENTS);
                         output.accept(SNItems.LAPIS_LAZULI_FRAGMENTS);
