@@ -9,10 +9,10 @@
       "item": "sporenexus:enriched_mycelium"
     },
     "S": {
-      "item": "minecraft:iron_ingot"
+      "item": "sporenexus:fungalsteel_ingot"
     },
     "X": {
-      "item": "minecraft:iron_block"
+      "item": "sporenexus:fungalsteel_block"
     }
   },
   "pattern": [

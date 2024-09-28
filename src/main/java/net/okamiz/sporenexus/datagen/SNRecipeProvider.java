@@ -56,10 +56,10 @@ public class SNRecipeProvider extends RecipeProvider implements IConditionBuilde
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,SNBlocks.FUNGALSTEEL_BLOCK, 1)
                 .requires(SNItems.FUNGALSTEEL_INGOT, 9)
-                .unlockedBy("has_fungalsteel_block", has(SNItems.FUNGALSTEEL_INGOT))
+                .unlockedBy("has_fungalsteel_ingot", has(SNItems.FUNGALSTEEL_INGOT))
                 .save(recipeOutput, "fungalsteel_block_from_ingot");
 
-        
+
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SNItems.FUNGAL_POWDER, 1)
                 .pattern(" X ")
@@ -93,13 +93,13 @@ public class SNRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .pattern("SXS")
                 .pattern("BMB")
                 .pattern("SXS")
-                .define('S', Items.IRON_INGOT)
+                .define('S', SNItems.FUNGALSTEEL_INGOT)
                 .define('M', SNBlocks.ENRICHED_MYCELIUM)
-                .define('X', Blocks.IRON_BLOCK)
+                .define('X', SNBlocks.FUNGALSTEEL_BLOCK)
                 .define('B', Blocks.IRON_BARS)
-                .unlockedBy("has_iron_ingot", has(Items.IRON_INGOT))
+                .unlockedBy("has_fungalsteel_ingot", has(SNItems.FUNGALSTEEL_INGOT))
                 .unlockedBy("has_iron_bars", has(Blocks.IRON_BARS))
-                .unlockedBy("has_iron_block", has(Blocks.IRON_BLOCK))
+                .unlockedBy("has_fungalsteel_block", has(SNBlocks.FUNGALSTEEL_BLOCK))
                 .unlockedBy("has_enriched_mycelium", has(SNBlocks.ENRICHED_MYCELIUM))
                 .save(recipeOutput);
 
