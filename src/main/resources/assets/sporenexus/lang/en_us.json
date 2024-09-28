@@ -43,7 +43,7 @@
   "tooltip.sporenexus.spore_relic" : "§7No Use for now (WIP)",
 
   "tooltip.sporenexus.ore_mushroom_line1" : "§7Fragments drop count : §e1-3",
-  "tooltip.sporenexus.ore_mushroom_line2" : "§7Fungal Essence drop chance : §a50%",
+  "tooltip.sporenexus.ore_mushroom_line2" : "§7Additional drop chance : §a50%",
   "tooltip.sporenexus.ore_mushroom_line3" : "§7Relic drop chance : §a2%",
 
   "tooltip.sporenexus.enriched_mycelium" : "§7Growth Speed : §a125%",
