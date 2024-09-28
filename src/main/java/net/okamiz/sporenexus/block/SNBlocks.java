@@ -54,9 +54,15 @@ public class SNBlocks {
                     .noOcclusion().randomTicks().pushReaction(PushReaction.DESTROY), Items.NETHERITE_SCRAP));
 
 
+    public static final DeferredBlock<Block> FUNGALSTEEL_BLOCK = registerBlock("fungalsteel_block",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
+
 
     public static final DeferredBlock<Block> SPORE_SPREADER = registerBlock("spore_spreader",
             () -> new SporeSpreader(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).randomTicks()));
+
+
+
     public static final DeferredBlock<Block> FERTILIZED_MYCELIUM = registerBlock("fertilized_mycelium",
             () -> new FertilizedMycelium(BlockBehaviour.Properties.ofFullCopy(Blocks.MYCELIUM)));
     public static final DeferredBlock<Block> ENRICHED_MYCELIUM = registerBlock("enriched_mycelium",

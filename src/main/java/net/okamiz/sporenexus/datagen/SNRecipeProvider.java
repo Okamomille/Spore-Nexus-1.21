@@ -49,6 +49,18 @@ public class SNRecipeProvider extends RecipeProvider implements IConditionBuilde
 
         // FUNGALSTEEL
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,SNItems.FUNGALSTEEL_INGOT, 9)
+                .requires(SNBlocks.FUNGALSTEEL_BLOCK, 1)
+                .unlockedBy("has_fungalsteel_block", has(SNBlocks.FUNGALSTEEL_BLOCK))
+                .save(recipeOutput, "fungalsteel_ingot_from_block");
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,SNBlocks.FUNGALSTEEL_BLOCK, 1)
+                .requires(SNItems.FUNGALSTEEL_INGOT, 9)
+                .unlockedBy("has_fungalsteel_block", has(SNItems.FUNGALSTEEL_INGOT))
+                .save(recipeOutput, "fungalsteel_block_from_ingot");
+
+        
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SNItems.FUNGAL_POWDER, 1)
                 .pattern(" X ")
                 .pattern("XOX")

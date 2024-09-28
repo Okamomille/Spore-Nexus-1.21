@@ -20,6 +20,7 @@ public class SNBlockStateProvider extends BlockStateProvider {
 
         blockWithItem(SNBlocks.FERTILIZED_MYCELIUM);
         blockWithItem(SNBlocks.ENRICHED_MYCELIUM);
+        blockWithItem(SNBlocks.FUNGALSTEEL_BLOCK);
 
     }
 

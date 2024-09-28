@@ -57,6 +57,7 @@ public class SNCreativeTabs {
                         output.accept(SNBlocks.FERTILIZED_MYCELIUM);
                         output.accept(SNBlocks.ENRICHED_MYCELIUM);
 
+                        output.accept(SNBlocks.FUNGALSTEEL_BLOCK);
                         output.accept(SNBlocks.SPORE_SPREADER);
 
                     })
