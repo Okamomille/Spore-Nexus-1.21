@@ -38,9 +38,13 @@
 
 
   "tooltip.sporenexus.wipitem" : "§7No Use for now (WIP)",
+
   "tooltip.sporenexus.ore_mushroom_line1" : "§eFragments drop count : 1-3",
   "tooltip.sporenexus.ore_mushroom_line2" : "§dFungal Essence drop chance : 50%",
-  "tooltip.sporenexus.enriched_mycelium" : "§7Resources Mushrooms grows 25% faster when planted on this soil"
+
+  "tooltip.sporenexus.enriched_mycelium" : "§7Growth Speed : §a125%",
+  "tooltip.sporenexus.fertilized_mycelium" : "§7Growth Speed : §a100%",
+  "tooltip.sporenexus.spore_spreader" : "§7Growth Speed Change in a 6x6 Area : §ax2"
 
 
 

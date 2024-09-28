@@ -2,12 +2,18 @@ package net.okamiz.sporenexus.block.custom;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.Mth;
 import net.minecraft.util.RandomSource;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
+
+import java.util.List;
 
 public class SporeSpreader extends Block {
     public SporeSpreader(Properties properties) {
@@ -44,5 +50,12 @@ public class SporeSpreader extends Block {
                 );
             }
         }
+    }
+
+
+    @Override
+    public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+        tooltipComponents.add(Component.translatable("tooltip.sporenexus.spore_spreader"));
+        super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }
 }

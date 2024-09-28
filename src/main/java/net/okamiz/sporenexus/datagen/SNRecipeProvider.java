@@ -54,13 +54,13 @@ public class SNRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .pattern("BMB")
                 .pattern("SXS")
                 .define('S', Items.IRON_INGOT)
-                .define('M', SNBlocks.FERTILIZED_MYCELIUM)
+                .define('M', SNBlocks.ENRICHED_MYCELIUM)
                 .define('X', Blocks.IRON_BLOCK)
                 .define('B', Blocks.IRON_BARS)
                 .unlockedBy("has_iron_ingot", has(Items.IRON_INGOT))
                 .unlockedBy("has_iron_bars", has(Blocks.IRON_BARS))
                 .unlockedBy("has_iron_block", has(Blocks.IRON_BLOCK))
-                .unlockedBy("has_fertilized_mycelium", has(SNBlocks.FERTILIZED_MYCELIUM))
+                .unlockedBy("has_enriched_mycelium", has(SNBlocks.ENRICHED_MYCELIUM))
                 .save(recipeOutput);
 
 
