@@ -1,4 +1,4 @@
-// 1.21.1	2024-09-27T15:34:43.7398853	Recipes
+// 1.21.1	2024-09-28T12:17:07.8173389	Recipes
 120912153324295343d3d9e21bd4d8ba8e9473cf data/minecraft/advancement/recipes/misc/coal_from_fragments.json
 a1b246d22941927d77142bbf1e185e64be0799e4 data/minecraft/advancement/recipes/misc/copper_from_fragments.json
 0fdf0ff9cc662c2ee45d384ca7bc7fc4e2b82935 data/minecraft/advancement/recipes/misc/diamond_from_fragments.json
@@ -39,6 +39,7 @@ bd0726ee86722cb89bbe83cc5465d74fe4335906 data/sporenexus/advancement/recipes/mis
 c5b89bf2b35de8b766ac968fe66178d3a17fd903 data/sporenexus/advancement/recipes/misc/netherite_mushroom.json
 4d9b5f0c94e3f5284d2cf2f4ee248d785733f920 data/sporenexus/advancement/recipes/misc/quartz_mushroom.json
 9a7b42ff9032d6e4b3e46616d3bcae028658e96c data/sporenexus/advancement/recipes/misc/redstone_mushroom.json
+36a1813f86aa85f532881162b3718dd4c9b8161a data/sporenexus/advancement/recipes/misc/spore_spreader.json
 7faab6ca050315ec0fb01a9c0a7ff80a036b026d data/sporenexus/recipe/coal_mushroom.json
 cd609d0fa1b366f10001dfb723d512d683a92800 data/sporenexus/recipe/copper_mushroom.json
 d2d22c060be12abbe476c46ba810a5cf07810eb4 data/sporenexus/recipe/diamond_mushroom.json
@@ -51,3 +52,4 @@ f9253a983a935751e9c4b57885a86fc4e54e2d08 data/sporenexus/recipe/iron_mushroom.js
 b8556100be7e98b195e5966a32a6fd7e6219880a data/sporenexus/recipe/netherite_mushroom.json
 808fbae71d15c943ba0e002f7667b24fb6c30f2d data/sporenexus/recipe/quartz_mushroom.json
 1cdb3b26026b81e1ee78cd5e1e26b5e3fd645e2d data/sporenexus/recipe/redstone_mushroom.json
+71679afb321aa7caf1a225223ff72aa8c0084c9c data/sporenexus/recipe/spore_spreader.json

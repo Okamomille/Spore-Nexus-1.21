@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:iron_bars"
+    },
+    "M": {
+      "item": "sporenexus:fertilized_mycelium"
+    },
+    "S": {
+      "item": "minecraft:iron_ingot"
+    },
+    "X": {
+      "item": "minecraft:iron_block"
+    }
+  },
+  "pattern": [
+    "SXS",
+    "BMB",
+    "SXS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sporenexus:spore_spreader"
+  }
+}

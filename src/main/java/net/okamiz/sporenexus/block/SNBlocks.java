@@ -14,6 +14,7 @@ import net.okamiz.sporenexus.SporeNexusMod;
 import net.okamiz.sporenexus.block.custom.EnrichedMycelium;
 import net.okamiz.sporenexus.block.custom.FertilizedMycelium;
 import net.okamiz.sporenexus.block.custom.ResourcesMushroomBlock;
+import net.okamiz.sporenexus.block.custom.SporeSpreader;
 import net.okamiz.sporenexus.item.SNItems;
 
 import java.util.function.Supplier;
@@ -54,7 +55,8 @@ public class SNBlocks {
 
 
 
-
+    public static final DeferredBlock<Block> SPORE_SPREADER = registerBlock("spore_spreader",
+            () -> new SporeSpreader(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).randomTicks()));
     public static final DeferredBlock<Block> FERTILIZED_MYCELIUM = registerBlock("fertilized_mycelium",
             () -> new FertilizedMycelium(BlockBehaviour.Properties.ofFullCopy(Blocks.MYCELIUM)));
     public static final DeferredBlock<Block> ENRICHED_MYCELIUM = registerBlock("enriched_mycelium",

@@ -42,6 +42,8 @@ public class SNBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(SNBlocks.FERTILIZED_MYCELIUM.get());
         dropSelf(SNBlocks.ENRICHED_MYCELIUM.get());
 
+        dropSelf(SNBlocks.SPORE_SPREADER.get());
+
 
 
         /*

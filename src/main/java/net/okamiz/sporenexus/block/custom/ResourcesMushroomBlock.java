@@ -194,16 +194,26 @@ public class ResourcesMushroomBlock extends CropBlock {
         BlockPos groundBlockPos = pos.below();
 
                 float additiveGrowthSpeed = 0.0F;
+                float fertilizedMyceliumBaseSpeed = 3.0F;
                 BlockState groundBlockState = blockGetter.getBlockState(groundBlockPos);
 
                 if (groundBlockState.getBlock() instanceof FertilizedMycelium) {
-                    additiveGrowthSpeed = 2.0F;
+                    additiveGrowthSpeed = fertilizedMyceliumBaseSpeed;
                 }
                 if (groundBlockState.getBlock() instanceof EnrichedMycelium) {
-                    additiveGrowthSpeed = 4.0F;
+                    additiveGrowthSpeed = fertilizedMyceliumBaseSpeed * 1.25F;
                 }
 
-                growthSpeed += additiveGrowthSpeed;
+        growthSpeed += additiveGrowthSpeed;
+
+        for (int i = -3; i < 3; i++) {
+            for (int j = -3; j < 3; j++) {
+                if(blockGetter.getBlockState(pos.offset(i, 0, j)).is(SNBlocks.SPORE_SPREADER)){
+                    growthSpeed *=2;
+                }
+            }
+        }
+
 
 
         BlockPos posNorth = pos.north();

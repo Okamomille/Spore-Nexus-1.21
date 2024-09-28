@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "sporenexus:block/spore_spreader_bottom",
+    "east": "sporenexus:block/spore_spreader_side_on",
+    "north": "sporenexus:block/spore_spreader_side_on",
+    "particle": "sporenexus:block/spore_spreader_side_on",
+    "south": "sporenexus:block/spore_spreader_side_on",
+    "up": "sporenexus:block/spore_spreader_top",
+    "west": "sporenexus:block/spore_spreader_side_on"
+  }
+}

@@ -1,4 +1,4 @@
-// 1.21.1	2024-09-27T15:34:43.737885	Loot Tables
+// 1.21.1	2024-09-27T23:02:53.2084641	Loot Tables
 b7f9f4f21d78502f73f618e961250edb251cdf0a data/sporenexus/loot_table/blocks/coal_mushroom.json
 c9ed5a9c0d3d669bc607d2ce208f6fdf067d58d9 data/sporenexus/loot_table/blocks/copper_mushroom.json
 1025d9d59e14da677944df5b2335ebedcb0ab51d data/sporenexus/loot_table/blocks/diamond_mushroom.json
@@ -11,3 +11,4 @@ d64374adb32a1c0a81583b3a02a84dbf01291f66 data/sporenexus/loot_table/blocks/gold_
 7fa0203804f0ebcadf82cec5dc1ebcf2c9368c88 data/sporenexus/loot_table/blocks/netherite_mushroom.json
 28450be34b7405e4c05422811ce2204225fa1a2c data/sporenexus/loot_table/blocks/quartz_mushroom.json
 75a08d2551591e5dd079aa7b1e03e7005a302a0a data/sporenexus/loot_table/blocks/redstone_mushroom.json
+b0b6f62ac3c27b5b8ea3507e010104e7698829e8 data/sporenexus/loot_table/blocks/spore_spreader.json
