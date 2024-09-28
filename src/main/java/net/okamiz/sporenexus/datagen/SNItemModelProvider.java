@@ -22,6 +22,10 @@ public class SNItemModelProvider extends ItemModelProvider {
         basicItem(SNItems.NEXUS_FUNGUS.get());
         basicItem(SNItems.MUSHROOM_CAP.get());
         basicItem(SNItems.FUNGAL_ESSENCE.get());
+
+        basicItem(SNItems.FUNGAL_POWDER.get());
+        basicItem(SNItems.FUNGALSTEEL_INGOT.get());
+
         basicItem(SNItems.COAL_FRAGMENTS.get());
         basicItem(SNItems.LAPIS_LAZULI_FRAGMENTS.get());
         basicItem(SNItems.QUARTZ_FRAGMENTS.get());

@@ -27,6 +27,11 @@ public class SNCreativeTabs {
                         output.accept(SNItems.MUSHROOM_CAP);
                         output.accept(SNItems.SPORE_RELIC);
                         output.accept(SNItems.FUNGAL_ESSENCE);
+
+                        output.accept(SNItems.FUNGAL_POWDER);
+                        output.accept(SNItems.FUNGALSTEEL_INGOT);
+
+
                         output.accept(SNItems.COAL_FRAGMENTS);
                         output.accept(SNItems.LAPIS_LAZULI_FRAGMENTS);
                         output.accept(SNItems.QUARTZ_FRAGMENTS);

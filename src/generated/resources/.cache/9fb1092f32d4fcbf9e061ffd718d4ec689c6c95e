@@ -1,4 +1,4 @@
-// 1.21.1	2024-09-28T13:14:47.6388096	Recipes
+// 1.21.1	2024-09-28T17:21:02.5955891	Recipes
 120912153324295343d3d9e21bd4d8ba8e9473cf data/minecraft/advancement/recipes/misc/coal_from_fragments.json
 a1b246d22941927d77142bbf1e185e64be0799e4 data/minecraft/advancement/recipes/misc/copper_from_fragments.json
 0fdf0ff9cc662c2ee45d384ca7bc7fc4e2b82935 data/minecraft/advancement/recipes/misc/diamond_from_fragments.json
@@ -33,6 +33,8 @@ bd0726ee86722cb89bbe83cc5465d74fe4335906 data/sporenexus/advancement/recipes/mis
 5cbcc162bba80a4d1d401352e0215d5aca8de001 data/sporenexus/advancement/recipes/misc/emerald_mushroom.json
 8f09b27060360691c03f426c8a41bc02f5ccb240 data/sporenexus/advancement/recipes/misc/enriched_mycelium.json
 114d207be5dd74635658c1df50e60708d1ede979 data/sporenexus/advancement/recipes/misc/fertilized_mycelium.json
+2540c34a3e06fb6c671b04dd7109c2a18c0bfdfc data/sporenexus/advancement/recipes/misc/fungalsteel_ingot.json
+0475cf6f4efccf14ba75430034d844e58ca7d323 data/sporenexus/advancement/recipes/misc/fungal_powder.json
 3e553a2a6209f763180d2c60201f1274a44192d4 data/sporenexus/advancement/recipes/misc/gold_mushroom.json
 806929f97df4bbb40a0e33e4e91f2ee364e833c2 data/sporenexus/advancement/recipes/misc/iron_mushroom.json
 644fa80858e2ba6ae5b1276a14728a1f63886c5f data/sporenexus/advancement/recipes/misc/lapis_lazuli_mushroom.json
@@ -46,6 +48,8 @@ d2d22c060be12abbe476c46ba810a5cf07810eb4 data/sporenexus/recipe/diamond_mushroom
 ca39b3572f7e25c4d136dba57c3b8d8f59a25cce data/sporenexus/recipe/emerald_mushroom.json
 6af03dfdc7d25a7a710e6b76e778b990b6393f50 data/sporenexus/recipe/enriched_mycelium.json
 68196555e442c5de2b30566f8aa6f9728df92a38 data/sporenexus/recipe/fertilized_mycelium.json
+bfbbe4b89d7a938eea82bc7e0cba489f91e3ab8b data/sporenexus/recipe/fungalsteel_ingot.json
+3ee4722fe15cb3c7d934618698b9776f930b322f data/sporenexus/recipe/fungal_powder.json
 3051a23b635f22964ba49c2b96b0a435ac3246d0 data/sporenexus/recipe/gold_mushroom.json
 f9253a983a935751e9c4b57885a86fc4e54e2d08 data/sporenexus/recipe/iron_mushroom.json
 3c26ae3a5802e5c32051432f68a838f3e5574892 data/sporenexus/recipe/lapis_lazuli_mushroom.json

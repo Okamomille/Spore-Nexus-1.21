@@ -47,6 +47,34 @@ public class SNRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .save(recipeOutput, "nexus_fungus_from_red_mushroom");
 
 
+        // FUNGALSTEEL
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SNItems.FUNGAL_POWDER, 1)
+                .pattern(" X ")
+                .pattern("XOX")
+                .pattern(" X ")
+                .define('O', Blocks.MOSS_BLOCK)
+                .define('X', SNItems.FUNGAL_ESSENCE)
+                .unlockedBy("has_moss_block", has(Blocks.MOSS_BLOCK))
+                .unlockedBy("has_fungal_essence", has(SNItems.FUNGAL_ESSENCE))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SNItems.FUNGALSTEEL_INGOT, 1)
+                .pattern(" X ")
+                .pattern("XOX")
+                .pattern(" X ")
+                .define('O', Items.IRON_INGOT)
+                .define('X', SNItems.FUNGAL_POWDER)
+                .unlockedBy("has_iron_ingot", has(Items.IRON_INGOT))
+                .unlockedBy("has_fungal_powder", has(SNItems.FUNGAL_POWDER))
+                .save(recipeOutput);
+
+
+
+
+
+
+
         //MACHINES
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SNBlocks.SPORE_SPREADER, 1)

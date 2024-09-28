@@ -25,6 +25,8 @@ public class SNItems {
             SporeRelicItem::new, new Item.Properties());
 
 
+    public static final DeferredItem<Item> FUNGAL_POWDER = ITEMS.registerSimpleItem("fungal_powder");
+    public static final DeferredItem<Item> FUNGALSTEEL_INGOT = ITEMS.registerSimpleItem("fungalsteel_ingot");
     public static final DeferredItem<Item> MUSHROOM_SPORES = ITEMS.registerSimpleItem("mushroom_spores");
     public static final DeferredItem<Item> NEXUS_FUNGUS = ITEMS.registerSimpleItem("nexus_fungus");
 
