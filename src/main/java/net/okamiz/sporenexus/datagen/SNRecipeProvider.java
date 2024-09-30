@@ -303,6 +303,16 @@ public class SNRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .unlockedBy("has_gold", has(Items.GOLD_INGOT))
                 .save(recipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SNBlocks.FUNGALSTEEL_MUSHROOM, 1)
+                .pattern("XXX")
+                .pattern("XOX")
+                .pattern("XXX")
+                .define('X', SNItems.FUNGALSTEEL_INGOT)
+                .define('O', SNItems.NEXUS_FUNGUS)
+                .unlockedBy("has_nexus_fungus", has(SNItems.NEXUS_FUNGUS))
+                .unlockedBy("has_fungalsteel_ingot", has(SNItems.FUNGALSTEEL_INGOT))
+                .save(recipeOutput);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SNBlocks.DIAMOND_MUSHROOM, 1)
                 .pattern("XXX")
                 .pattern("XOX")
@@ -385,6 +395,13 @@ public class SNRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .define('F', SNItems.GOLD_FRAGMENTS)
                 .unlockedBy("has_gold_fragments", has(SNItems.GOLD_FRAGMENTS))
                 .save(recipeOutput, "gold_from_fragments");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SNItems.FUNGALSTEEL_INGOT, 1)
+                .pattern("FF")
+                .pattern("FF")
+                .define('F', SNItems.FUNGALSTEEL_FRAGMENTS)
+                .unlockedBy("has_fungalsteel_fragments", has(SNItems.FUNGALSTEEL_FRAGMENTS))
+                .save(recipeOutput, "fungalsteel_from_fragments");
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.DIAMOND, 1)
                 .pattern("FF")

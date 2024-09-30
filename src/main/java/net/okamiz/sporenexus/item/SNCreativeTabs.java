@@ -39,6 +39,7 @@ public class SNCreativeTabs {
                         output.accept(SNItems.IRON_FRAGMENTS);
                         output.accept(SNItems.COPPER_FRAGMENTS);
                         output.accept(SNItems.GOLD_FRAGMENTS);
+                        output.accept(SNItems.FUNGALSTEEL_FRAGMENTS);
                         output.accept(SNItems.DIAMOND_FRAGMENTS);
                         output.accept(SNItems.EMERALD_FRAGMENTS);
                         output.accept(SNItems.NETHERITE_FRAGMENTS);
@@ -50,6 +51,7 @@ public class SNCreativeTabs {
                         output.accept(SNBlocks.IRON_MUSHROOM);
                         output.accept(SNBlocks.COPPER_MUSHROOM);
                         output.accept(SNBlocks.GOLD_MUSHROOM);
+                        output.accept(SNBlocks.FUNGALSTEEL_MUSHROOM);
                         output.accept(SNBlocks.DIAMOND_MUSHROOM);
                         output.accept(SNBlocks.EMERALD_MUSHROOM);
                         output.accept(SNBlocks.NETHERITE_MUSHROOM);

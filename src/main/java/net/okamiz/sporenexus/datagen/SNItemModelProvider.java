@@ -33,6 +33,7 @@ public class SNItemModelProvider extends ItemModelProvider {
         basicItem(SNItems.IRON_FRAGMENTS.get());
         basicItem(SNItems.COPPER_FRAGMENTS.get());
         basicItem(SNItems.GOLD_FRAGMENTS.get());
+        basicItem(SNItems.FUNGALSTEEL_FRAGMENTS.get());
         basicItem(SNItems.DIAMOND_FRAGMENTS.get());
         basicItem(SNItems.EMERALD_FRAGMENTS.get());
         basicItem(SNItems.NETHERITE_FRAGMENTS.get());

@@ -173,6 +173,9 @@ public class ResourcesMushroomBlock extends CropBlock {
             if(drop == Items.RAW_GOLD){
                 level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(SNItems.GOLD_FRAGMENTS.get())));
             }
+            if(drop == Items.WARPED_FUNGUS_ON_A_STICK){
+                level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(SNItems.FUNGALSTEEL_FRAGMENTS.get())));
+            }
             if(drop == Items.DIAMOND){
                 level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(SNItems.DIAMOND_FRAGMENTS.get())));
             }

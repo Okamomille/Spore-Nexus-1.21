@@ -44,6 +44,9 @@ public class SNBlocks {
     public static final DeferredBlock<Block> GOLD_MUSHROOM = registerBlock("gold_mushroom",
             () -> new ResourcesMushroomBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MUSHROOM_STEM)
                     .noOcclusion().randomTicks().pushReaction(PushReaction.DESTROY), Items.RAW_GOLD));
+    public static final DeferredBlock<Block> FUNGALSTEEL_MUSHROOM = registerBlock("fungalsteel_mushroom",
+            () -> new ResourcesMushroomBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MUSHROOM_STEM)
+                    .noOcclusion().randomTicks().pushReaction(PushReaction.DESTROY), Items.WARPED_FUNGUS_ON_A_STICK)); //TO BE FIXED
     public static final DeferredBlock<Block> DIAMOND_MUSHROOM = registerBlock("diamond_mushroom",
             () -> new ResourcesMushroomBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MUSHROOM_STEM)
                     .noOcclusion().randomTicks().pushReaction(PushReaction.DESTROY), Items.DIAMOND));

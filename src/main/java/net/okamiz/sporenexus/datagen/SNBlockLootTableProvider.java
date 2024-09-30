@@ -34,6 +34,7 @@ public class SNBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(SNBlocks.IRON_MUSHROOM.get());
         dropSelf(SNBlocks.COPPER_MUSHROOM.get());
         dropSelf(SNBlocks.GOLD_MUSHROOM.get());
+        dropSelf(SNBlocks.FUNGALSTEEL_MUSHROOM.get());
         dropSelf(SNBlocks.DIAMOND_MUSHROOM.get());
         dropSelf(SNBlocks.EMERALD_MUSHROOM.get());
         dropSelf(SNBlocks.NETHERITE_MUSHROOM.get());
