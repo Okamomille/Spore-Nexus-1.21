@@ -34,6 +34,7 @@ public class SNBlockTagProvider extends BlockTagsProvider {
                 .add(SNBlocks.NETHERITE_MUSHROOM.get());
 
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(SNBlocks.REGENERATION_TOTEM.get())
                 .add(SNBlocks.FUNGALSTEEL_BLOCK.get())
                 .add(SNBlocks.SPORE_SPREADER.get())
                 .add(SNBlocks.FUNGAL_PROPAGATOR.get());

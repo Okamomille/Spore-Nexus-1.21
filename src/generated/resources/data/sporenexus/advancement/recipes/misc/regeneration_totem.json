@@ -1,0 +1,76 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_andesite_wall": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:andesite_wall"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_glistering_melon_slice": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:glistering_melon_slice"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_nexus_fungus": {
+      "conditions": {
+        "items": [
+          {
+            "items": "sporenexus:nexus_fungus"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_polished_andesite": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:polished_andesite"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_spore_relic": {
+      "conditions": {
+        "items": [
+          {
+            "items": "sporenexus:spore_relic"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "sporenexus:regeneration_totem"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_nexus_fungus",
+      "has_andesite_wall",
+      "has_spore_relic",
+      "has_polished_andesite",
+      "has_glistering_melon_slice"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "sporenexus:regeneration_totem"
+    ]
+  }
+}

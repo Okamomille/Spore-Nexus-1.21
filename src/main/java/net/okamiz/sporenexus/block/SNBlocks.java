@@ -1,5 +1,8 @@
 package net.okamiz.sporenexus.block;
 
+import net.minecraft.core.particles.DustParticleOptions;
+import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
@@ -64,6 +67,9 @@ public class SNBlocks {
     public static final DeferredBlock<Block> FUNGAL_PROPAGATOR = registerBlock("fungal_propagator",
             () -> new FungalPropagator(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).randomTicks()));
 
+    //TOTEMS
+    public static final DeferredBlock<Block> REGENERATION_TOTEM = registerBlock("regeneration_totem",
+            () -> new TotemBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.ANDESITE).randomTicks().noOcclusion(), MobEffects.REGENERATION, DustParticleOptions.REDSTONE));
 
 
     public static final DeferredBlock<Block> FERTILIZED_MYCELIUM = registerBlock("fertilized_mycelium",

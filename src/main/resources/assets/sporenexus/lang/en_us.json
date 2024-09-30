@@ -46,6 +46,8 @@
   "block.sporenexus.emerald_mushroom": "Emerald Mushroom",
   "block.sporenexus.netherite_mushroom": "Netherite Mushroom",
 
+  "block.sporenexus.regeneration_totem": "§dRegeneration Totem",
+
 
   "tooltip.sporenexus.wipitem" : "§7No Use for now (WIP)",
   "tooltip.sporenexus.spore_relic" : "§7No Use for now (WIP)",

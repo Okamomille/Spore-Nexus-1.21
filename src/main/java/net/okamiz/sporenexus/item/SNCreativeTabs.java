@@ -62,6 +62,8 @@ public class SNCreativeTabs {
                         output.accept(SNBlocks.SPORE_SPREADER);
                         output.accept(SNBlocks.FUNGAL_PROPAGATOR);
 
+                        output.accept(SNBlocks.REGENERATION_TOTEM);
+
                     })
                     .build());
 

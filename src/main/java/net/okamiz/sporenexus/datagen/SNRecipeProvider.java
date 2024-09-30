@@ -128,6 +128,25 @@ public class SNRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .save(recipeOutput);
 
 
+        // TOTEMS
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SNBlocks.REGENERATION_TOTEM, 1)
+                .pattern(" X ")
+                .pattern("ABA")
+                .pattern("CDC")
+                .define('X', SNItems.NEXUS_FUNGUS)
+                .define('A', Blocks.ANDESITE_WALL)
+                .define('B', SNItems.SPORE_RELIC)
+                .define('C', Blocks.POLISHED_ANDESITE)
+                .define('D', Items.GLISTERING_MELON_SLICE)
+                .unlockedBy("has_nexus_fungus", has(SNItems.NEXUS_FUNGUS))
+                .unlockedBy("has_andesite_wall", has(Blocks.ANDESITE_WALL))
+                .unlockedBy("has_spore_relic", has(SNItems.SPORE_RELIC))
+                .unlockedBy("has_polished_andesite", has(Blocks.POLISHED_ANDESITE))
+                .unlockedBy("has_glistering_melon_slice", has(Items.GLISTERING_MELON_SLICE))
+                .save(recipeOutput);
+
+
 
         //MYCELIUMS
 

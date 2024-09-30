@@ -50,6 +50,9 @@ public class SNBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(SNBlocks.FUNGAL_LANTERN.get());
 
 
+        dropSelf(SNBlocks.REGENERATION_TOTEM.get());
+
+
 
         /*
         LootItemCondition.Builder lootItemConditionBuilder = LootItemBlockStatePropertyCondition.hasBlockStateProperties(SNBlocks.IRON_MUSHROOM.get())
