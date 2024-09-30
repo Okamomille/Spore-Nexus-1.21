@@ -8,11 +8,14 @@ import net.minecraft.world.level.block.Block;
 
 import java.util.List;
 
-public class FertilizedMycelium extends Block {
+public class FertilizedMycelium extends MyceliumSoilBlock {
 
     public FertilizedMycelium(Properties properties) {
         super(properties);
     }
+
+
+
 
     @Override
     public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {

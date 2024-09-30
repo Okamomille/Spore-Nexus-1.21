@@ -8,7 +8,7 @@ import net.minecraft.world.level.block.Block;
 
 import java.util.List;
 
-public class EnrichedMycelium extends Block {
+public class EnrichedMycelium extends MyceliumSoilBlock {
     public EnrichedMycelium(Properties properties) {
         super(properties);
     }

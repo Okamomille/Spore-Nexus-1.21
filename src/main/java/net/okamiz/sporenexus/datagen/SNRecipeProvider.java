@@ -131,6 +131,16 @@ public class SNRecipeProvider extends RecipeProvider implements IConditionBuilde
 
         //MYCELIUMS
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Blocks.MYCELIUM, 1)
+                .pattern("SSS")
+                .pattern("SDS")
+                .pattern("SSS")
+                .define('S', SNItems.MUSHROOM_SPORES)
+                .define('D', Blocks.DIRT)
+                .unlockedBy("has_mushroom_spores", has(SNItems.MUSHROOM_SPORES))
+                .unlockedBy("has_dirt", has(Blocks.DIRT))
+                .save(recipeOutput);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SNBlocks.FERTILIZED_MYCELIUM, 1)
                 .pattern("SSS")
                 .pattern("SMS")

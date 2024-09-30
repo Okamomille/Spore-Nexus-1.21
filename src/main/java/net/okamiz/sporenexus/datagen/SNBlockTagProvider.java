@@ -3,6 +3,7 @@ package net.okamiz.sporenexus.datagen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.okamiz.sporenexus.SporeNexusMod;
@@ -55,6 +56,7 @@ public class SNBlockTagProvider extends BlockTagsProvider {
                 .add(SNBlocks.NETHERITE_MUSHROOM.get());
 
         this.tag(SNTags.Blocks.MYCELIUM_SOILS)
+                .add(Blocks.MYCELIUM)
                 .add(SNBlocks.FERTILIZED_MYCELIUM.get())
                 .add(SNBlocks.ENRICHED_MYCELIUM.get());
 

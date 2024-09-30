@@ -1,4 +1,4 @@
-// 1.21.1	2024-09-30T16:18:52.4758602	Recipes
+// 1.21.1	2024-09-30T16:27:05.3044037	Recipes
 120912153324295343d3d9e21bd4d8ba8e9473cf data/minecraft/advancement/recipes/misc/coal_from_fragments.json
 a1b246d22941927d77142bbf1e185e64be0799e4 data/minecraft/advancement/recipes/misc/copper_from_fragments.json
 0fdf0ff9cc662c2ee45d384ca7bc7fc4e2b82935 data/minecraft/advancement/recipes/misc/diamond_from_fragments.json
@@ -8,6 +8,7 @@ a1b246d22941927d77142bbf1e185e64be0799e4 data/minecraft/advancement/recipes/misc
 1e9900414f70affe707823fd4682b51ef58d7516 data/minecraft/advancement/recipes/misc/gold_from_fragments.json
 5c46cc7bbe8e17cf3c08d1b1c62aff4d8f41f77d data/minecraft/advancement/recipes/misc/iron_from_fragments.json
 7b099ecc85d1831b0d2e0f73089adc91a14084f8 data/minecraft/advancement/recipes/misc/lapis_lazuli_from_fragments.json
+53117692c6b0e7750a8d9040cdd86a639ffca334 data/minecraft/advancement/recipes/misc/mycelium.json
 27846f7dd0f8959ce323256e1235e2fabf8906ce data/minecraft/advancement/recipes/misc/netherite_from_fragments.json
 fdbc5ad79e425e484729d552e58875ccbd284562 data/minecraft/advancement/recipes/misc/nexus_fungus_from_brown_mushroom.json
 350b310ff4f4c8819c1ac18783eb579233421ea1 data/minecraft/advancement/recipes/misc/nexus_fungus_from_red_mushroom.json
@@ -24,6 +25,7 @@ e4a1fdd252d56b476b7a2811d5358e2322664c0b data/minecraft/recipe/fungalsteel_ingot
 04edc06f07f737319574ac12c65569d189e13650 data/minecraft/recipe/gold_from_fragments.json
 46d46c6281505462a17319883fdb9d357d6db995 data/minecraft/recipe/iron_from_fragments.json
 877e6c1cce12a493fed0b9f13e8e2f841c73962c data/minecraft/recipe/lapis_lazuli_from_fragments.json
+bc19e38f295f02db73b799151379c211eed84fb8 data/minecraft/recipe/mycelium.json
 d4347ccb41837d298050bc940fc5c6f8be0eb169 data/minecraft/recipe/netherite_from_fragments.json
 0884e04ffd0c67e2dfa429e30bfecf37e88eee56 data/minecraft/recipe/nexus_fungus_from_brown_mushroom.json
 65050f1084304e40dae498e6ae534ec920add545 data/minecraft/recipe/nexus_fungus_from_red_mushroom.json
