@@ -33,11 +33,12 @@ import net.okamiz.sporenexus.util.SNTags;
 
 import java.util.List;
 import java.util.Random;
+import java.util.function.Supplier;
 
 public class ResourcesMushroomBlock extends CropBlock {
     public static final int MAX_AGE = 6;
     public static final IntegerProperty AGE = IntegerProperty.create("age", 0, 6);
-    public Item drop;
+    public Supplier<Item> drop;
 
     private static final VoxelShape[] SHAPE_BY_AGE = new VoxelShape[]{
             Block.box(5.0, 0.0, 5.0, 11.0, 6.0, 11.0),
@@ -48,7 +49,7 @@ public class ResourcesMushroomBlock extends CropBlock {
             Block.box(4.0, 0.0, 4.0, 12.0, 8.0, 12.0),
             Block.box(2.0, 0.0, 2.0, 14.0, 12.0, 14.0),
     };
-    public ResourcesMushroomBlock(Properties properties, Item drop) {
+    public ResourcesMushroomBlock(Properties properties, Supplier<Item> drop) {
         super(properties);
         this.drop = drop;
     }
@@ -152,39 +153,8 @@ public class ResourcesMushroomBlock extends CropBlock {
 
     private void dropFragments(Level level, BlockPos pos){
         if(drop != null){
-            if(drop == Items.COAL){
-                level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(SNItems.COAL_FRAGMENTS.get())));
-            }
-            if(drop == Items.LAPIS_LAZULI){
-                level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(SNItems.LAPIS_LAZULI_FRAGMENTS.get())));
-            }
-            if(drop == Items.QUARTZ){
-                level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(SNItems.QUARTZ_FRAGMENTS.get())));
-            }
-            if(drop == Items.REDSTONE){
-                level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(SNItems.REDSTONE_FRAGMENTS.get())));
-            }
-            if(drop == Items.RAW_IRON){
-                level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(SNItems.IRON_FRAGMENTS.get())));
-            }
-            if(drop == Items.RAW_COPPER){
-                level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(SNItems.COPPER_FRAGMENTS.get())));
-            }
-            if(drop == Items.RAW_GOLD){
-                level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(SNItems.GOLD_FRAGMENTS.get())));
-            }
-            if(drop == Items.WARPED_FUNGUS_ON_A_STICK){
-                level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(SNItems.FUNGALSTEEL_FRAGMENTS.get())));
-            }
-            if(drop == Items.DIAMOND){
-                level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(SNItems.DIAMOND_FRAGMENTS.get())));
-            }
-            if(drop == Items.EMERALD){
-                level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(SNItems.EMERALD_FRAGMENTS.get())));
-            }
-            if(drop == Items.NETHERITE_SCRAP){
-                level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(SNItems.NETHERITE_FRAGMENTS.get())));
-            }
+                level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(drop.get())));
+
         }
     }
 

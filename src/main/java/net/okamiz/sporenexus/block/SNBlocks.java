@@ -25,37 +25,37 @@ public class SNBlocks {
 
     public static final DeferredBlock<Block> COAL_MUSHROOM = registerBlock("coal_mushroom",
             () -> new ResourcesMushroomBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MUSHROOM_STEM)
-                    .noOcclusion().randomTicks().pushReaction(PushReaction.DESTROY), Items.COAL));
+                    .noOcclusion().randomTicks().pushReaction(PushReaction.DESTROY), SNItems.COAL_FRAGMENTS));
     public static final DeferredBlock<Block> LAPIS_LAZULI_MUSHROOM = registerBlock("lapis_lazuli_mushroom",
             () -> new ResourcesMushroomBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MUSHROOM_STEM)
-                    .noOcclusion().randomTicks().pushReaction(PushReaction.DESTROY), Items.LAPIS_LAZULI));
+                    .noOcclusion().randomTicks().pushReaction(PushReaction.DESTROY), SNItems.LAPIS_LAZULI_FRAGMENTS));
     public static final DeferredBlock<Block> QUARTZ_MUSHROOM = registerBlock("quartz_mushroom",
             () -> new ResourcesMushroomBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MUSHROOM_STEM)
-                    .noOcclusion().randomTicks().pushReaction(PushReaction.DESTROY), Items.QUARTZ));
+                    .noOcclusion().randomTicks().pushReaction(PushReaction.DESTROY), SNItems.QUARTZ_FRAGMENTS));
     public static final DeferredBlock<Block> REDSTONE_MUSHROOM = registerBlock("redstone_mushroom",
             () -> new ResourcesMushroomBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MUSHROOM_STEM)
-                    .noOcclusion().randomTicks().pushReaction(PushReaction.DESTROY), Items.REDSTONE));
+                    .noOcclusion().randomTicks().pushReaction(PushReaction.DESTROY), SNItems.REDSTONE_FRAGMENTS));
     public static final DeferredBlock<Block> IRON_MUSHROOM = registerBlock("iron_mushroom",
             () -> new ResourcesMushroomBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MUSHROOM_STEM)
-                    .noOcclusion().randomTicks().pushReaction(PushReaction.DESTROY), Items.RAW_IRON));
+                    .noOcclusion().randomTicks().pushReaction(PushReaction.DESTROY), SNItems.IRON_FRAGMENTS));
     public static final DeferredBlock<Block> COPPER_MUSHROOM = registerBlock("copper_mushroom",
             () -> new ResourcesMushroomBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MUSHROOM_STEM)
-                    .noOcclusion().randomTicks().pushReaction(PushReaction.DESTROY), Items.RAW_COPPER));
+                    .noOcclusion().randomTicks().pushReaction(PushReaction.DESTROY), SNItems.COPPER_FRAGMENTS));
     public static final DeferredBlock<Block> GOLD_MUSHROOM = registerBlock("gold_mushroom",
             () -> new ResourcesMushroomBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MUSHROOM_STEM)
-                    .noOcclusion().randomTicks().pushReaction(PushReaction.DESTROY), Items.RAW_GOLD));
+                    .noOcclusion().randomTicks().pushReaction(PushReaction.DESTROY), SNItems.GOLD_FRAGMENTS));
     public static final DeferredBlock<Block> FUNGALSTEEL_MUSHROOM = registerBlock("fungalsteel_mushroom",
             () -> new ResourcesMushroomBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MUSHROOM_STEM)
-                    .noOcclusion().randomTicks().pushReaction(PushReaction.DESTROY), Items.WARPED_FUNGUS_ON_A_STICK)); //TO BE FIXED
+                    .noOcclusion().randomTicks().pushReaction(PushReaction.DESTROY), SNItems.FUNGALSTEEL_FRAGMENTS));
     public static final DeferredBlock<Block> DIAMOND_MUSHROOM = registerBlock("diamond_mushroom",
             () -> new ResourcesMushroomBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MUSHROOM_STEM)
-                    .noOcclusion().randomTicks().pushReaction(PushReaction.DESTROY), Items.DIAMOND));
+                    .noOcclusion().randomTicks().pushReaction(PushReaction.DESTROY), SNItems.DIAMOND_FRAGMENTS));
     public static final DeferredBlock<Block> EMERALD_MUSHROOM = registerBlock("emerald_mushroom",
             () -> new ResourcesMushroomBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MUSHROOM_STEM)
-                    .noOcclusion().randomTicks().pushReaction(PushReaction.DESTROY), Items.EMERALD));
+                    .noOcclusion().randomTicks().pushReaction(PushReaction.DESTROY), SNItems.EMERALD_FRAGMENTS));
     public static final DeferredBlock<Block> NETHERITE_MUSHROOM = registerBlock("netherite_mushroom",
             () -> new ResourcesMushroomBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MUSHROOM_STEM)
-                    .noOcclusion().randomTicks().pushReaction(PushReaction.DESTROY), Items.NETHERITE_SCRAP));
+                    .noOcclusion().randomTicks().pushReaction(PushReaction.DESTROY), SNItems.NETHERITE_FRAGMENTS));
 
 
     public static final DeferredBlock<Block> FUNGALSTEEL_BLOCK = registerBlock("fungalsteel_block",
