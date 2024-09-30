@@ -34,9 +34,11 @@ public class SNBlockTagProvider extends BlockTagsProvider {
 
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(SNBlocks.FUNGALSTEEL_BLOCK.get())
-                .add(SNBlocks.SPORE_SPREADER.get());
+                .add(SNBlocks.SPORE_SPREADER.get())
+                .add(SNBlocks.FUNGAL_PROPAGATOR.get());
 
         this.tag(BlockTags.MINEABLE_WITH_HOE)
+                .add(SNBlocks.FUNGAL_LANTERN.get())
                 .add(SNBlocks.FERTILIZED_MYCELIUM.get())
                 .add(SNBlocks.ENRICHED_MYCELIUM.get());
 

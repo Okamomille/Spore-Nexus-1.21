@@ -60,6 +60,7 @@ public class SNCreativeTabs {
                         output.accept(SNBlocks.FUNGAL_LANTERN);
                         output.accept(SNBlocks.FUNGALSTEEL_BLOCK);
                         output.accept(SNBlocks.SPORE_SPREADER);
+                        output.accept(SNBlocks.FUNGAL_PROPAGATOR);
 
                     })
                     .build());

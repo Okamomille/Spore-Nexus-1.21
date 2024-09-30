@@ -113,6 +113,21 @@ public class SNRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .unlockedBy("has_enriched_mycelium", has(SNBlocks.ENRICHED_MYCELIUM))
                 .save(recipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SNBlocks.FUNGAL_PROPAGATOR, 1)
+                .pattern("SXS")
+                .pattern("BMB")
+                .pattern("SXS")
+                .define('S', SNItems.FUNGALSTEEL_INGOT)
+                .define('M', SNItems.MUSHROOM_SPORES)
+                .define('X', SNBlocks.FUNGALSTEEL_BLOCK)
+                .define('B', Items.IRON_NUGGET)
+                .unlockedBy("has_fungalsteel_ingot", has(SNItems.FUNGALSTEEL_INGOT))
+                .unlockedBy("has_iron_nugget", has(Items.IRON_NUGGET))
+                .unlockedBy("has_fungalsteel_block", has(SNBlocks.FUNGALSTEEL_BLOCK))
+                .unlockedBy("has_mushroom_spores", has(SNItems.MUSHROOM_SPORES))
+                .save(recipeOutput);
+
+
 
         //MYCELIUMS
 

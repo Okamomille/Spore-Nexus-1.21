@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "sporenexus:block/fungal_propagator_bottom",
+    "east": "sporenexus:block/fungal_propagator_side",
+    "north": "sporenexus:block/fungal_propagator_side",
+    "particle": "sporenexus:block/fungal_propagator_side",
+    "south": "sporenexus:block/fungal_propagator_side",
+    "up": "sporenexus:block/fungal_propagator_top",
+    "west": "sporenexus:block/fungal_propagator_side"
+  }
+}

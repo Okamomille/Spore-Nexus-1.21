@@ -11,10 +11,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.okamiz.sporenexus.SporeNexusMod;
-import net.okamiz.sporenexus.block.custom.EnrichedMycelium;
-import net.okamiz.sporenexus.block.custom.FertilizedMycelium;
-import net.okamiz.sporenexus.block.custom.ResourcesMushroomBlock;
-import net.okamiz.sporenexus.block.custom.SporeSpreader;
+import net.okamiz.sporenexus.block.custom.*;
 import net.okamiz.sporenexus.item.SNItems;
 
 import java.util.function.Supplier;
@@ -61,8 +58,11 @@ public class SNBlocks {
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SHROOMLIGHT)));
 
 
+    //MACHINES
     public static final DeferredBlock<Block> SPORE_SPREADER = registerBlock("spore_spreader",
             () -> new SporeSpreader(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).randomTicks()));
+    public static final DeferredBlock<Block> FUNGAL_PROPAGATOR = registerBlock("fungal_propagator",
+            () -> new FungalPropagator(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).randomTicks()));
 
 
 

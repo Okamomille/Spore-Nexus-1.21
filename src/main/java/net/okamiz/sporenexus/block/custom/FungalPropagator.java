@@ -11,17 +11,33 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 
 import java.util.List;
 
-public class SporeSpreader extends Block {
-    public SporeSpreader(Properties properties) {
+public class FungalPropagator extends Block {
+    public FungalPropagator(Properties properties) {
         super(properties);
     }
 
 
 
+    @Override
+    protected void randomTick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
+
+        if(!level.isClientSide()){
+            for (int i = -1; i < 1; i++) {
+                for (int j = -1; j < 1; j++) {
+                    if(level.getBlockState(pos.offset(i, 0, j)).is(Blocks.DIRT))
+                    {
+                        level.setBlock(pos.offset(i, 0, j), Blocks.MYCELIUM.defaultBlockState(), 2);
+                    }
+                }
+            }
+        }
+        super.randomTick(state, level, pos, random);
+    }
 
     @Override
     public void animateTick(BlockState state, Level level, BlockPos blockPos, RandomSource random) {
@@ -31,8 +47,8 @@ public class SporeSpreader extends Block {
         BlockPos.MutableBlockPos blockpos$mutableblockpos = new BlockPos.MutableBlockPos();
 
         for (int l = 0; l < 14; l++) {
-            blockpos$mutableblockpos.set(blockPosX + Mth.nextInt(random, -3, 3),
-                    blockPosY, blockPosZ + Mth.nextInt(random, -3, 3));
+            blockpos$mutableblockpos.set(blockPosX + Mth.nextInt(random, -1, 1),
+                    blockPosY, blockPosZ + Mth.nextInt(random, -1, 1));
             BlockState blockstate = level.getBlockState(blockpos$mutableblockpos);
             if (!blockstate.isCollisionShapeFullBlock(level, blockpos$mutableblockpos)) {
                 level.addParticle(
@@ -40,9 +56,9 @@ public class SporeSpreader extends Block {
                         (double)blockpos$mutableblockpos.getX() + random.nextDouble(),
                         (double)blockpos$mutableblockpos.getY() + random.nextDouble(),
                         (double)blockpos$mutableblockpos.getZ() + random.nextDouble(),
-                        0.01,
-                        0.01,
-                        0.01
+                        0.00,
+                        0.1,
+                        0.00
                 );
             }
         }
