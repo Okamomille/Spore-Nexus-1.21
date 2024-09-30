@@ -83,7 +83,17 @@ public class SNRecipeProvider extends RecipeProvider implements IConditionBuilde
 
 
 
+        // FUNGAL ORGANIC THINGS
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SNBlocks.FUNGAL_LANTERN, 1)
+                .pattern(" X ")
+                .pattern("XOX")
+                .pattern(" X ")
+                .define('O', Blocks.GLOWSTONE)
+                .define('X', SNItems.FUNGAL_POWDER)
+                .unlockedBy("has_glowstone", has(Blocks.GLOWSTONE))
+                .unlockedBy("has_fungal_powder", has(SNItems.FUNGAL_POWDER))
+                .save(recipeOutput);
 
 
 

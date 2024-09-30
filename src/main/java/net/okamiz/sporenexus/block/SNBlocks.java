@@ -57,6 +57,9 @@ public class SNBlocks {
     public static final DeferredBlock<Block> FUNGALSTEEL_BLOCK = registerBlock("fungalsteel_block",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
 
+    public static final DeferredBlock<Block> FUNGAL_LANTERN = registerBlock("fungal_lantern",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SHROOMLIGHT)));
+
 
     public static final DeferredBlock<Block> SPORE_SPREADER = registerBlock("spore_spreader",
             () -> new SporeSpreader(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).randomTicks()));

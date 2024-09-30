@@ -55,5 +55,9 @@ public class SNBlockTagProvider extends BlockTagsProvider {
         this.tag(SNTags.Blocks.MYCELIUM_SOILS)
                 .add(SNBlocks.FERTILIZED_MYCELIUM.get())
                 .add(SNBlocks.ENRICHED_MYCELIUM.get());
+
+        this.tag(BlockTags.MUSHROOM_GROW_BLOCK)
+                .add(SNBlocks.FERTILIZED_MYCELIUM.get())
+                .add(SNBlocks.ENRICHED_MYCELIUM.get());
     }
 }
