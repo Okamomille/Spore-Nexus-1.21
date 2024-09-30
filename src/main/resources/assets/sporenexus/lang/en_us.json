@@ -56,7 +56,8 @@
 
   "tooltip.sporenexus.enriched_mycelium" : "§7Growth Speed : §a125%",
   "tooltip.sporenexus.fertilized_mycelium" : "§7Growth Speed : §a100%",
-  "tooltip.sporenexus.spore_spreader" : "§7Growth Speed Change in a 6x6 Area : §ax2"
+  "tooltip.sporenexus.spore_spreader" : "§7Growth Speed Change in a 6x6 Area : §ax2",
+  "tooltip.sporenexus.fungal_propagator" : "§7Transform adjacent Dirt blocks into Mycelium"
 
 
 

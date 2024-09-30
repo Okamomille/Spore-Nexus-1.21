@@ -67,7 +67,7 @@ public class FungalPropagator extends Block {
 
     @Override
     public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
-        tooltipComponents.add(Component.translatable("tooltip.sporenexus.spore_spreader"));
+        tooltipComponents.add(Component.translatable("tooltip.sporenexus.fungal_propagator"));
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }
 }
