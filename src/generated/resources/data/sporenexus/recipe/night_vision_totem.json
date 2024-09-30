@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:andesite_wall"
+    },
+    "B": {
+      "item": "sporenexus:spore_relic"
+    },
+    "C": {
+      "item": "minecraft:polished_andesite"
+    },
+    "D": {
+      "item": "minecraft:ender_eye"
+    },
+    "X": {
+      "item": "sporenexus:nexus_fungus"
+    }
+  },
+  "pattern": [
+    " X ",
+    "ABA",
+    "CDC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sporenexus:night_vision_totem"
+  }
+}

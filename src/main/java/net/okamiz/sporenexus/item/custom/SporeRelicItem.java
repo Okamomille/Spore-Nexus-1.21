@@ -13,9 +13,4 @@ public class SporeRelicItem extends Item {
     }
 
 
-    @Override
-    public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
-        tooltipComponents.add(Component.translatable("tooltip.sporenexus.spore_relic"));
-        super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
-    }
 }

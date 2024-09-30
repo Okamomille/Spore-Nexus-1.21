@@ -146,6 +146,54 @@ public class SNRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .unlockedBy("has_glistering_melon_slice", has(Items.GLISTERING_MELON_SLICE))
                 .save(recipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SNBlocks.NIGHT_VISION_TOTEM, 1)
+                .pattern(" X ")
+                .pattern("ABA")
+                .pattern("CDC")
+                .define('X', SNItems.NEXUS_FUNGUS)
+                .define('A', Blocks.ANDESITE_WALL)
+                .define('B', SNItems.SPORE_RELIC)
+                .define('C', Blocks.POLISHED_ANDESITE)
+                .define('D', Items.ENDER_EYE)
+                .unlockedBy("has_nexus_fungus", has(SNItems.NEXUS_FUNGUS))
+                .unlockedBy("has_andesite_wall", has(Blocks.ANDESITE_WALL))
+                .unlockedBy("has_spore_relic", has(SNItems.SPORE_RELIC))
+                .unlockedBy("has_polished_andesite", has(Blocks.POLISHED_ANDESITE))
+                .unlockedBy("has_ender_eye", has(Items.ENDER_EYE))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SNBlocks.HASTE_TOTEM, 1)
+                .pattern(" X ")
+                .pattern("ABA")
+                .pattern("CDC")
+                .define('X', SNItems.NEXUS_FUNGUS)
+                .define('A', Blocks.ANDESITE_WALL)
+                .define('B', SNItems.SPORE_RELIC)
+                .define('C', Blocks.POLISHED_ANDESITE)
+                .define('D', Items.GOLDEN_PICKAXE)
+                .unlockedBy("has_nexus_fungus", has(SNItems.NEXUS_FUNGUS))
+                .unlockedBy("has_andesite_wall", has(Blocks.ANDESITE_WALL))
+                .unlockedBy("has_spore_relic", has(SNItems.SPORE_RELIC))
+                .unlockedBy("has_polished_andesite", has(Blocks.POLISHED_ANDESITE))
+                .unlockedBy("has_golden_pickaxe", has(Items.GOLDEN_PICKAXE))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SNBlocks.FIRE_RESISTANCE_TOTEM, 1)
+                .pattern(" X ")
+                .pattern("ABA")
+                .pattern("CDC")
+                .define('X', SNItems.NEXUS_FUNGUS)
+                .define('A', Blocks.ANDESITE_WALL)
+                .define('B', SNItems.SPORE_RELIC)
+                .define('C', Blocks.POLISHED_ANDESITE)
+                .define('D', Items.BLAZE_POWDER)
+                .unlockedBy("has_nexus_fungus", has(SNItems.NEXUS_FUNGUS))
+                .unlockedBy("has_andesite_wall", has(Blocks.ANDESITE_WALL))
+                .unlockedBy("has_spore_relic", has(SNItems.SPORE_RELIC))
+                .unlockedBy("has_polished_andesite", has(Blocks.POLISHED_ANDESITE))
+                .unlockedBy("has_blaze_powder", has(Items.BLAZE_POWDER))
+                .save(recipeOutput);
+
 
 
         //MYCELIUMS

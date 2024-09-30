@@ -51,6 +51,9 @@ public class SNBlockLootTableProvider extends BlockLootSubProvider {
 
 
         dropSelf(SNBlocks.REGENERATION_TOTEM.get());
+        dropSelf(SNBlocks.FIRE_RESISTANCE_TOTEM.get());
+        dropSelf(SNBlocks.NIGHT_VISION_TOTEM.get());
+        dropSelf(SNBlocks.HASTE_TOTEM.get());
 
 
 

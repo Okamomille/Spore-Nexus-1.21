@@ -16,6 +16,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import net.okamiz.sporenexus.SporeNexusMod;
 import net.okamiz.sporenexus.block.custom.*;
 import net.okamiz.sporenexus.item.SNItems;
+import net.okamiz.sporenexus.util.SNDustParticleOptions;
 
 import java.util.function.Supplier;
 
@@ -67,10 +68,21 @@ public class SNBlocks {
     public static final DeferredBlock<Block> FUNGAL_PROPAGATOR = registerBlock("fungal_propagator",
             () -> new FungalPropagator(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).randomTicks()));
 
-    //TOTEMS
+    //TOTEMS---------------------------
     public static final DeferredBlock<Block> REGENERATION_TOTEM = registerBlock("regeneration_totem",
-            () -> new TotemBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.ANDESITE).randomTicks().noOcclusion(), MobEffects.REGENERATION, DustParticleOptions.REDSTONE));
+            () -> new TotemBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.ANDESITE).randomTicks().noOcclusion(),
+                    MobEffects.REGENERATION, DustParticleOptions.REDSTONE));
+    public static final DeferredBlock<Block> NIGHT_VISION_TOTEM = registerBlock("night_vision_totem",
+            () -> new TotemBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.ANDESITE).randomTicks().noOcclusion(),
+                    MobEffects.NIGHT_VISION, SNDustParticleOptions.NIGHT_VISION));
+    public static final DeferredBlock<Block> FIRE_RESISTANCE_TOTEM = registerBlock("fire_resistance_totem",
+            () -> new TotemBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.ANDESITE).randomTicks().noOcclusion(),
+                    MobEffects.FIRE_RESISTANCE, SNDustParticleOptions.FIRE_RESISTANCE));
+    public static final DeferredBlock<Block> HASTE_TOTEM = registerBlock("haste_totem",
+            () -> new TotemBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.ANDESITE).randomTicks().noOcclusion(),
+                    MobEffects.DIG_SPEED, SNDustParticleOptions.HASTE));
 
+    //----------------------------------
 
     public static final DeferredBlock<Block> FERTILIZED_MYCELIUM = registerBlock("fertilized_mycelium",
             () -> new FertilizedMycelium(BlockBehaviour.Properties.ofFullCopy(Blocks.MYCELIUM)));

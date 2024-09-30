@@ -35,6 +35,9 @@ public class SNBlockTagProvider extends BlockTagsProvider {
 
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(SNBlocks.REGENERATION_TOTEM.get())
+                .add(SNBlocks.NIGHT_VISION_TOTEM.get())
+                .add(SNBlocks.HASTE_TOTEM.get())
+                .add(SNBlocks.FIRE_RESISTANCE_TOTEM.get())
                 .add(SNBlocks.FUNGALSTEEL_BLOCK.get())
                 .add(SNBlocks.SPORE_SPREADER.get())
                 .add(SNBlocks.FUNGAL_PROPAGATOR.get());

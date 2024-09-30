@@ -1,6 +1,9 @@
 {
   "values": [
     "sporenexus:regeneration_totem",
+    "sporenexus:night_vision_totem",
+    "sporenexus:haste_totem",
+    "sporenexus:fire_resistance_totem",
     "sporenexus:fungalsteel_block",
     "sporenexus:spore_spreader",
     "sporenexus:fungal_propagator"

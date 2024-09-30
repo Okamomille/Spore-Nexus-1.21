@@ -47,6 +47,9 @@
   "block.sporenexus.netherite_mushroom": "Netherite Mushroom",
 
   "block.sporenexus.regeneration_totem": "§dRegeneration Totem",
+  "block.sporenexus.night_vision_totem": "§dNight Vision Totem",
+  "block.sporenexus.haste_totem": "§dHaste Totem",
+  "block.sporenexus.fire_resistance_totem": "§dFire Resistance Totem",
 
 
   "tooltip.sporenexus.wipitem" : "§7No Use for now (WIP)",
@@ -59,7 +62,9 @@
   "tooltip.sporenexus.enriched_mycelium" : "§7Growth Speed : §a125%",
   "tooltip.sporenexus.fertilized_mycelium" : "§7Growth Speed : §a100%",
   "tooltip.sporenexus.spore_spreader" : "§7Growth Speed Change in a 6x6 Area : §ax2",
-  "tooltip.sporenexus.fungal_propagator" : "§7Transform adjacent Dirt blocks into Mycelium"
+  "tooltip.sporenexus.fungal_propagator" : "§7Transform adjacent Dirt blocks into Mycelium",
+
+  "tooltip.sporenexus.totems" : "§7Grants an Effect to players in a small area around the totem when placed"
 
 
 
