@@ -22,11 +22,18 @@ public class SNCreativeTabs {
                     .icon(() -> new ItemStack(SNBlocks.IRON_MUSHROOM))
                     .displayItems((itemDisplayParameters, output) -> {
 
-                        output.accept(SNItems.MUSHROOM_SPORES);
                         output.accept(SNItems.NEXUS_FUNGUS);
+                        output.accept(SNItems.GREAT_FUNGUS);
+                        output.accept(SNItems.INFERNAL_FUNGUS);
+                        output.accept(SNItems.ETHEREAL_FUNGUS);
+
+                        output.accept(SNItems.FUNGAL_ESSENCE);
+                        output.accept(SNItems.INFERNAL_ESSENCE);
+                        output.accept(SNItems.ETHEREAL_ESSENCE);
+
+                        output.accept(SNItems.MUSHROOM_SPORES);
                         output.accept(SNItems.MUSHROOM_CAP);
                         output.accept(SNItems.SPORE_RELIC);
-                        output.accept(SNItems.FUNGAL_ESSENCE);
 
                         output.accept(SNItems.FUNGAL_POWDER);
                         output.accept(SNItems.FUNGALSTEEL_INGOT);

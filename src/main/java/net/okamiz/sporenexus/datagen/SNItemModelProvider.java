@@ -17,11 +17,18 @@ public class SNItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
 
+        basicItem(SNItems.NEXUS_FUNGUS.get());
+        basicItem(SNItems.GREAT_FUNGUS.get());
+        basicItem(SNItems.INFERNAL_FUNGUS.get());
+        basicItem(SNItems.ETHEREAL_FUNGUS.get());
+
+        basicItem(SNItems.FUNGAL_ESSENCE.get());
+        basicItem(SNItems.INFERNAL_ESSENCE.get());
+        basicItem(SNItems.ETHEREAL_ESSENCE.get());
+
         basicItem(SNItems.SPORE_RELIC.get());
         basicItem(SNItems.MUSHROOM_SPORES.get());
-        basicItem(SNItems.NEXUS_FUNGUS.get());
         basicItem(SNItems.MUSHROOM_CAP.get());
-        basicItem(SNItems.FUNGAL_ESSENCE.get());
 
         basicItem(SNItems.FUNGAL_POWDER.get());
         basicItem(SNItems.FUNGALSTEEL_INGOT.get());

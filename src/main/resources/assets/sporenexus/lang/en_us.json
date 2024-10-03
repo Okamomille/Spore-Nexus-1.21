@@ -3,9 +3,15 @@
 
 
   "item.sporenexus.mushroom_spores": "Mushroom Spores",
-  "item.sporenexus.nexus_fungus": "Nexus Fungus",
   "item.sporenexus.mushroom_cap": "Mushroom Cap",
-  "item.sporenexus.fungal_essence": "Fungal Essence",
+  "item.sporenexus.fungal_essence": "§eFungal Essence",
+  "item.sporenexus.infernal_essence": "§cInfernal Essence",
+  "item.sporenexus.ethereal_essence": "§dEthereal Essence",
+
+  "item.sporenexus.nexus_fungus": "Nexus Fungus",
+  "item.sporenexus.great_fungus": "§eGreat Fungus",
+  "item.sporenexus.infernal_fungus": "§cInfernal Fungus",
+  "item.sporenexus.ethereal_fungus": "§dEthereal Fungus",
 
   "item.sporenexus.spore_relic": "§aSpore Relic",
 

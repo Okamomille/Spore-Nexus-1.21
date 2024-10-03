@@ -19,8 +19,6 @@ public class SNItems {
 
     public static final DeferredItem<Item> MUSHROOM_CAP = ITEMS.registerItem("mushroom_cap",
             WIPItem::new, new Item.Properties());
-    public static final DeferredItem<Item> FUNGAL_ESSENCE = ITEMS.registerItem("fungal_essence",
-            Item::new, new Item.Properties());
     public static final DeferredItem<Item> SPORE_RELIC = ITEMS.registerItem("spore_relic",
             SporeRelicItem::new, new Item.Properties());
 
@@ -28,7 +26,16 @@ public class SNItems {
     public static final DeferredItem<Item> FUNGAL_POWDER = ITEMS.registerSimpleItem("fungal_powder");
     public static final DeferredItem<Item> FUNGALSTEEL_INGOT = ITEMS.registerSimpleItem("fungalsteel_ingot");
     public static final DeferredItem<Item> MUSHROOM_SPORES = ITEMS.registerSimpleItem("mushroom_spores");
+
     public static final DeferredItem<Item> NEXUS_FUNGUS = ITEMS.registerSimpleItem("nexus_fungus");
+    public static final DeferredItem<Item> GREAT_FUNGUS = ITEMS.registerSimpleItem("great_fungus");
+    public static final DeferredItem<Item> INFERNAL_FUNGUS = ITEMS.registerSimpleItem("infernal_fungus");
+    public static final DeferredItem<Item> ETHEREAL_FUNGUS = ITEMS.registerSimpleItem("ethereal_fungus");
+
+    public static final DeferredItem<Item> FUNGAL_ESSENCE = ITEMS.registerSimpleItem("fungal_essence");
+    public static final DeferredItem<Item> INFERNAL_ESSENCE = ITEMS.registerSimpleItem("infernal_essence");
+    public static final DeferredItem<Item> ETHEREAL_ESSENCE = ITEMS.registerSimpleItem("ethereal_essence");
+
 
     public static final DeferredItem<Item> COAL_FRAGMENTS = ITEMS.registerSimpleItem("coal_fragments");
     public static final DeferredItem<Item> LAPIS_LAZULI_FRAGMENTS = ITEMS.registerSimpleItem("lapis_lazuli_fragments");

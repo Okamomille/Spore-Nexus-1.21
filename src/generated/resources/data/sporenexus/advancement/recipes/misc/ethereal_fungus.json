@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_ethereal_essence": {
+      "conditions": {
+        "items": [
+          {
+            "items": "sporenexus:ethereal_essence"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_infernal_fungus": {
+      "conditions": {
+        "items": [
+          {
+            "items": "sporenexus:infernal_fungus"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "sporenexus:ethereal_fungus"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_infernal_fungus",
+      "has_ethereal_essence"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "sporenexus:ethereal_fungus"
+    ]
+  }
+}

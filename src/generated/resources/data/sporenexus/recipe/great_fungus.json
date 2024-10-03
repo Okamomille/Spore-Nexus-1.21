@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "O": {
+      "item": "sporenexus:nexus_fungus"
+    },
+    "X": {
+      "item": "sporenexus:fungal_essence"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "XOX",
+    "XXX"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sporenexus:great_fungus"
+  }
+}

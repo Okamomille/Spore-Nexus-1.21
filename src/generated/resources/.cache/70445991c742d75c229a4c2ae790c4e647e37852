@@ -1,13 +1,18 @@
-// 1.21.1	2024-09-30T23:43:54.6243748	Item Models: sporenexus
+// 1.21.1	2024-10-03T21:44:55.6803257	Item Models: sporenexus
 b1a400ae75c0d9e499c7c305265339e38cae0352 assets/sporenexus/models/item/coal_fragments.json
 c6078c2acd9a53e199bf71ee945412bea38cc2ff assets/sporenexus/models/item/copper_fragments.json
 5f77781d3ea78f9ce3239faee1b059758ad80aab assets/sporenexus/models/item/diamond_fragments.json
 def1e94bad54c14214e7fe460dc6474cf295ecf4 assets/sporenexus/models/item/emerald_fragments.json
+9ac40d5b7dcfeca620779d02f53b713fa1d165da assets/sporenexus/models/item/ethereal_essence.json
+a0b5ea40e59e3a876236f76266da10d2a8d08faa assets/sporenexus/models/item/ethereal_fungus.json
 d69cc53d38823ce3dc1c519a3d86d77d6795d18e assets/sporenexus/models/item/fungalsteel_fragments.json
 b239f5c1951e441875a9aece4f8b505c6fb777db assets/sporenexus/models/item/fungalsteel_ingot.json
 15427e2f5da5dd3c666008ab07e30c43f00221db assets/sporenexus/models/item/fungal_essence.json
 a7d5e191001dcc4d9b43225be7b9482118cb7ce3 assets/sporenexus/models/item/fungal_powder.json
 3da242de5572771039335491988f0c1aeedbd14e assets/sporenexus/models/item/gold_fragments.json
+3388dd81cc08fdd189c5070b3cf1fc2eacfb586e assets/sporenexus/models/item/great_fungus.json
+b95e097aeeda8e2f22829c9aea6ebc7874f92532 assets/sporenexus/models/item/infernal_essence.json
+5fa707bd41edf801c9f83112986da972dc322dc0 assets/sporenexus/models/item/infernal_fungus.json
 602d580bbe7ac4e2cdb9acb3b65c9b5cba289f3e assets/sporenexus/models/item/iron_fragments.json
 9e599a6d6be680d0d3158e494bf25387046e6d99 assets/sporenexus/models/item/lapis_lazuli_fragments.json
 4808bf2c9886a3f81c5a1139aedfd987beebd72e assets/sporenexus/models/item/mushroom_cap.json

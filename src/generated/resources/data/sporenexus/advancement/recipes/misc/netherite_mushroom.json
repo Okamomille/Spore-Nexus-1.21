@@ -1,21 +1,21 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_netherite": {
+    "has_ethereal_fungus": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:netherite_scrap"
+            "items": "sporenexus:ethereal_fungus"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_nexus_fungus": {
+    "has_netherite": {
       "conditions": {
         "items": [
           {
-            "items": "sporenexus:nexus_fungus"
+            "items": "minecraft:netherite_scrap"
           }
         ]
       },
@@ -31,7 +31,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_nexus_fungus",
+      "has_ethereal_fungus",
       "has_netherite"
     ]
   ],

@@ -11,11 +11,11 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_nexus_fungus": {
+    "has_ethereal_fungus": {
       "conditions": {
         "items": [
           {
-            "items": "sporenexus:nexus_fungus"
+            "items": "sporenexus:ethereal_fungus"
           }
         ]
       },
@@ -31,7 +31,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_nexus_fungus",
+      "has_ethereal_fungus",
       "has_emerald"
     ]
   ],

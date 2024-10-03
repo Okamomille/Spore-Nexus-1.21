@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "O": {
+      "item": "sporenexus:infernal_fungus"
+    },
+    "X": {
+      "item": "sporenexus:ethereal_essence"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "XOX",
+    "XXX"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sporenexus:ethereal_fungus"
+  }
+}

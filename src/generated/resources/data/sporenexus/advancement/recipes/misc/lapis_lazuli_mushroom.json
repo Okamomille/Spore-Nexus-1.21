@@ -1,21 +1,21 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_lapis_lazuli": {
+    "has_great_fungus": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:lapis_lazuli"
+            "items": "sporenexus:great_fungus"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_nexus_fungus": {
+    "has_lapis_lazuli": {
       "conditions": {
         "items": [
           {
-            "items": "sporenexus:nexus_fungus"
+            "items": "minecraft:lapis_lazuli"
           }
         ]
       },
@@ -31,7 +31,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_nexus_fungus",
+      "has_great_fungus",
       "has_lapis_lazuli"
     ]
   ],

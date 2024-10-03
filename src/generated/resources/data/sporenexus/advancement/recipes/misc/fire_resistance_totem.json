@@ -21,11 +21,11 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_nexus_fungus": {
+    "has_infernal_fungus": {
       "conditions": {
         "items": [
           {
-            "items": "sporenexus:nexus_fungus"
+            "items": "sporenexus:infernal_fungus"
           }
         ]
       },
@@ -61,7 +61,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_nexus_fungus",
+      "has_infernal_fungus",
       "has_andesite_wall",
       "has_spore_relic",
       "has_polished_andesite",
