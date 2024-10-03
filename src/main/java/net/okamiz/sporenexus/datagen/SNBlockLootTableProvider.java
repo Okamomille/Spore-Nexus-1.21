@@ -45,6 +45,7 @@ public class SNBlockLootTableProvider extends BlockLootSubProvider {
 
         dropSelf(SNBlocks.SPORE_SPREADER.get());
         dropSelf(SNBlocks.FUNGAL_PROPAGATOR.get());
+        dropSelf(SNBlocks.MUSHROOM_COLLECTOR.get());
 
         dropSelf(SNBlocks.FUNGALSTEEL_BLOCK.get());
 

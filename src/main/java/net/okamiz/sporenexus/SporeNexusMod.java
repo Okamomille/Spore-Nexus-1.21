@@ -1,8 +1,15 @@
 package net.okamiz.sporenexus;
 
+import net.minecraft.core.Direction;
+import net.neoforged.neoforge.capabilities.Capabilities;
+import net.neoforged.neoforge.capabilities.RegisterCapabilitiesEvent;
+import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import net.okamiz.sporenexus.block.SNBlocks;
+import net.okamiz.sporenexus.block.entity.SNBlockEntities;
 import net.okamiz.sporenexus.item.SNCreativeTabs;
 import net.okamiz.sporenexus.item.SNItems;
+import net.okamiz.sporenexus.screen.SNMenuTypes;
+import net.okamiz.sporenexus.screen.custom.MushroomCollectorScreen;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -42,7 +49,14 @@ public class SporeNexusMod {
 
         SNItems.register(modEventBus);
         SNBlocks.register(modEventBus);
+
         SNCreativeTabs.register(modEventBus);
+
+        SNBlockEntities.register(modEventBus);
+
+        SNMenuTypes.register(modEventBus);
+
+        modEventBus.addListener(this::registerCapabilities);
 
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.
@@ -90,5 +104,18 @@ public class SporeNexusMod {
             LOGGER.info("HELLO FROM CLIENT SETUP");
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
         }
+
+        @SubscribeEvent
+        public static void registerScreens(RegisterMenuScreensEvent event){
+            event.register(SNMenuTypes.MUSHROOM_COLLECTOR_MENU.get(), MushroomCollectorScreen::new);
+        }
+    }
+
+    private void registerCapabilities(RegisterCapabilitiesEvent event) {
+        event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, SNBlockEntities.MUSHROOM_COLLECTOR_BE.get(), (blockEntity, dir) -> {
+            if (dir == null) return blockEntity.getItemHandler();
+            if (dir == Direction.DOWN) return blockEntity.getItemHandler();
+            return blockEntity.getItemHandler();
+        });
     }
 }

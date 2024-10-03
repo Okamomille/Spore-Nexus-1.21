@@ -63,6 +63,7 @@ public class SNCreativeTabs {
                         output.accept(SNBlocks.FUNGALSTEEL_BLOCK);
                         output.accept(SNBlocks.SPORE_SPREADER);
                         output.accept(SNBlocks.FUNGAL_PROPAGATOR);
+                        output.accept(SNBlocks.MUSHROOM_COLLECTOR);
 
                         output.accept(SNBlocks.REGENERATION_TOTEM);
                         output.accept(SNBlocks.NIGHT_VISION_TOTEM);

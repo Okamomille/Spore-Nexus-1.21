@@ -41,7 +41,8 @@ public class SNBlockTagProvider extends BlockTagsProvider {
                 .add(SNBlocks.FIRE_RESISTANCE_TOTEM.get())
                 .add(SNBlocks.FUNGALSTEEL_BLOCK.get())
                 .add(SNBlocks.SPORE_SPREADER.get())
-                .add(SNBlocks.FUNGAL_PROPAGATOR.get());
+                .add(SNBlocks.FUNGAL_PROPAGATOR.get())
+                .add(SNBlocks.MUSHROOM_COLLECTOR.get());
 
         this.tag(BlockTags.MINEABLE_WITH_HOE)
                 .add(SNBlocks.FUNGAL_LANTERN.get())

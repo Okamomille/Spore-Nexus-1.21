@@ -127,6 +127,20 @@ public class SNRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .unlockedBy("has_mushroom_spores", has(SNItems.MUSHROOM_SPORES))
                 .save(recipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SNBlocks.MUSHROOM_COLLECTOR, 1)
+                .pattern("SXS")
+                .pattern("BMB")
+                .pattern("SBS")
+                .define('S', SNItems.FUNGALSTEEL_INGOT)
+                .define('M', Blocks.CHEST)
+                .define('X', SNBlocks.FUNGALSTEEL_BLOCK)
+                .define('B', Blocks.HOPPER)
+                .unlockedBy("has_fungalsteel_ingot", has(SNItems.FUNGALSTEEL_INGOT))
+                .unlockedBy("has_hopper", has(Blocks.HOPPER))
+                .unlockedBy("has_fungalsteel_block", has(SNBlocks.FUNGALSTEEL_BLOCK))
+                .unlockedBy("has_chest", has(Blocks.CHEST))
+                .save(recipeOutput);
+
 
         // TOTEMS
 

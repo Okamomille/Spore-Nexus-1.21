@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "sporenexus:block/mushroom_collector_bottom",
+    "east": "sporenexus:block/mushroom_collector_side",
+    "north": "sporenexus:block/mushroom_collector_side",
+    "particle": "sporenexus:block/mushroom_collector_side",
+    "south": "sporenexus:block/mushroom_collector_side",
+    "up": "sporenexus:block/mushroom_collector_top",
+    "west": "sporenexus:block/mushroom_collector_side"
+  }
+}

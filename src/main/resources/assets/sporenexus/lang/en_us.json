@@ -35,6 +35,7 @@
 
   "block.sporenexus.spore_spreader": "Spore Spreader",
   "block.sporenexus.fungal_propagator": "Fungal Propagator",
+  "block.sporenexus.mushroom_collector": "Mushroom Collector",
 
   "block.sporenexus.coal_mushroom": "Coal Mushroom",
   "block.sporenexus.lapis_lazuli_mushroom": "Lapis Lazuli Mushroom",
@@ -54,6 +55,9 @@
   "block.sporenexus.fire_resistance_totem": "§dFire Resistance Totem",
 
 
+  "gui.sporenexus.mushroom_collector": "Mushroom Collector",
+
+
   "tooltip.sporenexus.wipitem" : "§7No Use for now (WIP)",
   "tooltip.sporenexus.spore_relic" : "§7No Use for now (WIP)",
 
@@ -65,6 +69,8 @@
   "tooltip.sporenexus.fertilized_mycelium" : "§7Growth Speed : §a100%",
   "tooltip.sporenexus.spore_spreader" : "§7Growth Speed Change in a 6x6 Area : §ax2",
   "tooltip.sporenexus.fungal_propagator" : "§7Transform adjacent Dirt blocks into Mycelium",
+  "tooltip.sporenexus.mushroom_collector_line1" : "§7Harvest the adjacent Resource Mushrooms when fully grown",
+  "tooltip.sporenexus.mushroom_collector_line2" : "§7> Collect only the Fragments and Fungal Essences",
 
   "tooltip.sporenexus.totems" : "§7Grants an Effect to players in a small area around the totem when placed"
 

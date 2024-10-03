@@ -30,15 +30,20 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import net.okamiz.sporenexus.block.SNBlocks;
 import net.okamiz.sporenexus.item.SNItems;
 import net.okamiz.sporenexus.util.SNTags;
+import org.jetbrains.annotations.NotNull;
 
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 import java.util.function.Supplier;
 
 public class ResourcesMushroomBlock extends CropBlock {
     public static final int MAX_AGE = 6;
     public static final IntegerProperty AGE = IntegerProperty.create("age", 0, 6);
     public Supplier<Item> drop;
+    ItemStack fragmentsDrop;
+    ItemStack fungalEssenceDrop;
+    ItemStack mushroomCapDrop;
+    ItemStack mushroomSporesDrop;
+    ItemStack relicDrop;
 
     private static final VoxelShape[] SHAPE_BY_AGE = new VoxelShape[]{
             Block.box(5.0, 0.0, 5.0, 11.0, 6.0, 11.0),
@@ -53,6 +58,17 @@ public class ResourcesMushroomBlock extends CropBlock {
         super(properties);
         this.drop = drop;
     }
+
+    @Override
+    protected void onPlace(BlockState state, Level level, BlockPos pos, BlockState oldState, boolean movedByPiston) {
+        this.fragmentsDrop = new ItemStack(drop.get());
+        this.fungalEssenceDrop = new ItemStack(SNItems.FUNGAL_ESSENCE.get());
+        this.mushroomCapDrop = new ItemStack(SNItems.MUSHROOM_CAP.get());
+        this.mushroomSporesDrop = new ItemStack(SNItems.MUSHROOM_SPORES.get());
+        this.relicDrop = new ItemStack(SNItems.SPORE_RELIC.get());
+        super.onPlace(state, level, pos, oldState, movedByPiston);
+    }
+
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
         builder.add(AGE);
@@ -91,13 +107,17 @@ public class ResourcesMushroomBlock extends CropBlock {
         return MAX_AGE;
     }
 
+        public void resetAge(Level level, BlockPos pos){
+            level.setBlock(pos, this.defaultBlockState().setValue(AGE, 0), 3);
+        }
+
 
     @Override
     protected InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos, Player player, BlockHitResult hitResult) {
 
         if(!level.isClientSide()){
             if(level.getBlockState(pos).getValue(AGE) == this.MAX_AGE){
-                level.setBlock(pos, state.setValue(AGE, 0), 3);
+                resetAge(level, pos);
                 ParticleUtils.spawnParticleInBlock(level, pos, 5, ParticleTypes.HAPPY_VILLAGER);
 
                 Random random = new Random();
@@ -135,17 +155,17 @@ public class ResourcesMushroomBlock extends CropBlock {
         int sporeRelicDropRate = random.nextInt(100);
 
         if(fungalEssenceDropRate == 0){
-            level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(SNItems.FUNGAL_ESSENCE.get())));
+            level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), fungalEssenceDrop));
         }
         if(mushroomCapDropRate == 0){
-            level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(SNItems.MUSHROOM_CAP.get())));
+            level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), mushroomCapDrop));
         }
         if(mushroomSporesDropRate == 0){
-            level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(SNItems.MUSHROOM_SPORES.get())));
+            level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), mushroomSporesDrop));
         }
 
         if(sporeRelicDropRate <= 1){
-            level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(SNItems.SPORE_RELIC.get())));
+            level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), relicDrop));
         }
 
 
@@ -153,10 +173,23 @@ public class ResourcesMushroomBlock extends CropBlock {
 
     private void dropFragments(Level level, BlockPos pos){
         if(drop != null){
-                level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(drop.get())));
+                level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), fragmentsDrop));
 
         }
     }
+
+
+    public List<ItemStack> getCustomDrops(){
+
+        List<ItemStack> drops = new ArrayList<>();
+
+        drops.add(fragmentsDrop);
+        drops.add(fragmentsDrop);
+        drops.add(fungalEssenceDrop);
+
+        return drops;
+    }
+
 
 
     @Override

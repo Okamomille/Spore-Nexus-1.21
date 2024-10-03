@@ -61,6 +61,9 @@ public class SNBlocks {
     public static final DeferredBlock<Block> FUNGALSTEEL_BLOCK = registerBlock("fungalsteel_block",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
 
+    public static final DeferredBlock<Block> MUSHROOM_COLLECTOR = registerBlock("mushroom_collector",
+            () -> new MushroomCollectorBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
+
     public static final DeferredBlock<Block> FUNGAL_LANTERN = registerBlock("fungal_lantern",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SHROOMLIGHT)));
 

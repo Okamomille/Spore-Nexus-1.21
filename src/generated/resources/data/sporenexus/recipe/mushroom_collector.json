@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:hopper"
+    },
+    "M": {
+      "item": "minecraft:chest"
+    },
+    "S": {
+      "item": "sporenexus:fungalsteel_ingot"
+    },
+    "X": {
+      "item": "sporenexus:fungalsteel_block"
+    }
+  },
+  "pattern": [
+    "SXS",
+    "BMB",
+    "SBS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sporenexus:mushroom_collector"
+  }
+}
