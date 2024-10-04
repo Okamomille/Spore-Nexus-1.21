@@ -37,17 +37,59 @@ public class SNItems {
     public static final DeferredItem<Item> ETHEREAL_ESSENCE = ITEMS.registerSimpleItem("ethereal_essence");
 
 
+
+
+
+    // ------------------------------------------- LEVEL 1 FRAGMENTS ---------------------------------------------------
+
+    // -- BLOCKS FRAGMENTS
+    public static final DeferredItem<Item> DIRT_FRAGMENTS = ITEMS.registerSimpleItem("dirt_fragments");
+    public static final DeferredItem<Item> GRAVEL_FRAGMENTS = ITEMS.registerSimpleItem("gravel_fragments");
+    public static final DeferredItem<Item> SAND_FRAGMENTS = ITEMS.registerSimpleItem("sand_fragments");
+    public static final DeferredItem<Item> CLAY_FRAGMENTS = ITEMS.registerSimpleItem("clay_fragments");
+    public static final DeferredItem<Item> STONE_FRAGMENTS = ITEMS.registerSimpleItem("stone_fragments");
+    public static final DeferredItem<Item> MOSSY_COBBLESTONE_FRAGMENTS = ITEMS.registerSimpleItem("mossy_cobblestone_fragments");
+
+    // -- ORES FRAGMENTS
     public static final DeferredItem<Item> COAL_FRAGMENTS = ITEMS.registerSimpleItem("coal_fragments");
-    public static final DeferredItem<Item> LAPIS_LAZULI_FRAGMENTS = ITEMS.registerSimpleItem("lapis_lazuli_fragments");
-    public static final DeferredItem<Item> QUARTZ_FRAGMENTS = ITEMS.registerSimpleItem("quartz_fragments");
-    public static final DeferredItem<Item> REDSTONE_FRAGMENTS = ITEMS.registerSimpleItem("redstone_fragments");
     public static final DeferredItem<Item> IRON_FRAGMENTS = ITEMS.registerSimpleItem("iron_fragments");
     public static final DeferredItem<Item> COPPER_FRAGMENTS = ITEMS.registerSimpleItem("copper_fragments");
+
+
+
+
+    // ------------------------------------------- LEVEL 2 FRAGMENTS ---------------------------------------------------
+
+
+
+    // -- ORES FRAGMENTS
+    public static final DeferredItem<Item> REDSTONE_FRAGMENTS = ITEMS.registerSimpleItem("redstone_fragments");
     public static final DeferredItem<Item> GOLD_FRAGMENTS = ITEMS.registerSimpleItem("gold_fragments");
     public static final DeferredItem<Item> FUNGALSTEEL_FRAGMENTS = ITEMS.registerSimpleItem("fungalsteel_fragments");
+    public static final DeferredItem<Item> LAPIS_LAZULI_FRAGMENTS = ITEMS.registerSimpleItem("lapis_lazuli_fragments");
+
+
+
+    // ------------------------------------------- LEVEL 3 FRAGMENTS ---------------------------------------------------
+
+
+
+    // -- ORES FRAGMENTS
+    public static final DeferredItem<Item> QUARTZ_FRAGMENTS = ITEMS.registerSimpleItem("quartz_fragments");
     public static final DeferredItem<Item> DIAMOND_FRAGMENTS = ITEMS.registerSimpleItem("diamond_fragments");
+
+
+
+    // ------------------------------------------- LEVEL 4 FRAGMENTS ---------------------------------------------------
+
+
+
+    // -- ORES FRAGMENTS
     public static final DeferredItem<Item> EMERALD_FRAGMENTS = ITEMS.registerSimpleItem("emerald_fragments");
     public static final DeferredItem<Item> NETHERITE_FRAGMENTS = ITEMS.registerSimpleItem("netherite_fragments");
+
+
+
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

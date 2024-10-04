@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "item": "sporenexus:stone_fragments"
+    },
+    "X": {
+      "item": "sporenexus:mossy_cobblestone_fragments"
+    }
+  },
+  "pattern": [
+    "FFF",
+    "FXF",
+    "FFF"
+  ],
+  "result": {
+    "count": 8,
+    "id": "minecraft:mossy_stone_bricks"
+  }
+}

@@ -27,15 +27,25 @@ public class SNBlockLootTableProvider extends BlockLootSubProvider {
     @Override
     protected void generate() {
 
+        dropSelf(SNBlocks.DIRT_MUSHROOM.get());
+        dropSelf(SNBlocks.GRAVEL_MUSHROOM.get());
+        dropSelf(SNBlocks.SAND_MUSHROOM.get());
+        dropSelf(SNBlocks.CLAY_MUSHROOM.get());
+        dropSelf(SNBlocks.STONE_MUSHROOM.get());
+
+
         dropSelf(SNBlocks.COAL_MUSHROOM.get());
-        dropSelf(SNBlocks.LAPIS_LAZULI_MUSHROOM.get());
-        dropSelf(SNBlocks.QUARTZ_MUSHROOM.get());
-        dropSelf(SNBlocks.REDSTONE_MUSHROOM.get());
         dropSelf(SNBlocks.IRON_MUSHROOM.get());
         dropSelf(SNBlocks.COPPER_MUSHROOM.get());
+
+        dropSelf(SNBlocks.REDSTONE_MUSHROOM.get());
+        dropSelf(SNBlocks.LAPIS_LAZULI_MUSHROOM.get());
         dropSelf(SNBlocks.GOLD_MUSHROOM.get());
         dropSelf(SNBlocks.FUNGALSTEEL_MUSHROOM.get());
+
+        dropSelf(SNBlocks.QUARTZ_MUSHROOM.get());
         dropSelf(SNBlocks.DIAMOND_MUSHROOM.get());
+
         dropSelf(SNBlocks.EMERALD_MUSHROOM.get());
         dropSelf(SNBlocks.NETHERITE_MUSHROOM.get());
 

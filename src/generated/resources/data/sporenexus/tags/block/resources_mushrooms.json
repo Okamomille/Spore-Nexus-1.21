@@ -1,13 +1,18 @@
 {
   "values": [
+    "sporenexus:dirt_mushroom",
+    "sporenexus:gravel_mushroom",
+    "sporenexus:sand_mushroom",
+    "sporenexus:clay_mushroom",
+    "sporenexus:stone_mushroom",
     "sporenexus:coal_mushroom",
-    "sporenexus:lapis_lazuli_mushroom",
-    "sporenexus:quartz_mushroom",
-    "sporenexus:redstone_mushroom",
     "sporenexus:iron_mushroom",
     "sporenexus:copper_mushroom",
+    "sporenexus:redstone_mushroom",
+    "sporenexus:lapis_lazuli_mushroom",
     "sporenexus:gold_mushroom",
     "sporenexus:fungalsteel_mushroom",
+    "sporenexus:quartz_mushroom",
     "sporenexus:diamond_mushroom",
     "sporenexus:emerald_mushroom",
     "sporenexus:netherite_mushroom"

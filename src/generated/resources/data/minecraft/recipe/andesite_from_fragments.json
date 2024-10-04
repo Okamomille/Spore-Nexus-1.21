@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "item": "sporenexus:stone_fragments"
+    },
+    "X": {
+      "item": "sporenexus:gravel_fragments"
+    }
+  },
+  "pattern": [
+    "XFX",
+    "F F",
+    "XFX"
+  ],
+  "result": {
+    "count": 8,
+    "id": "minecraft:andesite"
+  }
+}

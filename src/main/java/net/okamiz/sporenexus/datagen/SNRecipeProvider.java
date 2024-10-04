@@ -435,9 +435,128 @@ public class SNRecipeProvider extends RecipeProvider implements IConditionBuilde
         //------------------- --------------------------------------------------------------------
 
 
+        // --------------------------------------- FRAGMENTS TO BLOCKS ---------------------------------------------------
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Blocks.DIRT, 4)
+                .pattern("FF")
+                .pattern("FF")
+                .define('F', SNItems.DIRT_FRAGMENTS)
+                .unlockedBy("has_dirt_fragments", has(SNItems.DIRT_FRAGMENTS))
+                .save(recipeOutput, "dirt_from_fragments");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Blocks.GRAVEL, 4)
+                .pattern("FF")
+                .pattern("FF")
+                .define('F', SNItems.GRAVEL_FRAGMENTS)
+                .unlockedBy("has_gravel_fragments", has(SNItems.GRAVEL_FRAGMENTS))
+                .save(recipeOutput, "gravel_from_fragments");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Blocks.SAND, 4)
+                .pattern("FF")
+                .pattern("FF")
+                .define('F', SNItems.SAND_FRAGMENTS)
+                .unlockedBy("has_sand_fragments", has(SNItems.SAND_FRAGMENTS))
+                .save(recipeOutput, "sand_from_fragments");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Blocks.GRAY_CONCRETE_POWDER, 4)
+                .pattern("XFX")
+                .pattern("FXF")
+                .pattern("XFX")
+                .define('F', SNItems.SAND_FRAGMENTS)
+                .define('X', SNItems.GRAVEL_FRAGMENTS)
+                .unlockedBy("has_sand_fragments", has(SNItems.SAND_FRAGMENTS))
+                .unlockedBy("has_gravel_fragments", has(SNItems.GRAVEL_FRAGMENTS))
+                .save(recipeOutput, "gray_concrete_powder_from_fragments");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Blocks.SANDSTONE, 4)
+                .pattern(" F ")
+                .pattern("FXF")
+                .pattern(" F ")
+                .define('F', SNItems.SAND_FRAGMENTS)
+                .define('X', SNItems.STONE_FRAGMENTS)
+                .unlockedBy("has_sand_fragments", has(SNItems.SAND_FRAGMENTS))
+                .unlockedBy("has_stone_fragments", has(SNItems.STONE_FRAGMENTS))
+                .save(recipeOutput, "sandstone_from_fragments");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Blocks.CLAY, 4)
+                .pattern("FF")
+                .pattern("FF")
+                .define('F', SNItems.CLAY_FRAGMENTS)
+                .unlockedBy("has_clay_fragments", has(SNItems.CLAY_FRAGMENTS))
+                .save(recipeOutput, "clay_from_fragments");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Blocks.STONE, 4)
+                .pattern("FF")
+                .pattern("FF")
+                .define('F', SNItems.STONE_FRAGMENTS)
+                .unlockedBy("has_stone_fragments", has(SNItems.STONE_FRAGMENTS))
+                .save(recipeOutput, "stone_from_fragments");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Blocks.COBBLESTONE, 4)
+                .pattern(" F ")
+                .pattern("F F")
+                .pattern(" F ")
+                .define('F', SNItems.STONE_FRAGMENTS)
+                .unlockedBy("has_stone_fragments", has(SNItems.STONE_FRAGMENTS))
+                .save(recipeOutput, "cobblestone_from_fragments");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Blocks.ANDESITE, 8)
+                .pattern("XFX")
+                .pattern("F F")
+                .pattern("XFX")
+                .define('F', SNItems.STONE_FRAGMENTS)
+                .define('X', SNItems.GRAVEL_FRAGMENTS)
+                .unlockedBy("has_stone_fragments", has(SNItems.STONE_FRAGMENTS))
+                .unlockedBy("has_gravel_fragments", has(SNItems.GRAVEL_FRAGMENTS))
+                .save(recipeOutput, "andesite_from_fragments");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Blocks.GRANITE, 8)
+                .pattern("FXF")
+                .pattern("X X")
+                .pattern("FXF")
+                .define('F', SNItems.STONE_FRAGMENTS)
+                .define('X', SNItems.GRAVEL_FRAGMENTS)
+                .unlockedBy("has_stone_fragments", has(SNItems.STONE_FRAGMENTS))
+                .unlockedBy("has_gravel_fragments", has(SNItems.GRAVEL_FRAGMENTS))
+                .save(recipeOutput, "granite_from_fragments");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Blocks.DIORITE, 9)
+                .pattern("FXF")
+                .pattern("XFX")
+                .pattern("FXF")
+                .define('F', SNItems.STONE_FRAGMENTS)
+                .define('X', SNItems.GRAVEL_FRAGMENTS)
+                .unlockedBy("has_stone_fragments", has(SNItems.STONE_FRAGMENTS))
+                .unlockedBy("has_gravel_fragments", has(SNItems.GRAVEL_FRAGMENTS))
+                .save(recipeOutput, "diorite_from_fragments");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Blocks.DEEPSLATE, 4)
+                .pattern("FFF")
+                .pattern("FFF")
+                .pattern("FFF")
+                .define('F', SNItems.STONE_FRAGMENTS)
+                .unlockedBy("has_stone_fragments", has(SNItems.STONE_FRAGMENTS))
+                .save(recipeOutput, "deepslate_from_fragments");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Blocks.MOSSY_COBBLESTONE, 4)
+                .pattern("FF")
+                .pattern("FF")
+                .define('F', SNItems.MOSSY_COBBLESTONE_FRAGMENTS)
+                .unlockedBy("has_mossy_cobblestone_fragments", has(SNItems.MOSSY_COBBLESTONE_FRAGMENTS))
+                .save(recipeOutput, "mossy_cobblestone_from_fragments");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Blocks.MOSSY_STONE_BRICKS, 8)
+                .pattern("FFF")
+                .pattern("FXF")
+                .pattern("FFF")
+                .define('F', SNItems.STONE_FRAGMENTS)
+                .define('X', SNItems.MOSSY_COBBLESTONE_FRAGMENTS)
+                .unlockedBy("has_stone_fragments", has(SNItems.STONE_FRAGMENTS))
+                .unlockedBy("has_mossy_cobblestone_fragments", has(SNItems.MOSSY_COBBLESTONE_FRAGMENTS))
+                .save(recipeOutput, "mossy_stonebricks_from_fragments");
 
 
-        // FRAGMENTS TO ORES
+        // --------------------------------------- FRAGMENTS TO ORES ---------------------------------------------------
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.COAL, 1)
                 .pattern("FF")

@@ -1,7 +1,9 @@
-// 1.21.1	2024-10-01T15:31:42.9960024	Loot Tables
+// 1.21.1	2024-10-04T12:30:09.8149266	Loot Tables
+9e8b0b48342ed99e2c82f57a3de4cb94ef441e63 data/sporenexus/loot_table/blocks/clay_mushroom.json
 b7f9f4f21d78502f73f618e961250edb251cdf0a data/sporenexus/loot_table/blocks/coal_mushroom.json
 c9ed5a9c0d3d669bc607d2ce208f6fdf067d58d9 data/sporenexus/loot_table/blocks/copper_mushroom.json
 1025d9d59e14da677944df5b2335ebedcb0ab51d data/sporenexus/loot_table/blocks/diamond_mushroom.json
+8552ee6048afdf9820d482e56f2d11cddf71e0f0 data/sporenexus/loot_table/blocks/dirt_mushroom.json
 e95420ff7d313d8054f56a9a483f120dc816a2e6 data/sporenexus/loot_table/blocks/emerald_mushroom.json
 cbe8a3d3412bbff46fff5bb7994bae897222310b data/sporenexus/loot_table/blocks/enriched_mycelium.json
 41c0677941333cdf4da39a11d911556022d57b07 data/sporenexus/loot_table/blocks/fertilized_mycelium.json
@@ -11,6 +13,7 @@ e0bc8e8c4efbf4162013f5c07e08b00ba94b0c98 data/sporenexus/loot_table/blocks/funga
 a6e57cb58ce1005533dbbdfb47c98218a649bcd6 data/sporenexus/loot_table/blocks/fungal_lantern.json
 80d4fc7f382020c4d9acb452967849d23fd500b1 data/sporenexus/loot_table/blocks/fungal_propagator.json
 d64374adb32a1c0a81583b3a02a84dbf01291f66 data/sporenexus/loot_table/blocks/gold_mushroom.json
+0e4eba84a21c687d201a396822aa87908e86e7a9 data/sporenexus/loot_table/blocks/gravel_mushroom.json
 dc2722a7d60ac72c4c9c928ad95609d7c0559ba7 data/sporenexus/loot_table/blocks/haste_totem.json
 1be42f0e5b13ef505866ea5e7e5329cd95f3c000 data/sporenexus/loot_table/blocks/iron_mushroom.json
 9197d12197296f3cb168c04693ac96bdfb8bb68f data/sporenexus/loot_table/blocks/lapis_lazuli_mushroom.json
@@ -20,4 +23,6 @@ e659a945b7708692d1b41fb667419494fca7147d data/sporenexus/loot_table/blocks/mushr
 28450be34b7405e4c05422811ce2204225fa1a2c data/sporenexus/loot_table/blocks/quartz_mushroom.json
 75a08d2551591e5dd079aa7b1e03e7005a302a0a data/sporenexus/loot_table/blocks/redstone_mushroom.json
 4424f18e7f55897fc851e0696a27d4cb36b3c658 data/sporenexus/loot_table/blocks/regeneration_totem.json
+9639ba229454d054c82105ed074f0e7c0a0beca6 data/sporenexus/loot_table/blocks/sand_mushroom.json
 b0b6f62ac3c27b5b8ea3507e010104e7698829e8 data/sporenexus/loot_table/blocks/spore_spreader.json
+fde2b21a3e087206a6e383a06146da399aa48cf5 data/sporenexus/loot_table/blocks/stone_mushroom.json

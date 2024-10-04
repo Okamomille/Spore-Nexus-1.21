@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "item": "sporenexus:stone_fragments"
+    },
+    "X": {
+      "item": "sporenexus:gravel_fragments"
+    }
+  },
+  "pattern": [
+    "FXF",
+    "XFX",
+    "FXF"
+  ],
+  "result": {
+    "count": 9,
+    "id": "minecraft:diorite"
+  }
+}

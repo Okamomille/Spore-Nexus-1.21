@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "item": "sporenexus:sand_fragments"
+    },
+    "X": {
+      "item": "sporenexus:stone_fragments"
+    }
+  },
+  "pattern": [
+    " F ",
+    "FXF",
+    " F "
+  ],
+  "result": {
+    "count": 4,
+    "id": "minecraft:sandstone"
+  }
+}

@@ -39,6 +39,7 @@ public class ResourcesMushroomBlock extends CropBlock {
     public static final int MAX_AGE = 6;
     public static final IntegerProperty AGE = IntegerProperty.create("age", 0, 6);
     public Supplier<Item> drop;
+    public Supplier<Item> secondaryDrop;
     ItemStack fragmentsDrop;
     ItemStack fungalEssenceDrop;
     ItemStack mushroomCapDrop;
@@ -54,9 +55,10 @@ public class ResourcesMushroomBlock extends CropBlock {
             Block.box(4.0, 0.0, 4.0, 12.0, 8.0, 12.0),
             Block.box(2.0, 0.0, 2.0, 14.0, 12.0, 14.0),
     };
-    public ResourcesMushroomBlock(Properties properties, Supplier<Item> drop) {
+    public ResourcesMushroomBlock(Properties properties, Supplier<Item> drop, Supplier<Item> secondaryDrop) {
         super(properties);
         this.drop = drop;
+        this.secondaryDrop = secondaryDrop;
     }
 
     @Override
@@ -150,12 +152,18 @@ public class ResourcesMushroomBlock extends CropBlock {
     private void drop(Level level, BlockPos pos){
         Random random = new Random();
         int fungalEssenceDropRate = random.nextInt(2);
+        int secondaryDropRate = random.nextInt(3);
         int mushroomCapDropRate = random.nextInt(3);
         int mushroomSporesDropRate = random.nextInt(5);
         int sporeRelicDropRate = random.nextInt(100);
 
         if(fungalEssenceDropRate == 0){
             level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), fungalEssenceDrop));
+        }
+        if(secondaryDropRate == 0){
+            if(secondaryDrop != null){
+                level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(secondaryDrop.get())));
+            }
         }
         if(mushroomCapDropRate == 0){
             level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), mushroomCapDrop));

@@ -1,7 +1,9 @@
-// 1.21.1	2024-10-03T21:44:55.6803257	Item Models: sporenexus
+// 1.21.1	2024-10-04T11:56:47.4962346	Item Models: sporenexus
+19d9d3d505d46e71a961f5e1c2a4d3efc203195c assets/sporenexus/models/item/clay_fragments.json
 b1a400ae75c0d9e499c7c305265339e38cae0352 assets/sporenexus/models/item/coal_fragments.json
 c6078c2acd9a53e199bf71ee945412bea38cc2ff assets/sporenexus/models/item/copper_fragments.json
 5f77781d3ea78f9ce3239faee1b059758ad80aab assets/sporenexus/models/item/diamond_fragments.json
+8f22cb13b27e9729454462d81345a5bdea94be24 assets/sporenexus/models/item/dirt_fragments.json
 def1e94bad54c14214e7fe460dc6474cf295ecf4 assets/sporenexus/models/item/emerald_fragments.json
 9ac40d5b7dcfeca620779d02f53b713fa1d165da assets/sporenexus/models/item/ethereal_essence.json
 a0b5ea40e59e3a876236f76266da10d2a8d08faa assets/sporenexus/models/item/ethereal_fungus.json
@@ -10,15 +12,19 @@ b239f5c1951e441875a9aece4f8b505c6fb777db assets/sporenexus/models/item/fungalste
 15427e2f5da5dd3c666008ab07e30c43f00221db assets/sporenexus/models/item/fungal_essence.json
 a7d5e191001dcc4d9b43225be7b9482118cb7ce3 assets/sporenexus/models/item/fungal_powder.json
 3da242de5572771039335491988f0c1aeedbd14e assets/sporenexus/models/item/gold_fragments.json
+34751f2d490066b32e7805c8f50f4b412e505ff1 assets/sporenexus/models/item/gravel_fragments.json
 3388dd81cc08fdd189c5070b3cf1fc2eacfb586e assets/sporenexus/models/item/great_fungus.json
 b95e097aeeda8e2f22829c9aea6ebc7874f92532 assets/sporenexus/models/item/infernal_essence.json
 5fa707bd41edf801c9f83112986da972dc322dc0 assets/sporenexus/models/item/infernal_fungus.json
 602d580bbe7ac4e2cdb9acb3b65c9b5cba289f3e assets/sporenexus/models/item/iron_fragments.json
 9e599a6d6be680d0d3158e494bf25387046e6d99 assets/sporenexus/models/item/lapis_lazuli_fragments.json
+e9ee5af18a1fd1a927897a2db844223042aea6ca assets/sporenexus/models/item/mossy_cobblestone_fragments.json
 4808bf2c9886a3f81c5a1139aedfd987beebd72e assets/sporenexus/models/item/mushroom_cap.json
 0579862c191c626a8cb9cb282b3e8bd2d4fa0cd3 assets/sporenexus/models/item/mushroom_spores.json
 d0b8f142076bbd177de1149402672fb48cd2fb5d assets/sporenexus/models/item/netherite_fragments.json
 4b18027a5dda2df20d74b1908178d588f9c75256 assets/sporenexus/models/item/nexus_fungus.json
 368c6b1ede61e4b4666f88710517f43a6bb71c14 assets/sporenexus/models/item/quartz_fragments.json
 b9596314eb254592d3bd4105014bd16d82d5c124 assets/sporenexus/models/item/redstone_fragments.json
+af87b2d8f30c054bad454c16eaa06467f8e736db assets/sporenexus/models/item/sand_fragments.json
 99770bf68729fa3c2c47a06ba4cea6bef88e6285 assets/sporenexus/models/item/spore_relic.json
+fc14af1c094d20fec514a0ca9d625c3495462e81 assets/sporenexus/models/item/stone_fragments.json

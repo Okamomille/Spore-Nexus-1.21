@@ -18,15 +18,26 @@
   "item.sporenexus.fungal_powder": "Fungal Powder",
   "item.sporenexus.fungalsteel_ingot": "Fungalsteel Ingot",
 
+
+  "item.sporenexus.dirt_fragments": "Dirt Fragments",
+  "item.sporenexus.gravel_fragments": "Gravel Fragments",
+  "item.sporenexus.clay_fragments": "Clay Fragments",
+  "item.sporenexus.sand_fragments": "Sand Fragments",
+  "item.sporenexus.stone_fragments": "Stone Fragments",
+  "item.sporenexus.mossy_cobblestone_fragments": "Mossy Cobblestone Fragments",
+
   "item.sporenexus.coal_fragments": "Coal Fragments",
-  "item.sporenexus.lapis_lazuli_fragments": "Lapis Lazuli Fragments",
-  "item.sporenexus.quartz_fragments": "Quartz Fragments",
-  "item.sporenexus.redstone_fragments": "Redstone Fragments",
   "item.sporenexus.iron_fragments": "Iron Fragments",
   "item.sporenexus.copper_fragments": "Copper Fragments",
+
+  "item.sporenexus.redstone_fragments": "Redstone Fragments",
+  "item.sporenexus.lapis_lazuli_fragments": "Lapis Lazuli Fragments",
   "item.sporenexus.gold_fragments": "Gold Fragments",
   "item.sporenexus.fungalsteel_fragments": "Fungalsteel Fragments",
+
+  "item.sporenexus.quartz_fragments": "Quartz Fragments",
   "item.sporenexus.diamond_fragments": "Diamond Fragments",
+
   "item.sporenexus.emerald_fragments": "Emerald Fragments",
   "item.sporenexus.netherite_fragments": "Netherite Fragments",
 
@@ -43,17 +54,30 @@
   "block.sporenexus.fungal_propagator": "Fungal Propagator",
   "block.sporenexus.mushroom_collector": "Mushroom Collector",
 
+
+  "block.sporenexus.dirt_mushroom": "Dirt Mushroom",
+  "block.sporenexus.gravel_mushroom": "Gravel Mushroom",
+  "block.sporenexus.sand_mushroom": "Sand Mushroom",
+  "block.sporenexus.clay_mushroom": "Clay Mushroom",
+  "block.sporenexus.stone_mushroom": "Stone Mushroom",
+
   "block.sporenexus.coal_mushroom": "Coal Mushroom",
-  "block.sporenexus.lapis_lazuli_mushroom": "Lapis Lazuli Mushroom",
-  "block.sporenexus.quartz_mushroom": "Quartz Mushroom",
-  "block.sporenexus.redstone_mushroom": "Redstone Mushroom",
   "block.sporenexus.iron_mushroom": "Iron Mushroom",
   "block.sporenexus.copper_mushroom": "Copper Mushroom",
-  "block.sporenexus.gold_mushroom": "Gold Mushroom",
-  "block.sporenexus.fungalsteel_mushroom": "Fungalsteel Mushroom",
-  "block.sporenexus.diamond_mushroom": "Diamond Mushroom",
-  "block.sporenexus.emerald_mushroom": "Emerald Mushroom",
-  "block.sporenexus.netherite_mushroom": "Netherite Mushroom",
+
+  "block.sporenexus.redstone_mushroom": "§eRedstone Mushroom",
+  "block.sporenexus.lapis_lazuli_mushroom": "§eLapis Lazuli Mushroom",
+  "block.sporenexus.gold_mushroom": "§eGold Mushroom",
+  "block.sporenexus.fungalsteel_mushroom": "§eFungalsteel Mushroom",
+
+  "block.sporenexus.quartz_mushroom": "§cQuartz Mushroom",
+  "block.sporenexus.diamond_mushroom": "§cDiamond Mushroom",
+
+  "block.sporenexus.emerald_mushroom": "§dEmerald Mushroom",
+  "block.sporenexus.netherite_mushroom": "§dNetherite Mushroom",
+
+
+
 
   "block.sporenexus.regeneration_totem": "§dRegeneration Totem",
   "block.sporenexus.night_vision_totem": "§dNight Vision Totem",

@@ -33,15 +33,26 @@ public class SNItemModelProvider extends ItemModelProvider {
         basicItem(SNItems.FUNGAL_POWDER.get());
         basicItem(SNItems.FUNGALSTEEL_INGOT.get());
 
+
+        basicItem(SNItems.DIRT_FRAGMENTS.get());
+        basicItem(SNItems.GRAVEL_FRAGMENTS.get());
+        basicItem(SNItems.SAND_FRAGMENTS.get());
+        basicItem(SNItems.CLAY_FRAGMENTS.get());
+        basicItem(SNItems.STONE_FRAGMENTS.get());
+        basicItem(SNItems.MOSSY_COBBLESTONE_FRAGMENTS.get());
+
         basicItem(SNItems.COAL_FRAGMENTS.get());
-        basicItem(SNItems.LAPIS_LAZULI_FRAGMENTS.get());
-        basicItem(SNItems.QUARTZ_FRAGMENTS.get());
-        basicItem(SNItems.REDSTONE_FRAGMENTS.get());
         basicItem(SNItems.IRON_FRAGMENTS.get());
         basicItem(SNItems.COPPER_FRAGMENTS.get());
+
+        basicItem(SNItems.REDSTONE_FRAGMENTS.get());
+        basicItem(SNItems.LAPIS_LAZULI_FRAGMENTS.get());
         basicItem(SNItems.GOLD_FRAGMENTS.get());
         basicItem(SNItems.FUNGALSTEEL_FRAGMENTS.get());
+
+        basicItem(SNItems.QUARTZ_FRAGMENTS.get());
         basicItem(SNItems.DIAMOND_FRAGMENTS.get());
+
         basicItem(SNItems.EMERALD_FRAGMENTS.get());
         basicItem(SNItems.NETHERITE_FRAGMENTS.get());
 

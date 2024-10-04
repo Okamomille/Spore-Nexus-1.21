@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "item": "sporenexus:sand_fragments"
+    },
+    "X": {
+      "item": "sporenexus:gravel_fragments"
+    }
+  },
+  "pattern": [
+    "XFX",
+    "FXF",
+    "XFX"
+  ],
+  "result": {
+    "count": 4,
+    "id": "minecraft:gray_concrete_powder"
+  }
+}
