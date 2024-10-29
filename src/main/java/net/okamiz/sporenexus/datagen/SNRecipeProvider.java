@@ -338,9 +338,69 @@ public class SNRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .unlockedBy("has_iron", has(Items.IRON_INGOT))
                 .save(recipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SNBlocks.CLAY_MUSHROOM, 1)
+                .pattern("XXX")
+                .pattern("XOX")
+                .pattern("XXX")
+                .define('X', Blocks.CLAY)
+                .define('O', SNItems.NEXUS_FUNGUS)
+                .unlockedBy("has_nexus_fungus", has(SNItems.NEXUS_FUNGUS))
+                .unlockedBy("has_clay", has(Blocks.CLAY))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SNBlocks.SAND_MUSHROOM, 1)
+                .pattern("XXX")
+                .pattern("XOX")
+                .pattern("XXX")
+                .define('X', Blocks.SAND)
+                .define('O', SNItems.NEXUS_FUNGUS)
+                .unlockedBy("has_nexus_fungus", has(SNItems.NEXUS_FUNGUS))
+                .unlockedBy("has_sand", has(Blocks.SAND))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SNBlocks.STONE_MUSHROOM, 1)
+                .pattern("XXX")
+                .pattern("XOX")
+                .pattern("XXX")
+                .define('X', Blocks.STONE)
+                .define('O', SNItems.NEXUS_FUNGUS)
+                .unlockedBy("has_nexus_fungus", has(SNItems.NEXUS_FUNGUS))
+                .unlockedBy("has_stone", has(Blocks.STONE))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SNBlocks.DIRT_MUSHROOM, 1)
+                .pattern("XXX")
+                .pattern("XOX")
+                .pattern("XXX")
+                .define('X', Blocks.DIRT)
+                .define('O', SNItems.NEXUS_FUNGUS)
+                .unlockedBy("has_nexus_fungus", has(SNItems.NEXUS_FUNGUS))
+                .unlockedBy("has_dirt", has(Blocks.DIRT))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SNBlocks.GRAVEL_MUSHROOM, 1)
+                .pattern("XXX")
+                .pattern("XOX")
+                .pattern("XXX")
+                .define('X', Blocks.GRAVEL)
+                .define('O', SNItems.NEXUS_FUNGUS)
+                .unlockedBy("has_nexus_fungus", has(SNItems.NEXUS_FUNGUS))
+                .unlockedBy("has_gravel", has(Blocks.GRAVEL))
+                .save(recipeOutput);
+
 
 
             // --- LEVEL 2 ---
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SNBlocks.ICE_MUSHROOM, 1)
+                .pattern("XXX")
+                .pattern("XOX")
+                .pattern("XXX")
+                .define('X', Blocks.ICE)
+                .define('O', SNItems.GREAT_FUNGUS)
+                .unlockedBy("has_great_fungus", has(SNItems.GREAT_FUNGUS))
+                .unlockedBy("has_ice", has(Blocks.ICE))
+                .save(recipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SNBlocks.REDSTONE_MUSHROOM, 1)
                 .pattern("XXX")
@@ -386,6 +446,43 @@ public class SNRecipeProvider extends RecipeProvider implements IConditionBuilde
 
 
             // --- LEVEL 3 ---
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SNBlocks.BLACKSTONE_MUSHROOM, 1)
+                .pattern("XXX")
+                .pattern("XOX")
+                .pattern("XXX")
+                .define('X', Blocks.BLACKSTONE)
+                .define('O', SNItems.INFERNAL_FUNGUS)
+                .unlockedBy("has_infernal_fungus", has(SNItems.INFERNAL_FUNGUS))
+                .unlockedBy("has_blackstone", has(Blocks.BLACKSTONE))
+                .save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SNBlocks.GLOWSTONE_MUSHROOM, 1)
+                .pattern("XXX")
+                .pattern("XOX")
+                .pattern("XXX")
+                .define('X', Blocks.GLOWSTONE)
+                .define('O', SNItems.INFERNAL_FUNGUS)
+                .unlockedBy("has_infernal_fungus", has(SNItems.INFERNAL_FUNGUS))
+                .unlockedBy("has_glowstone", has(Blocks.GLOWSTONE))
+                .save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SNBlocks.NETHERRACK_MUSHROOM, 1)
+                .pattern("XXX")
+                .pattern("XOX")
+                .pattern("XXX")
+                .define('X', Blocks.NETHERRACK)
+                .define('O', SNItems.INFERNAL_FUNGUS)
+                .unlockedBy("has_infernal_fungus", has(SNItems.INFERNAL_FUNGUS))
+                .unlockedBy("has_netherrack", has(Blocks.NETHERRACK))
+                .save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SNBlocks.SOUL_SAND_MUSHROOM, 1)
+                .pattern("XXX")
+                .pattern("XOX")
+                .pattern("XXX")
+                .define('X', Blocks.SOUL_SAND)
+                .define('O', SNItems.INFERNAL_FUNGUS)
+                .unlockedBy("has_infernal_fungus", has(SNItems.INFERNAL_FUNGUS))
+                .unlockedBy("has_soul_sand", has(Blocks.SOUL_SAND))
+                .save(recipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SNBlocks.QUARTZ_MUSHROOM, 1)
                 .pattern("XXX")
@@ -554,6 +651,42 @@ public class SNRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .unlockedBy("has_stone_fragments", has(SNItems.STONE_FRAGMENTS))
                 .unlockedBy("has_mossy_cobblestone_fragments", has(SNItems.MOSSY_COBBLESTONE_FRAGMENTS))
                 .save(recipeOutput, "mossy_stonebricks_from_fragments");
+
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Blocks.BLACKSTONE, 4)
+                .pattern("FF")
+                .pattern("FF")
+                .define('F', SNItems.BLACKSTONE_FRAGMENTS)
+                .unlockedBy("has_blackstone_fragments", has(SNItems.BLACKSTONE_FRAGMENTS))
+                .save(recipeOutput, "blackstone_from_fragments");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Blocks.GLOWSTONE, 4)
+                .pattern("FF")
+                .pattern("FF")
+                .define('F', SNItems.GLOWSTONE_FRAGMENTS)
+                .unlockedBy("has_glowstone_fragments", has(SNItems.GLOWSTONE_FRAGMENTS))
+                .save(recipeOutput, "glowstone_from_fragments");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Blocks.NETHERRACK, 4)
+                .pattern("FF")
+                .pattern("FF")
+                .define('F', SNItems.NETHERRACK_FRAGMENTS)
+                .unlockedBy("has_netherrack_fragments", has(SNItems.NETHERRACK_FRAGMENTS))
+                .save(recipeOutput, "netherrack_from_fragments");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Blocks.SOUL_SAND, 4)
+                .pattern("FF")
+                .pattern("FF")
+                .define('F', SNItems.SOUL_SAND_FRAGMENTS)
+                .unlockedBy("has_soul_sand_fragments", has(SNItems.SOUL_SAND_FRAGMENTS))
+                .save(recipeOutput, "soul_sand_from_fragments");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Blocks.ICE, 4)
+                .pattern("FF")
+                .pattern("FF")
+                .define('F', SNItems.ICE_FRAGMENTS)
+                .unlockedBy("has_ice_fragments", has(SNItems.ICE_FRAGMENTS))
+                .save(recipeOutput, "ice_from_fragments");
 
 
         // --------------------------------------- FRAGMENTS TO ORES ---------------------------------------------------

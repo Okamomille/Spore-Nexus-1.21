@@ -32,10 +32,18 @@ public class SNBlockTagProvider extends BlockTagsProvider {
                 .add(SNBlocks.IRON_MUSHROOM.get())
                 .add(SNBlocks.COPPER_MUSHROOM.get())
 
+
+                .add(SNBlocks.ICE_MUSHROOM.get())
+
                 .add(SNBlocks.REDSTONE_MUSHROOM.get())
                 .add(SNBlocks.LAPIS_LAZULI_MUSHROOM.get())
                 .add(SNBlocks.GOLD_MUSHROOM.get())
                 .add(SNBlocks.FUNGALSTEEL_MUSHROOM.get())
+
+                .add(SNBlocks.BLACKSTONE_MUSHROOM.get())
+                .add(SNBlocks.GLOWSTONE_MUSHROOM.get())
+                .add(SNBlocks.NETHERRACK_MUSHROOM.get())
+                .add(SNBlocks.SOUL_SAND_MUSHROOM.get())
 
                 .add(SNBlocks.QUARTZ_MUSHROOM.get())
                 .add(SNBlocks.DIAMOND_MUSHROOM.get())
@@ -69,10 +77,17 @@ public class SNBlockTagProvider extends BlockTagsProvider {
                 .add(SNBlocks.IRON_MUSHROOM.get())
                 .add(SNBlocks.COPPER_MUSHROOM.get())
 
+                .add(SNBlocks.ICE_MUSHROOM.get())
+
                 .add(SNBlocks.REDSTONE_MUSHROOM.get())
                 .add(SNBlocks.LAPIS_LAZULI_MUSHROOM.get())
                 .add(SNBlocks.GOLD_MUSHROOM.get())
                 .add(SNBlocks.FUNGALSTEEL_MUSHROOM.get())
+
+                .add(SNBlocks.BLACKSTONE_MUSHROOM.get())
+                .add(SNBlocks.GLOWSTONE_MUSHROOM.get())
+                .add(SNBlocks.NETHERRACK_MUSHROOM.get())
+                .add(SNBlocks.SOUL_SAND_MUSHROOM.get())
 
                 .add(SNBlocks.QUARTZ_MUSHROOM.get())
                 .add(SNBlocks.DIAMOND_MUSHROOM.get())

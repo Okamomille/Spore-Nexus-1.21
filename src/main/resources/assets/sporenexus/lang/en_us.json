@@ -30,13 +30,23 @@
   "item.sporenexus.iron_fragments": "Iron Fragments",
   "item.sporenexus.copper_fragments": "Copper Fragments",
 
+
+  "item.sporenexus.ice_fragments": "Ice Fragments",
+
   "item.sporenexus.redstone_fragments": "Redstone Fragments",
   "item.sporenexus.lapis_lazuli_fragments": "Lapis Lazuli Fragments",
   "item.sporenexus.gold_fragments": "Gold Fragments",
   "item.sporenexus.fungalsteel_fragments": "Fungalsteel Fragments",
 
+
+  "item.sporenexus.blackstone_fragments": "Blackstone Fragments",
+  "item.sporenexus.glowstone_fragments": "Glowstone Fragments",
+  "item.sporenexus.netherrack_fragments": "Netherrack Fragments",
+  "item.sporenexus.soul_sand_fragments": "Soul Sand Fragments",
+
   "item.sporenexus.quartz_fragments": "Quartz Fragments",
   "item.sporenexus.diamond_fragments": "Diamond Fragments",
+
 
   "item.sporenexus.emerald_fragments": "Emerald Fragments",
   "item.sporenexus.netherite_fragments": "Netherite Fragments",
@@ -65,13 +75,23 @@
   "block.sporenexus.iron_mushroom": "Iron Mushroom",
   "block.sporenexus.copper_mushroom": "Copper Mushroom",
 
+
   "block.sporenexus.redstone_mushroom": "§eRedstone Mushroom",
+
+  "block.sporenexus.ice_mushroom": "§eIce Mushroom",
   "block.sporenexus.lapis_lazuli_mushroom": "§eLapis Lazuli Mushroom",
   "block.sporenexus.gold_mushroom": "§eGold Mushroom",
   "block.sporenexus.fungalsteel_mushroom": "§eFungalsteel Mushroom",
 
+
+  "block.sporenexus.blackstone_mushroom": "§cBlackstone Mushroom",
+  "block.sporenexus.glowstone_mushroom": "§cGlowstone Mushroom",
+  "block.sporenexus.netherrack_mushroom": "§cNetherrack Mushroom",
+  "block.sporenexus.soul_sand_mushroom": "§cSoul Sand Mushroom",
+
   "block.sporenexus.quartz_mushroom": "§cQuartz Mushroom",
   "block.sporenexus.diamond_mushroom": "§cDiamond Mushroom",
+
 
   "block.sporenexus.emerald_mushroom": "§dEmerald Mushroom",
   "block.sporenexus.netherite_mushroom": "§dNetherite Mushroom",

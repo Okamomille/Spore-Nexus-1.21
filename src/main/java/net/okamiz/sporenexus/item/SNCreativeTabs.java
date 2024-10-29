@@ -59,8 +59,7 @@ public class SNCreativeTabs {
             // ------------------------------------------- LEVEL 2 FRAGMENTS ---------------------------------------------------
 
             // -- BLOCKS FRAGMENTS
-
-
+                        output.accept(SNItems.ICE_FRAGMENTS);
 
             // -- ORES FRAGMENTS
 
@@ -73,7 +72,10 @@ public class SNCreativeTabs {
             // ------------------------------------------- LEVEL 3 FRAGMENTS ---------------------------------------------------
 
             // -- BLOCKS FRAGMENTS
-
+                        output.accept(SNItems.BLACKSTONE_FRAGMENTS);
+                        output.accept(SNItems.GLOWSTONE_FRAGMENTS);
+                        output.accept(SNItems.NETHERRACK_FRAGMENTS);
+                        output.accept(SNItems.SOUL_SAND_FRAGMENTS);
 
 
             // -- ORES FRAGMENTS
@@ -108,12 +110,19 @@ public class SNCreativeTabs {
 
             // ------------------------------------------- LEVEL 2 MUSHROOMS ---------------------------------------------------
 
+                        output.accept(SNBlocks.ICE_MUSHROOM);
+
                         output.accept(SNBlocks.REDSTONE_MUSHROOM);
                         output.accept(SNBlocks.LAPIS_LAZULI_MUSHROOM);
                         output.accept(SNBlocks.GOLD_MUSHROOM);
                         output.accept(SNBlocks.FUNGALSTEEL_MUSHROOM);
 
             // ------------------------------------------- LEVEL 3 MUSHROOMS ---------------------------------------------------
+
+                        output.accept(SNBlocks.BLACKSTONE_MUSHROOM);
+                        output.accept(SNBlocks.GLOWSTONE_MUSHROOM);
+                        output.accept(SNBlocks.NETHERRACK_MUSHROOM);
+                        output.accept(SNBlocks.SOUL_SAND_MUSHROOM);
 
                         output.accept(SNBlocks.QUARTZ_MUSHROOM);
                         output.accept(SNBlocks.DIAMOND_MUSHROOM);

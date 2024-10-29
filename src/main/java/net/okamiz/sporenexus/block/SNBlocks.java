@@ -60,6 +60,10 @@ public class SNBlocks {
 
     // ------------------------------------------- LEVEL 2 MUSHROOMS ---------------------------------------------------
 
+    // -- BLOCKS MUSHROOMS
+    public static final DeferredBlock<Block> ICE_MUSHROOM = registerBlock("ice_mushroom",
+            () -> new ResourcesMushroomBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MUSHROOM_STEM)
+                    .noOcclusion().randomTicks().pushReaction(PushReaction.DESTROY), SNItems.ICE_FRAGMENTS, null));
 
 
     // -- ORES MUSHROOMS
@@ -78,7 +82,19 @@ public class SNBlocks {
 
     // ------------------------------------------- LEVEL 3 MUSHROOMS ---------------------------------------------------
 
-
+    // -- BLOCKS MUSHROOMS
+    public static final DeferredBlock<Block> BLACKSTONE_MUSHROOM = registerBlock("blackstone_mushroom",
+            () -> new ResourcesMushroomBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MUSHROOM_STEM)
+                    .noOcclusion().randomTicks().pushReaction(PushReaction.DESTROY), SNItems.BLACKSTONE_FRAGMENTS, null));
+    public static final DeferredBlock<Block> GLOWSTONE_MUSHROOM = registerBlock("glowstone_mushroom",
+            () -> new ResourcesMushroomBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MUSHROOM_STEM)
+                    .noOcclusion().randomTicks().pushReaction(PushReaction.DESTROY), SNItems.GLOWSTONE_FRAGMENTS, null));
+    public static final DeferredBlock<Block> NETHERRACK_MUSHROOM = registerBlock("netherrack_mushroom",
+            () -> new ResourcesMushroomBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MUSHROOM_STEM)
+                    .noOcclusion().randomTicks().pushReaction(PushReaction.DESTROY), SNItems.NETHERRACK_FRAGMENTS, null));
+    public static final DeferredBlock<Block> SOUL_SAND_MUSHROOM = registerBlock("soul_sand_mushroom",
+            () -> new ResourcesMushroomBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MUSHROOM_STEM)
+                    .noOcclusion().randomTicks().pushReaction(PushReaction.DESTROY), SNItems.SOUL_SAND_FRAGMENTS, null));
 
     // -- ORES MUSHROOMS
     public static final DeferredBlock<Block> QUARTZ_MUSHROOM = registerBlock("quartz_mushroom",

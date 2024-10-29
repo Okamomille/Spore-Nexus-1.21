@@ -60,6 +60,8 @@ public class SNItems {
 
     // ------------------------------------------- LEVEL 2 FRAGMENTS ---------------------------------------------------
 
+    // -- BLOCKS FRAGMENTS
+    public static final DeferredItem<Item> ICE_FRAGMENTS = ITEMS.registerSimpleItem("ice_fragments");
 
 
     // -- ORES FRAGMENTS
@@ -72,7 +74,11 @@ public class SNItems {
 
     // ------------------------------------------- LEVEL 3 FRAGMENTS ---------------------------------------------------
 
-
+    // -- BLOCKS FRAGMENTS
+    public static final DeferredItem<Item> BLACKSTONE_FRAGMENTS = ITEMS.registerSimpleItem("blackstone_fragments");
+    public static final DeferredItem<Item> GLOWSTONE_FRAGMENTS = ITEMS.registerSimpleItem("glowstone_fragments");
+    public static final DeferredItem<Item> NETHERRACK_FRAGMENTS = ITEMS.registerSimpleItem("netherrack_fragments");
+    public static final DeferredItem<Item> SOUL_SAND_FRAGMENTS = ITEMS.registerSimpleItem("soul_sand_fragments");
 
     // -- ORES FRAGMENTS
     public static final DeferredItem<Item> QUARTZ_FRAGMENTS = ITEMS.registerSimpleItem("quartz_fragments");
