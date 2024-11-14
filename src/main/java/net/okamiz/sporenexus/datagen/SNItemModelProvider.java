@@ -3,9 +3,12 @@ package net.okamiz.sporenexus.datagen;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
+import net.neoforged.neoforge.client.model.generators.ItemModelBuilder;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
+import net.minecraft.world.item.Item;
+import net.neoforged.neoforge.registries.DeferredItem;
 import net.okamiz.sporenexus.SporeNexusMod;
 import net.okamiz.sporenexus.item.SNItems;
 
@@ -37,6 +40,17 @@ public class SNItemModelProvider extends ItemModelProvider {
         basicItem(SNItems.INFERNAL_DIAMOND.get());
         basicItem(SNItems.ETHEREAL_DIAMOND.get());
 
+        // ---------------------------------------- FUNGAL TOOLS --------------------------------------------------------
+
+        handheldItem(SNItems.FUNGAL_DIAMOND_SWORD);
+        handheldItem(SNItems.FUNGAL_DIAMOND_PICKAXE);
+        handheldItem(SNItems.FUNGAL_DIAMOND_AXE);
+        handheldItem(SNItems.FUNGAL_DIAMOND_SHOVEL);
+        handheldItem(SNItems.FUNGAL_DIAMOND_HOE);
+
+
+
+        // ---------------------------------------- ---------------------------------------------------------------------
 
         basicItem(SNItems.DIRT_FRAGMENTS.get());
         basicItem(SNItems.GRAVEL_FRAGMENTS.get());
@@ -77,5 +91,11 @@ public class SNItemModelProvider extends ItemModelProvider {
         this.withExistingParent(block.getId().getPath(), mcLoc("item/generated"))
                 .texture("layer0", ResourceLocation.fromNamespaceAndPath(SporeNexusMod.MOD_ID,
                         "block/" + block.getId().getPath()));
+    }
+
+    private ItemModelBuilder handheldItem(DeferredItem<Item> item) {
+        return withExistingParent(item.getId().getPath(),
+                ResourceLocation.parse("item/handheld")).texture("layer0",
+                ResourceLocation.fromNamespaceAndPath(SporeNexusMod.MOD_ID,"item/" + item.getId().getPath()));
     }
 }

@@ -42,6 +42,17 @@ public class SNCreativeTabs {
                         output.accept(SNItems.INFERNAL_DIAMOND);
                         output.accept(SNItems.ETHEREAL_DIAMOND);
 
+
+                        output.accept(SNItems.FUNGAL_DIAMOND_SWORD);
+                        output.accept(SNItems.FUNGAL_DIAMOND_PICKAXE);
+                        output.accept(SNItems.FUNGAL_DIAMOND_AXE);
+                        output.accept(SNItems.FUNGAL_DIAMOND_SHOVEL);
+                        output.accept(SNItems.FUNGAL_DIAMOND_HOE);
+
+
+
+
+
             // ------------------------------------------- LEVEL 1 FRAGMENTS ---------------------------------------------------
 
             // -- BLOCKS FRAGMENTS
@@ -152,7 +163,6 @@ public class SNCreativeTabs {
                         output.accept(SNBlocks.NIGHT_VISION_TOTEM);
                         output.accept(SNBlocks.HASTE_TOTEM);
                         output.accept(SNBlocks.FIRE_RESISTANCE_TOTEM);
-
                     })
                     .build());
 

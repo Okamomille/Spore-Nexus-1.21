@@ -12,6 +12,9 @@ import net.okamiz.sporenexus.SporeNexusMod;
 public class SNTags {
     public static class Blocks{
 
+        public static final TagKey<Block> INCORRECT_FOR_FUNGAL_DIAMOND_TOOL = createTag("incorrect_for_fungal_diamond_tool");
+        public static final TagKey<Block> NEEDS_FUNGAL_DIAMOND_TOOL = createTag("needs_fungal_diamond_tool");
+
         public static final TagKey<Block> MYCELIUM_SOILS = createTag("mycelium_soils");
         public static final TagKey<Block> RESOURCES_MUSHROOMS = createTag("resources_mushrooms");
 

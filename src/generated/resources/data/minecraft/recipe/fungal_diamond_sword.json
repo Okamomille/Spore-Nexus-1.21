@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "sporenexus:fungal_diamond"
+    }
+  },
+  "pattern": [
+    "X",
+    "X",
+    "I"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sporenexus:fungal_diamond_sword"
+  }
+}

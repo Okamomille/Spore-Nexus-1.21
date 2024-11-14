@@ -1,7 +1,6 @@
 package net.okamiz.sporenexus.item;
 
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -97,6 +96,34 @@ public class SNItems {
     // -- ORES FRAGMENTS
     public static final DeferredItem<Item> EMERALD_FRAGMENTS = ITEMS.registerSimpleItem("emerald_fragments");
     public static final DeferredItem<Item> NETHERITE_FRAGMENTS = ITEMS.registerSimpleItem("netherite_fragments");
+
+
+
+
+
+
+
+
+    // ------------------------------------------- FUNGAL TOOLS ---------------------------------------------------
+
+    public static final DeferredItem<Item> FUNGAL_DIAMOND_SWORD = ITEMS.register("fungal_diamond_sword",
+            ()-> new SwordItem(SNToolTiers.FUNGAL_DIAMOND, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(SNToolTiers.FUNGAL_DIAMOND, 3, -2.4f))));
+    public static final DeferredItem<Item> FUNGAL_DIAMOND_PICKAXE = ITEMS.register("fungal_diamond_pickaxe",
+            ()-> new PickaxeItem(SNToolTiers.FUNGAL_DIAMOND, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(SNToolTiers.FUNGAL_DIAMOND, 1, -2.8f))));
+    public static final DeferredItem<Item> FUNGAL_DIAMOND_AXE = ITEMS.register("fungal_diamond_axe",
+            ()-> new AxeItem(SNToolTiers.FUNGAL_DIAMOND, new Item.Properties()
+                    .attributes(AxeItem.createAttributes(SNToolTiers.FUNGAL_DIAMOND, 1.5f, -3.0f))));
+    public static final DeferredItem<Item> FUNGAL_DIAMOND_SHOVEL = ITEMS.register("fungal_diamond_shovel",
+            ()-> new ShovelItem(SNToolTiers.FUNGAL_DIAMOND, new Item.Properties()
+                    .attributes(ShovelItem.createAttributes(SNToolTiers.FUNGAL_DIAMOND, 6, -3.2f))));
+    public static final DeferredItem<Item> FUNGAL_DIAMOND_HOE = ITEMS.register("fungal_diamond_hoe",
+            ()-> new HoeItem(SNToolTiers.FUNGAL_DIAMOND, new Item.Properties()
+                    .attributes(HoeItem.createAttributes(SNToolTiers.FUNGAL_DIAMOND, 0, -3.0f))));
+
+
+
 
 
 

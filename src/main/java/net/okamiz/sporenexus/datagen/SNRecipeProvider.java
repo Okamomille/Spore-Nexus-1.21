@@ -1,10 +1,11 @@
 package net.okamiz.sporenexus.datagen;
 
+import net.minecraft.advancements.Criterion;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.level.block.Block;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 import net.okamiz.sporenexus.block.SNBlocks;
@@ -114,6 +115,13 @@ public class SNRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .unlockedBy("has_diamond", has(Items.DIAMOND))
                 .unlockedBy("has_fungal_essence", has(SNItems.FUNGAL_ESSENCE))
                 .save(recipeOutput);
+
+        craftCustomToolSet(recipeOutput, "fungal_diamond", SNItems.FUNGAL_DIAMOND_SWORD.get(),
+                SNItems.FUNGAL_DIAMOND_PICKAXE.get(), SNItems.FUNGAL_DIAMOND_AXE.get(), SNItems.FUNGAL_DIAMOND_SHOVEL.get(), SNItems.FUNGAL_DIAMOND_HOE.get(),
+                SNItems.FUNGAL_DIAMOND.get(), "has_fungal_diamond", has(SNItems.FUNGAL_DIAMOND));
+
+
+
 
 
         // INFERNAL DIAMOND
@@ -805,4 +813,155 @@ public class SNRecipeProvider extends RecipeProvider implements IConditionBuilde
 
 
     }
+
+
+
+    private void craftCustomToolSet(RecipeOutput recipeOutput, String saveID, Item resultSword, Item resultPickaxe, Item resultAxe
+            , Item resultShovel, Item resultHoe, Item ingredient, String criterionString, Criterion<?> criterion){
+
+
+        craftCustomSword(recipeOutput, saveID + "_sword", resultSword, ingredient, criterionString, criterion);
+        craftCustomPickaxe(recipeOutput, saveID + "_pickaxe", resultPickaxe, ingredient, criterionString, criterion);
+        craftCustomAxe(recipeOutput, saveID + "_axe", resultAxe, ingredient, criterionString, criterion);
+        craftCustomShovel(recipeOutput, saveID + "_shovel", resultShovel, ingredient, criterionString, criterion);
+        craftCustomHoe(recipeOutput, saveID + "_hoe", resultHoe, ingredient, criterionString, criterion);
+    }
+
+    private void craftCustomArmorSet(RecipeOutput recipeOutput, String saveID, Item resultHelmet, Item resultChestplate, Item resultLeggings
+            , Item resultBoots, Item resultHoe, Item ingredient, String criterionString, Criterion<?> criterion){
+
+
+        craftCustomHelmet(recipeOutput, saveID + "_helmet", resultHelmet, ingredient, criterionString, criterion);
+        craftCustomChestplate(recipeOutput, saveID + "_chestplate", resultChestplate, ingredient, criterionString, criterion);
+        craftCustomLeggings(recipeOutput, saveID + "_leggings", resultLeggings, ingredient, criterionString, criterion);
+        craftCustomBoots(recipeOutput, saveID + "_boots", resultBoots, ingredient, criterionString, criterion);
+    }
+
+
+// - ------------------------------------------TOOLS CRAFT VOIDS-----------------------------------------------------
+    private void craftCustomSword(RecipeOutput recipeOutput, String saveID, Item result, Item ingredient, String criterionString, Criterion<?> criterion){
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, result, 1)
+                .pattern("X")
+                .pattern("X")
+                .pattern("I")
+                .define('X', ingredient)
+                .define('I', Items.STICK)
+                .unlockedBy(criterionString, criterion)
+                .unlockedBy("has_stick", has(Items.STICK))
+                .save(recipeOutput, saveID);
+    }
+
+    private void craftCustomPickaxe(RecipeOutput recipeOutput, String saveID, Item result, Item ingredient, String criterionString, Criterion<?> criterion){
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, result, 1)
+                .pattern("XXX")
+                .pattern(" I ")
+                .pattern(" I ")
+                .define('X', ingredient)
+                .define('I', Items.STICK)
+                .unlockedBy(criterionString, criterion)
+                .unlockedBy("has_stick", has(Items.STICK))
+                .save(recipeOutput, saveID);
+    }
+
+    private void craftCustomAxe(RecipeOutput recipeOutput, String saveID, Item result, Item ingredient, String criterionString, Criterion<?> criterion){
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, result, 1)
+                .pattern("XX")
+                .pattern("XI")
+                .pattern(" I")
+                .define('X', ingredient)
+                .define('I', Items.STICK)
+                .unlockedBy(criterionString, criterion)
+                .unlockedBy("has_stick", has(Items.STICK))
+                .save(recipeOutput, saveID);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, result, 1)
+                .pattern(" XX")
+                .pattern(" IX")
+                .pattern(" I ")
+                .define('X', ingredient)
+                .define('I', Items.STICK)
+                .unlockedBy(criterionString, criterion)
+                .unlockedBy("has_stick", has(Items.STICK))
+                .save(recipeOutput, saveID + "_reversed");
+    }
+
+    private void craftCustomShovel(RecipeOutput recipeOutput, String saveID, Item result, Item ingredient, String criterionString, Criterion<?> criterion){
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, result, 1)
+                .pattern("X")
+                .pattern("I")
+                .pattern("I")
+                .define('X', ingredient)
+                .define('I', Items.STICK)
+                .unlockedBy(criterionString, criterion)
+                .unlockedBy("has_stick", has(Items.STICK))
+                .save(recipeOutput, saveID);
+    }
+
+    private void craftCustomHoe(RecipeOutput recipeOutput, String saveID, Item result, Item ingredient, String criterionString, Criterion<?> criterion){
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, result, 1)
+                .pattern("XX")
+                .pattern(" I")
+                .pattern(" I")
+                .define('X', ingredient)
+                .define('I', Items.STICK)
+                .unlockedBy(criterionString, criterion)
+                .unlockedBy("has_stick", has(Items.STICK))
+                .save(recipeOutput, saveID);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, result, 1)
+                .pattern("XX")
+                .pattern("I ")
+                .pattern("I ")
+                .define('X', ingredient)
+                .define('I', Items.STICK)
+                .unlockedBy(criterionString, criterion)
+                .unlockedBy("has_stick", has(Items.STICK))
+                .save(recipeOutput, saveID + "_reversed");
+    }
+
+// - --------------------------------------------------------------------------------------------------------------------
+
+// - ------------------------------------------ARMOR CRAFT VOIDS-----------------------------------------------------
+
+    private void craftCustomHelmet(RecipeOutput recipeOutput, String saveID, Item result, Item ingredient, String criterionString, Criterion<?> criterion){
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, result, 1)
+                .pattern("XXX")
+                .pattern("X X")
+                .define('X', ingredient)
+                .unlockedBy(criterionString, criterion)
+                .save(recipeOutput, saveID);
+    }
+
+    private void craftCustomChestplate(RecipeOutput recipeOutput, String saveID, Item result, Item ingredient, String criterionString, Criterion<?> criterion){
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, result, 1)
+                .pattern("X X")
+                .pattern("XXX")
+                .pattern("XXX")
+                .define('X', ingredient)
+                .unlockedBy(criterionString, criterion)
+                .save(recipeOutput, saveID);
+    }
+
+    private void craftCustomLeggings(RecipeOutput recipeOutput, String saveID, Item result, Item ingredient, String criterionString, Criterion<?> criterion){
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, result, 1)
+                .pattern("XXX")
+                .pattern("X X")
+                .pattern("X X")
+                .define('X', ingredient)
+                .unlockedBy(criterionString, criterion)
+                .save(recipeOutput, saveID);
+    }
+
+    private void craftCustomBoots(RecipeOutput recipeOutput, String saveID, Item result, Item ingredient, String criterionString, Criterion<?> criterion){
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, result, 1)
+                .pattern("X X")
+                .pattern("X X")
+                .define('X', ingredient)
+                .unlockedBy(criterionString, criterion)
+                .save(recipeOutput, saveID);
+    }
+
+
+
+
 }
