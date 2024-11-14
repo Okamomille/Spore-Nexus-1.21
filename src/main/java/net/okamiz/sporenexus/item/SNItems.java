@@ -114,13 +114,13 @@ public class SNItems {
                     .attributes(PickaxeItem.createAttributes(SNToolTiers.FUNGAL_DIAMOND, 1, -2.8f))));
     public static final DeferredItem<Item> FUNGAL_DIAMOND_AXE = ITEMS.register("fungal_diamond_axe",
             ()-> new AxeItem(SNToolTiers.FUNGAL_DIAMOND, new Item.Properties()
-                    .attributes(AxeItem.createAttributes(SNToolTiers.FUNGAL_DIAMOND, 1.5f, -3.0f))));
+                    .attributes(AxeItem.createAttributes(SNToolTiers.FUNGAL_DIAMOND, 5f, -3.0f))));
     public static final DeferredItem<Item> FUNGAL_DIAMOND_SHOVEL = ITEMS.register("fungal_diamond_shovel",
             ()-> new ShovelItem(SNToolTiers.FUNGAL_DIAMOND, new Item.Properties()
-                    .attributes(ShovelItem.createAttributes(SNToolTiers.FUNGAL_DIAMOND, 6, -3.2f))));
+                    .attributes(ShovelItem.createAttributes(SNToolTiers.FUNGAL_DIAMOND, 1.5f, -3.0f))));
     public static final DeferredItem<Item> FUNGAL_DIAMOND_HOE = ITEMS.register("fungal_diamond_hoe",
             ()-> new HoeItem(SNToolTiers.FUNGAL_DIAMOND, new Item.Properties()
-                    .attributes(HoeItem.createAttributes(SNToolTiers.FUNGAL_DIAMOND, 0, -3.0f))));
+                    .attributes(HoeItem.createAttributes(SNToolTiers.FUNGAL_DIAMOND, -3.0f, 0f))));
 
 
 
