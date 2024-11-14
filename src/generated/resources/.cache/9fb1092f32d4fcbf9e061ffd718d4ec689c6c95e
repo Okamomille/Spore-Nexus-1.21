@@ -1,4 +1,4 @@
-// 1.21.1	2024-11-14T22:59:09.6420655	Recipes
+// 1.21.1	2024-11-14T23:15:50.0104324	Recipes
 c05c430fc40d25125c003c4e328279bc88da7e9d data/minecraft/advancement/recipes/misc/andesite_from_fragments.json
 38872f70ade1d50a297570fb630654fc79dc752f data/minecraft/advancement/recipes/misc/blackstone_from_fragments.json
 7ef0b6a6775a5d0f7efaf96bb7e11c056f12bc99 data/minecraft/advancement/recipes/misc/clay_from_fragments.json
@@ -130,7 +130,7 @@ cc56b03740364eb392dfcbbb4a19580282e52a16 data/minecraft/recipe/stone_from_fragme
 1712ad023d7745fd07bbb207699281bf92bc8aa3 data/sporenexus/advancement/recipes/misc/blackstone_mushroom.json
 9964bf402ec586266cedbc2337192f940c72fd69 data/sporenexus/advancement/recipes/misc/clay_mushroom.json
 69ae3fb2ccc12d804566435813b40767841a9252 data/sporenexus/advancement/recipes/misc/coal_mushroom.json
-bd0726ee86722cb89bbe83cc5465d74fe4335906 data/sporenexus/advancement/recipes/misc/copper_mushroom.json
+69baab9a2ba9967ce26a8e83aa35081d4daa3acb data/sporenexus/advancement/recipes/misc/copper_mushroom.json
 73763e24f351df33d43c2c4d6ab1e14aee91505e data/sporenexus/advancement/recipes/misc/diamond_mushroom.json
 dfb68c24129d67656fd333f1f21c6fafd73163ae data/sporenexus/advancement/recipes/misc/dirt_mushroom.json
 d40be6f53b044509eb0bd90d295b764d61d5372e data/sporenexus/advancement/recipes/misc/emerald_mushroom.json
@@ -156,9 +156,9 @@ c9c1c2f08a746c31db7a5eb6e5df5ef05e16d0a7 data/sporenexus/advancement/recipes/mis
 d5e73305eca6655d6e49271f2270e4fabae48b52 data/sporenexus/advancement/recipes/misc/infernal_essence.json
 e7f12c343be5300647afd4bfb94fa9853a04b69a data/sporenexus/advancement/recipes/misc/infernal_fungus.json
 806929f97df4bbb40a0e33e4e91f2ee364e833c2 data/sporenexus/advancement/recipes/misc/iron_mushroom.json
-a2a02b25e7df791deb3e70f7046bedda9fc7fa34 data/sporenexus/advancement/recipes/misc/lapis_lazuli_mushroom.json
+73804a6f2024cca440fd922d14887d9bcdb1a111 data/sporenexus/advancement/recipes/misc/lapis_lazuli_mushroom.json
 b5a4d89dd87cb1728c14c765d2051a8a1d75c631 data/sporenexus/advancement/recipes/misc/mushroom_collector.json
-cd95eff07239234ed1ccbfa89b5a9f039231b205 data/sporenexus/advancement/recipes/misc/netherite_mushroom.json
+cdd8b5c0f5e4f54d036f1896c166ac3131ca38d5 data/sporenexus/advancement/recipes/misc/netherite_mushroom.json
 e1ea0c04e31bc8a6e6ca337f405b4eb97128977e data/sporenexus/advancement/recipes/misc/netherrack_mushroom.json
 5e3e93456eb3ba9228e074a306cb57fdcf0325ec data/sporenexus/advancement/recipes/misc/night_vision_totem.json
 d7394dce52aab0a8c57e357404728429003a34a3 data/sporenexus/advancement/recipes/misc/quartz_mushroom.json
@@ -199,7 +199,7 @@ c5c383bfe66d3dc5e1d6520a8c394ccd4a8b993a data/sporenexus/recipe/infernal_fungus.
 f9253a983a935751e9c4b57885a86fc4e54e2d08 data/sporenexus/recipe/iron_mushroom.json
 a140fa8bad203638d5c78b90722985d01ce96bb2 data/sporenexus/recipe/lapis_lazuli_mushroom.json
 218e8419d3baae35e7f27fe382a7761ab3c6203d data/sporenexus/recipe/mushroom_collector.json
-1739e1d66b2fc46197e1449a65ad8b436cbe85e6 data/sporenexus/recipe/netherite_mushroom.json
+7a5257cd8cb6ea17f5bb4d041f13ee6a0b349430 data/sporenexus/recipe/netherite_mushroom.json
 726136665b52d3afce9993c07e965153cf3d68e6 data/sporenexus/recipe/netherrack_mushroom.json
 95ac7469cbe40e69c23c072742a9206622557352 data/sporenexus/recipe/night_vision_totem.json
 de61f2e6f516d64d7b15f70f20336e5dd8afabf5 data/sporenexus/recipe/quartz_mushroom.json

@@ -11,7 +11,7 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_lapis_lazuli": {
+    "has_lapis": {
       "conditions": {
         "items": [
           {
@@ -32,7 +32,7 @@
     [
       "has_the_recipe",
       "has_great_fungus",
-      "has_lapis_lazuli"
+      "has_lapis"
     ]
   ],
   "rewards": {
