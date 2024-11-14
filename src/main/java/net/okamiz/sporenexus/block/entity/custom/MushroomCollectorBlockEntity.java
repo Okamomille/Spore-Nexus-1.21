@@ -28,6 +28,8 @@ import org.jetbrains.annotations.Nullable;
 import java.util.List;
 
 public class MushroomCollectorBlockEntity extends BlockEntity implements MenuProvider {
+
+    private boolean isHarvesting;
     public final ItemStackHandler inventory = new ItemStackHandler(15){
 
         @Override
@@ -41,6 +43,7 @@ public class MushroomCollectorBlockEntity extends BlockEntity implements MenuPro
 
     public MushroomCollectorBlockEntity(BlockPos pos, BlockState blockState) {
         super(SNBlockEntities.MUSHROOM_COLLECTOR_BE.get(), pos, blockState);
+        isHarvesting = false;
     }
 
     public void clearContents(){
@@ -86,6 +89,7 @@ public class MushroomCollectorBlockEntity extends BlockEntity implements MenuPro
 
     public void harvestMushrooms() {
         if (this.level == null) return;
+        if(this.level.isClientSide()) return;
         // Check if there is space in the inventory
         if (!hasSpaceInInventory()) {
             return; // If the inventory is full, do not collect mushrooms
@@ -100,17 +104,26 @@ public class MushroomCollectorBlockEntity extends BlockEntity implements MenuPro
 
             // Check if the block is a mushroom
             if (block instanceof  ResourcesMushroomBlock resourcesMushroomBlock) {
-                // Reset the block and collect its drops
-                List<ItemStack> drops = resourcesMushroomBlock.getCustomDrops();
 
-                for (ItemStack drop : drops) {
-                    addToInventory(drop);
+                if(resourcesMushroomBlock.getAge(blockState) == resourcesMushroomBlock.getMaxAge() && !isHarvesting){
+                    isHarvesting = true;
+                    // Reset the block and collect its drops
+                    List<ItemStack> drops = resourcesMushroomBlock.getCustomDrops();
+
+                    for (ItemStack drop : drops) {
+                        addToInventory(drop);
+                    }
+
+                    resourcesMushroomBlock.resetAge(level, pos);
+                    isHarvesting = false;
                 }
-
-                resourcesMushroomBlock.resetAge(level, pos);
+                else{
+                    return; // If the mushroom is not grown, do not collect mushrooms
+                }
             }
         }
     }
+
 
 
     private boolean hasSpaceInInventory() {
