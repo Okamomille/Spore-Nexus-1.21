@@ -120,7 +120,8 @@ public class SNBlocks {
 
     // ------------------------------------------- ///////////////// ---------------------------------------------------
 
-
+    public static final DeferredBlock<Block> FUNGAL_DIAMOND_BLOCK = registerBlock("fungal_diamond_block",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_BLOCK)));
 
 
 

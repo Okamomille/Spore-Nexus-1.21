@@ -6,6 +6,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 import net.okamiz.sporenexus.block.SNBlocks;
@@ -105,6 +106,9 @@ public class SNRecipeProvider extends RecipeProvider implements IConditionBuilde
         // ------------------------------------
 
         // FUNGAL DIAMOND
+
+        craft9x9BlockRecipes(recipeOutput, "fungal_diamond", SNItems.FUNGAL_DIAMOND.get(), SNBlocks.FUNGAL_DIAMOND_BLOCK.get(),
+                "has_fungal_diamond", has(SNItems.FUNGAL_DIAMOND));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SNItems.FUNGAL_DIAMOND, 1)
                 .pattern(" X ")
@@ -961,6 +965,18 @@ public class SNRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .save(recipeOutput, saveID);
     }
 
+
+    private void craft9x9BlockRecipes(RecipeOutput recipeOutput, String saveID, Item item, Block block, String criterionString, Criterion<?> criterion){
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,item, 9)
+                .requires(block, 1)
+                .unlockedBy(criterionString, criterion)
+                .save(recipeOutput, saveID + "from_block");
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,block, 1)
+                .requires(item, 9)
+                .unlockedBy(criterionString, criterion)
+                .save(recipeOutput, saveID + "block_from_items");
+    }
 
 
 

@@ -1,7 +1,8 @@
-// 1.21.1	2024-10-29T18:18:13.8911491	Tags for minecraft:block mod id sporenexus
+// 1.21.1	2024-11-14T21:36:09.0271186	Tags for minecraft:block mod id sporenexus
 783d14503ecd3c9d4391352b449e234b1ac8945c data/minecraft/tags/block/mineable/axe.json
 44c1ebebe09e23453c662d1100ab171f3b3b056a data/minecraft/tags/block/mineable/hoe.json
-f7c363e5683188a253f0ef076d57629a90c7c00c data/minecraft/tags/block/mineable/pickaxe.json
+2a6405525015fdbce60a6616bdef9b9dc9e04709 data/minecraft/tags/block/mineable/pickaxe.json
 ddd78b76c07ac3bb21a9b831bb9e03dd1cb6b41e data/minecraft/tags/block/mushroom_grow_block.json
+5c1df08e64c3113f59082ea4a60a347729315ef5 data/minecraft/tags/block/needs_iron_tool.json
 2a39f87769b7cca262fd09f471fc3006c31bb3e7 data/sporenexus/tags/block/mycelium_soils.json
 783d14503ecd3c9d4391352b449e234b1ac8945c data/sporenexus/tags/block/resources_mushrooms.json

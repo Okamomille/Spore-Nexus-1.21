@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-29T18:18:13.8931549	Loot Tables
+// 1.21.1	2024-11-14T21:32:26.8429808	Loot Tables
 953c9b447afcb2aec0d61d5ea2a7b7f11999b22b data/sporenexus/loot_table/blocks/blackstone_mushroom.json
 9e8b0b48342ed99e2c82f57a3de4cb94ef441e63 data/sporenexus/loot_table/blocks/clay_mushroom.json
 b7f9f4f21d78502f73f618e961250edb251cdf0a data/sporenexus/loot_table/blocks/coal_mushroom.json
@@ -11,6 +11,7 @@ cbe8a3d3412bbff46fff5bb7994bae897222310b data/sporenexus/loot_table/blocks/enric
 9dccde4927378d9f142e433aeb142ad05b8343d3 data/sporenexus/loot_table/blocks/fire_resistance_totem.json
 9173ad24d9e3f4edee11a219075f89f49b20a85b data/sporenexus/loot_table/blocks/fungalsteel_block.json
 e0bc8e8c4efbf4162013f5c07e08b00ba94b0c98 data/sporenexus/loot_table/blocks/fungalsteel_mushroom.json
+d0588dc688f44fcdc18459ee0d755a8d01ff9074 data/sporenexus/loot_table/blocks/fungal_diamond_block.json
 a6e57cb58ce1005533dbbdfb47c98218a649bcd6 data/sporenexus/loot_table/blocks/fungal_lantern.json
 80d4fc7f382020c4d9acb452967849d23fd500b1 data/sporenexus/loot_table/blocks/fungal_propagator.json
 782682a9e38824864d623cd5ba0e63be9dff00a4 data/sporenexus/loot_table/blocks/glowstone_mushroom.json

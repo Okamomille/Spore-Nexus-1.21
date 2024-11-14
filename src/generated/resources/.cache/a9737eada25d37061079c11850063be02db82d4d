@@ -1,13 +1,16 @@
-// 1.21.1	2024-09-30T13:27:37.92508	Block States: sporenexus
+// 1.21.1	2024-11-14T21:32:26.8479816	Block States: sporenexus
 2447524b8a82dc6ec0c41f3947b704bbabf17c0e assets/sporenexus/blockstates/enriched_mycelium.json
 bf2b1d567191991b77b03cacf584214b3fdf375c assets/sporenexus/blockstates/fertilized_mycelium.json
 0cf44414630c86301ee257babfdbba73ccedd385 assets/sporenexus/blockstates/fungalsteel_block.json
+75b7576cf63774faf34a61de92956d73b848f1d6 assets/sporenexus/blockstates/fungal_diamond_block.json
 97fcae20966713bb51b099b7ba586a8aae2a0128 assets/sporenexus/blockstates/fungal_lantern.json
 b454f101df0913afa69bf3deaf1a17310122a42f assets/sporenexus/models/block/enriched_mycelium.json
 b7c8d80ad6cc8c8152fd321cffee4f42d957d878 assets/sporenexus/models/block/fertilized_mycelium.json
 52ebc1dd37e526c615f1d6b7b92bcb83abca29cb assets/sporenexus/models/block/fungalsteel_block.json
+5471c6941f57af35c276c09065f270ba8bb2fdb2 assets/sporenexus/models/block/fungal_diamond_block.json
 fbed05fa72c338784739fa9ee8c872e2a8e96582 assets/sporenexus/models/block/fungal_lantern.json
 95210b26786d56540d923ab5921413637239f83e assets/sporenexus/models/item/enriched_mycelium.json
 c3e83e38c65d0e118877da8f6810ecf4d9f5cf4a assets/sporenexus/models/item/fertilized_mycelium.json
 dc0051a8843afb3d19c7816c3b1c84d6a659718c assets/sporenexus/models/item/fungalsteel_block.json
+cdc68daa4655000199f4ce73d197a038eec0dfa3 assets/sporenexus/models/item/fungal_diamond_block.json
 e6adb45f9afe833acbf0df0bdfd4bf7d1574348f assets/sporenexus/models/item/fungal_lantern.json
