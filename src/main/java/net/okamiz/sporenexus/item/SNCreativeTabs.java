@@ -38,6 +38,10 @@ public class SNCreativeTabs {
                         output.accept(SNItems.FUNGAL_POWDER);
                         output.accept(SNItems.FUNGALSTEEL_INGOT);
 
+                        output.accept(SNItems.FUNGAL_DIAMOND);
+                        output.accept(SNItems.INFERNAL_DIAMOND);
+                        output.accept(SNItems.ETHEREAL_DIAMOND);
+
             // ------------------------------------------- LEVEL 1 FRAGMENTS ---------------------------------------------------
 
             // -- BLOCKS FRAGMENTS

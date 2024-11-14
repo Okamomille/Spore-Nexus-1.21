@@ -103,7 +103,42 @@ public class SNRecipeProvider extends RecipeProvider implements IConditionBuilde
 
         // ------------------------------------
 
+        // FUNGAL DIAMOND
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SNItems.FUNGAL_DIAMOND, 1)
+                .pattern(" X ")
+                .pattern("XOX")
+                .pattern(" X ")
+                .define('O', Items.DIAMOND)
+                .define('X', SNItems.FUNGAL_ESSENCE)
+                .unlockedBy("has_diamond", has(Items.DIAMOND))
+                .unlockedBy("has_fungal_essence", has(SNItems.FUNGAL_ESSENCE))
+                .save(recipeOutput);
+
+
+        // INFERNAL DIAMOND
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SNItems.INFERNAL_DIAMOND, 1)
+                .pattern(" X ")
+                .pattern("XOX")
+                .pattern(" X ")
+                .define('O', SNItems.FUNGAL_DIAMOND)
+                .define('X', SNItems.INFERNAL_ESSENCE)
+                .unlockedBy("has_fungal_diamond", has(SNItems.FUNGAL_DIAMOND))
+                .unlockedBy("has_infernal_essence", has(SNItems.INFERNAL_ESSENCE))
+                .save(recipeOutput);
+
+        // ETHEREAL DIAMOND
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SNItems.ETHEREAL_DIAMOND, 1)
+                .pattern(" X ")
+                .pattern("XOX")
+                .pattern(" X ")
+                .define('O', SNItems.INFERNAL_DIAMOND)
+                .define('X', SNItems.ETHEREAL_ESSENCE)
+                .unlockedBy("has_infernal_diamond", has(SNItems.INFERNAL_DIAMOND))
+                .unlockedBy("has_ethereal_essence", has(SNItems.ETHEREAL_ESSENCE))
+                .save(recipeOutput);
 
 
         // FUNGALSTEEL

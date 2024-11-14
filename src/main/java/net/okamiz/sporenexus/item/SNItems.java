@@ -36,6 +36,10 @@ public class SNItems {
     public static final DeferredItem<Item> INFERNAL_ESSENCE = ITEMS.registerSimpleItem("infernal_essence");
     public static final DeferredItem<Item> ETHEREAL_ESSENCE = ITEMS.registerSimpleItem("ethereal_essence");
 
+    public static final DeferredItem<Item> FUNGAL_DIAMOND = ITEMS.registerSimpleItem("fungal_diamond");
+    public static final DeferredItem<Item> INFERNAL_DIAMOND = ITEMS.registerSimpleItem("infernal_diamond");
+    public static final DeferredItem<Item> ETHEREAL_DIAMOND = ITEMS.registerSimpleItem("ethereal_diamond");
+
 
 
 

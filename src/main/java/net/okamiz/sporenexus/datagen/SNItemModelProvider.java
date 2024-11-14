@@ -33,6 +33,10 @@ public class SNItemModelProvider extends ItemModelProvider {
         basicItem(SNItems.FUNGAL_POWDER.get());
         basicItem(SNItems.FUNGALSTEEL_INGOT.get());
 
+        basicItem(SNItems.FUNGAL_DIAMOND.get());
+        basicItem(SNItems.INFERNAL_DIAMOND.get());
+        basicItem(SNItems.ETHEREAL_DIAMOND.get());
+
 
         basicItem(SNItems.DIRT_FRAGMENTS.get());
         basicItem(SNItems.GRAVEL_FRAGMENTS.get());
