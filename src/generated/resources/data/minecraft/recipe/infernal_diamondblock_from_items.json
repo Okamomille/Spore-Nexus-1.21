@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "sporenexus:infernal_diamond"
+    },
+    {
+      "item": "sporenexus:infernal_diamond"
+    },
+    {
+      "item": "sporenexus:infernal_diamond"
+    },
+    {
+      "item": "sporenexus:infernal_diamond"
+    },
+    {
+      "item": "sporenexus:infernal_diamond"
+    },
+    {
+      "item": "sporenexus:infernal_diamond"
+    },
+    {
+      "item": "sporenexus:infernal_diamond"
+    },
+    {
+      "item": "sporenexus:infernal_diamond"
+    },
+    {
+      "item": "sporenexus:infernal_diamond"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "sporenexus:infernal_diamond_block"
+  }
+}

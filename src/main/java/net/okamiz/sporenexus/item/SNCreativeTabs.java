@@ -49,6 +49,18 @@ public class SNCreativeTabs {
                         output.accept(SNItems.FUNGAL_DIAMOND_SHOVEL);
                         output.accept(SNItems.FUNGAL_DIAMOND_HOE);
 
+                        output.accept(SNItems.INFERNAL_DIAMOND_SWORD);
+                        output.accept(SNItems.INFERNAL_DIAMOND_PICKAXE);
+                        output.accept(SNItems.INFERNAL_DIAMOND_AXE);
+                        output.accept(SNItems.INFERNAL_DIAMOND_SHOVEL);
+                        output.accept(SNItems.INFERNAL_DIAMOND_HOE);
+
+                        output.accept(SNItems.ETHEREAL_DIAMOND_SWORD);
+                        output.accept(SNItems.ETHEREAL_DIAMOND_PICKAXE);
+                        output.accept(SNItems.ETHEREAL_DIAMOND_AXE);
+                        output.accept(SNItems.ETHEREAL_DIAMOND_SHOVEL);
+                        output.accept(SNItems.ETHEREAL_DIAMOND_HOE);
+
 
 
 
@@ -152,6 +164,10 @@ public class SNCreativeTabs {
 
                         output.accept(SNBlocks.FERTILIZED_MYCELIUM);
                         output.accept(SNBlocks.ENRICHED_MYCELIUM);
+
+                        output.accept(SNBlocks.FUNGAL_DIAMOND_BLOCK);
+                        output.accept(SNBlocks.INFERNAL_DIAMOND_BLOCK);
+                        output.accept(SNBlocks.ETHEREAL_DIAMOND_BLOCK);
 
                         output.accept(SNBlocks.FUNGAL_LANTERN);
                         output.accept(SNBlocks.FUNGALSTEEL_BLOCK);

@@ -48,6 +48,22 @@ public class SNItemModelProvider extends ItemModelProvider {
         handheldItem(SNItems.FUNGAL_DIAMOND_SHOVEL);
         handheldItem(SNItems.FUNGAL_DIAMOND_HOE);
 
+        // ---------------------------------------- INFERNAL TOOLS --------------------------------------------------------
+
+        handheldItem(SNItems.INFERNAL_DIAMOND_SWORD);
+        handheldItem(SNItems.INFERNAL_DIAMOND_PICKAXE);
+        handheldItem(SNItems.INFERNAL_DIAMOND_AXE);
+        handheldItem(SNItems.INFERNAL_DIAMOND_SHOVEL);
+        handheldItem(SNItems.INFERNAL_DIAMOND_HOE);
+
+        // ---------------------------------------- ETHEREAL TOOLS --------------------------------------------------------
+
+        handheldItem(SNItems.ETHEREAL_DIAMOND_SWORD);
+        handheldItem(SNItems.ETHEREAL_DIAMOND_PICKAXE);
+        handheldItem(SNItems.ETHEREAL_DIAMOND_AXE);
+        handheldItem(SNItems.ETHEREAL_DIAMOND_SHOVEL);
+        handheldItem(SNItems.ETHEREAL_DIAMOND_HOE);
+
 
 
         // ---------------------------------------- ---------------------------------------------------------------------

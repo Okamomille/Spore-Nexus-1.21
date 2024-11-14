@@ -23,6 +23,8 @@ public class SNBlockStateProvider extends BlockStateProvider {
         blockWithItem(SNBlocks.FUNGALSTEEL_BLOCK);
 
         blockWithItem(SNBlocks.FUNGAL_DIAMOND_BLOCK);
+        blockWithItem(SNBlocks.INFERNAL_DIAMOND_BLOCK);
+        blockWithItem(SNBlocks.ETHEREAL_DIAMOND_BLOCK);
 
         blockWithItem(SNBlocks.FUNGAL_LANTERN);
 

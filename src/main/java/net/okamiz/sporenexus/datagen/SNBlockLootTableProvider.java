@@ -69,6 +69,8 @@ public class SNBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(SNBlocks.FUNGALSTEEL_BLOCK.get());
 
         dropSelf(SNBlocks.FUNGAL_DIAMOND_BLOCK.get());
+        dropSelf(SNBlocks.INFERNAL_DIAMOND_BLOCK.get());
+        dropSelf(SNBlocks.ETHEREAL_DIAMOND_BLOCK.get());
 
         dropSelf(SNBlocks.FUNGAL_LANTERN.get());
 

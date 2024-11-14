@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_ethereal_diamond": {
+      "conditions": {
+        "items": [
+          {
+            "items": "sporenexus:ethereal_diamond"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_stick": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:stick"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:ethereal_diamond_axe"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_ethereal_diamond",
+      "has_stick"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:ethereal_diamond_axe"
+    ]
+  }
+}

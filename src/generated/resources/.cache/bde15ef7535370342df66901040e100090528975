@@ -1,1 +1,6 @@
-// 1.21.1	2024-09-26T20:15:10.9718221	Tags for minecraft:item mod id sporenexus
+// 1.21.1	2024-11-14T22:59:09.6475814	Tags for minecraft:item mod id sporenexus
+a75f1089af914bfea11aadbde23e4a2eda4e9f00 data/minecraft/tags/item/axes.json
+221cc9e0be4b41e101334cd393c9e430925f56da data/minecraft/tags/item/hoes.json
+cac9be4afc81f5dba16bb0ed7fe0fdf10f7dc1d0 data/minecraft/tags/item/pickaxes.json
+2e9b98ca7e0ec8211ad50a07cfb86c67e8d02623 data/minecraft/tags/item/shovels.json
+53df77c34e71179eba8079ad2b9044f247abcc4b data/minecraft/tags/item/swords.json

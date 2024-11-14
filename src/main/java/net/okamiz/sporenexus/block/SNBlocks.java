@@ -122,6 +122,10 @@ public class SNBlocks {
 
     public static final DeferredBlock<Block> FUNGAL_DIAMOND_BLOCK = registerBlock("fungal_diamond_block",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_BLOCK)));
+    public static final DeferredBlock<Block> INFERNAL_DIAMOND_BLOCK = registerBlock("infernal_diamond_block",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_BLOCK)));
+    public static final DeferredBlock<Block> ETHEREAL_DIAMOND_BLOCK = registerBlock("ethereal_diamond_block",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_BLOCK)));
 
 
 

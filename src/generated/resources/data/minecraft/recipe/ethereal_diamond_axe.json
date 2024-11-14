@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "sporenexus:ethereal_diamond"
+    }
+  },
+  "pattern": [
+    "XX",
+    "XI",
+    " I"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sporenexus:ethereal_diamond_axe"
+  }
+}

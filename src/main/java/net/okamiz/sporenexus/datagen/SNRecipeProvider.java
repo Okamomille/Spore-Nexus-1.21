@@ -124,11 +124,12 @@ public class SNRecipeProvider extends RecipeProvider implements IConditionBuilde
                 SNItems.FUNGAL_DIAMOND_PICKAXE.get(), SNItems.FUNGAL_DIAMOND_AXE.get(), SNItems.FUNGAL_DIAMOND_SHOVEL.get(), SNItems.FUNGAL_DIAMOND_HOE.get(),
                 SNItems.FUNGAL_DIAMOND.get(), "has_fungal_diamond", has(SNItems.FUNGAL_DIAMOND));
 
-
-
-
+        // ------------------------------------
 
         // INFERNAL DIAMOND
+
+        craft9x9BlockRecipes(recipeOutput, "infernal_diamond", SNItems.INFERNAL_DIAMOND.get(), SNBlocks.INFERNAL_DIAMOND_BLOCK.get(),
+                "has_infernal_diamond", has(SNItems.INFERNAL_DIAMOND));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SNItems.INFERNAL_DIAMOND, 1)
                 .pattern(" X ")
@@ -140,7 +141,16 @@ public class SNRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .unlockedBy("has_infernal_essence", has(SNItems.INFERNAL_ESSENCE))
                 .save(recipeOutput);
 
+        craftCustomToolSet(recipeOutput, "infernal_diamond", SNItems.INFERNAL_DIAMOND_SWORD.get(),
+                SNItems.INFERNAL_DIAMOND_PICKAXE.get(), SNItems.INFERNAL_DIAMOND_AXE.get(), SNItems.INFERNAL_DIAMOND_SHOVEL.get(), SNItems.INFERNAL_DIAMOND_HOE.get(),
+                SNItems.INFERNAL_DIAMOND.get(), "has_infernal_diamond", has(SNItems.INFERNAL_DIAMOND));
+
+        // ------------------------------------
+
         // ETHEREAL DIAMOND
+
+        craft9x9BlockRecipes(recipeOutput, "ethereal_diamond", SNItems.ETHEREAL_DIAMOND.get(), SNBlocks.ETHEREAL_DIAMOND_BLOCK.get(),
+                "has_ethereal_diamond", has(SNItems.ETHEREAL_DIAMOND));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SNItems.ETHEREAL_DIAMOND, 1)
                 .pattern(" X ")
@@ -152,6 +162,12 @@ public class SNRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .unlockedBy("has_ethereal_essence", has(SNItems.ETHEREAL_ESSENCE))
                 .save(recipeOutput);
 
+        craftCustomToolSet(recipeOutput, "ethereal_diamond", SNItems.ETHEREAL_DIAMOND_SWORD.get(),
+                SNItems.ETHEREAL_DIAMOND_PICKAXE.get(), SNItems.ETHEREAL_DIAMOND_AXE.get(), SNItems.ETHEREAL_DIAMOND_SHOVEL.get(), SNItems.ETHEREAL_DIAMOND_HOE.get(),
+                SNItems.ETHEREAL_DIAMOND.get(), "has_ethereal_diamond", has(SNItems.ETHEREAL_DIAMOND));
+
+
+        // ------------------------------------
 
         // FUNGALSTEEL
 

@@ -1,4 +1,4 @@
-// 1.21.1	2024-11-14T19:11:57.1576437	Item Models: sporenexus
+// 1.21.1	2024-11-14T22:59:09.640066	Item Models: sporenexus
 2949ed185d6aa94bd615fe127069898300063b62 assets/sporenexus/models/item/blackstone_fragments.json
 19d9d3d505d46e71a961f5e1c2a4d3efc203195c assets/sporenexus/models/item/clay_fragments.json
 b1a400ae75c0d9e499c7c305265339e38cae0352 assets/sporenexus/models/item/coal_fragments.json
@@ -7,6 +7,11 @@ c6078c2acd9a53e199bf71ee945412bea38cc2ff assets/sporenexus/models/item/copper_fr
 8f22cb13b27e9729454462d81345a5bdea94be24 assets/sporenexus/models/item/dirt_fragments.json
 def1e94bad54c14214e7fe460dc6474cf295ecf4 assets/sporenexus/models/item/emerald_fragments.json
 74258dd68f4dc281fb0ff0c7d844a3243e816544 assets/sporenexus/models/item/ethereal_diamond.json
+d5fdc67fa20ebd9d32ac8ebd468d8db614082dcf assets/sporenexus/models/item/ethereal_diamond_axe.json
+840e95ab00b20f5f9bfd25c17a3713ff612d6c48 assets/sporenexus/models/item/ethereal_diamond_hoe.json
+dfc04f7a864f1585b9659b3e8134e9375207cc13 assets/sporenexus/models/item/ethereal_diamond_pickaxe.json
+736e9552bb13066bd32f7d06240e9efd972d0421 assets/sporenexus/models/item/ethereal_diamond_shovel.json
+842d114e7d1a1dd98feb5742527f78c3a880fce6 assets/sporenexus/models/item/ethereal_diamond_sword.json
 9ac40d5b7dcfeca620779d02f53b713fa1d165da assets/sporenexus/models/item/ethereal_essence.json
 a0b5ea40e59e3a876236f76266da10d2a8d08faa assets/sporenexus/models/item/ethereal_fungus.json
 d69cc53d38823ce3dc1c519a3d86d77d6795d18e assets/sporenexus/models/item/fungalsteel_fragments.json
@@ -25,6 +30,11 @@ a7d5e191001dcc4d9b43225be7b9482118cb7ce3 assets/sporenexus/models/item/fungal_po
 3388dd81cc08fdd189c5070b3cf1fc2eacfb586e assets/sporenexus/models/item/great_fungus.json
 92fee39a65a0280dbf746519c874a89bbb611493 assets/sporenexus/models/item/ice_fragments.json
 cf22859c642600bc424f61e09ad54078bbb02506 assets/sporenexus/models/item/infernal_diamond.json
+a8a31686149d69367cc4eac3f242b75b1423639c assets/sporenexus/models/item/infernal_diamond_axe.json
+d14102fee58e94d1cc98929f9517ae5caa5e044e assets/sporenexus/models/item/infernal_diamond_hoe.json
+8d3b6ebb938cbdb463e7ca51f781e23fcb099071 assets/sporenexus/models/item/infernal_diamond_pickaxe.json
+b739303e62869825ff18b11898565b88de5689cf assets/sporenexus/models/item/infernal_diamond_shovel.json
+0f60fff3362b05b43d3ddb9f5e801800f4566e72 assets/sporenexus/models/item/infernal_diamond_sword.json
 b95e097aeeda8e2f22829c9aea6ebc7874f92532 assets/sporenexus/models/item/infernal_essence.json
 5fa707bd41edf801c9f83112986da972dc322dc0 assets/sporenexus/models/item/infernal_fungus.json
 602d580bbe7ac4e2cdb9acb3b65c9b5cba289f3e assets/sporenexus/models/item/iron_fragments.json

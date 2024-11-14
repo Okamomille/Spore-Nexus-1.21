@@ -1,4 +1,4 @@
-// 1.21.1	2024-11-14T21:32:26.8429808	Loot Tables
+// 1.21.1	2024-11-14T22:59:09.6390652	Loot Tables
 953c9b447afcb2aec0d61d5ea2a7b7f11999b22b data/sporenexus/loot_table/blocks/blackstone_mushroom.json
 9e8b0b48342ed99e2c82f57a3de4cb94ef441e63 data/sporenexus/loot_table/blocks/clay_mushroom.json
 b7f9f4f21d78502f73f618e961250edb251cdf0a data/sporenexus/loot_table/blocks/coal_mushroom.json
@@ -7,6 +7,7 @@ c9ed5a9c0d3d669bc607d2ce208f6fdf067d58d9 data/sporenexus/loot_table/blocks/coppe
 8552ee6048afdf9820d482e56f2d11cddf71e0f0 data/sporenexus/loot_table/blocks/dirt_mushroom.json
 e95420ff7d313d8054f56a9a483f120dc816a2e6 data/sporenexus/loot_table/blocks/emerald_mushroom.json
 cbe8a3d3412bbff46fff5bb7994bae897222310b data/sporenexus/loot_table/blocks/enriched_mycelium.json
+9d344af015779f60ec79d23446525741e0286651 data/sporenexus/loot_table/blocks/ethereal_diamond_block.json
 41c0677941333cdf4da39a11d911556022d57b07 data/sporenexus/loot_table/blocks/fertilized_mycelium.json
 9dccde4927378d9f142e433aeb142ad05b8343d3 data/sporenexus/loot_table/blocks/fire_resistance_totem.json
 9173ad24d9e3f4edee11a219075f89f49b20a85b data/sporenexus/loot_table/blocks/fungalsteel_block.json
@@ -19,6 +20,7 @@ d64374adb32a1c0a81583b3a02a84dbf01291f66 data/sporenexus/loot_table/blocks/gold_
 0e4eba84a21c687d201a396822aa87908e86e7a9 data/sporenexus/loot_table/blocks/gravel_mushroom.json
 dc2722a7d60ac72c4c9c928ad95609d7c0559ba7 data/sporenexus/loot_table/blocks/haste_totem.json
 9b812f5a901f8cfbf88bf9c3e06b296afe290ece data/sporenexus/loot_table/blocks/ice_mushroom.json
+5b3f67e92f20cfb0df1b6bd595c71e16a107e4eb data/sporenexus/loot_table/blocks/infernal_diamond_block.json
 1be42f0e5b13ef505866ea5e7e5329cd95f3c000 data/sporenexus/loot_table/blocks/iron_mushroom.json
 9197d12197296f3cb168c04693ac96bdfb8bb68f data/sporenexus/loot_table/blocks/lapis_lazuli_mushroom.json
 e659a945b7708692d1b41fb667419494fca7147d data/sporenexus/loot_table/blocks/mushroom_collector.json

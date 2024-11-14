@@ -123,6 +123,43 @@ public class SNItems {
                     .attributes(HoeItem.createAttributes(SNToolTiers.FUNGAL_DIAMOND, -3.0f, 0f))));
 
 
+    // ------------------------------------------- INFERNAL TOOLS ---------------------------------------------------
+
+    public static final DeferredItem<Item> INFERNAL_DIAMOND_SWORD = ITEMS.register("infernal_diamond_sword",
+            ()-> new SwordItem(SNToolTiers.INFERNAL_DIAMOND, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(SNToolTiers.INFERNAL_DIAMOND, 3, -2.4f))));
+    public static final DeferredItem<Item> INFERNAL_DIAMOND_PICKAXE = ITEMS.register("infernal_diamond_pickaxe",
+            ()-> new PickaxeItem(SNToolTiers.INFERNAL_DIAMOND, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(SNToolTiers.INFERNAL_DIAMOND, 1, -2.8f))));
+    public static final DeferredItem<Item> INFERNAL_DIAMOND_AXE = ITEMS.register("infernal_diamond_axe",
+            ()-> new AxeItem(SNToolTiers.INFERNAL_DIAMOND, new Item.Properties()
+                    .attributes(AxeItem.createAttributes(SNToolTiers.INFERNAL_DIAMOND, 5f, -3.0f))));
+    public static final DeferredItem<Item> INFERNAL_DIAMOND_SHOVEL = ITEMS.register("infernal_diamond_shovel",
+            ()-> new ShovelItem(SNToolTiers.INFERNAL_DIAMOND, new Item.Properties()
+                    .attributes(ShovelItem.createAttributes(SNToolTiers.INFERNAL_DIAMOND, 1.5f, -3.0f))));
+    public static final DeferredItem<Item> INFERNAL_DIAMOND_HOE = ITEMS.register("infernal_diamond_hoe",
+            ()-> new HoeItem(SNToolTiers.INFERNAL_DIAMOND, new Item.Properties()
+                    .attributes(HoeItem.createAttributes(SNToolTiers.INFERNAL_DIAMOND, -3.0f, 0f))));
+
+
+    // ------------------------------------------- ETHEREAL TOOLS ---------------------------------------------------
+
+    public static final DeferredItem<Item> ETHEREAL_DIAMOND_SWORD = ITEMS.register("ethereal_diamond_sword",
+            ()-> new SwordItem(SNToolTiers.ETHEREAL_DIAMOND, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(SNToolTiers.ETHEREAL_DIAMOND, 3, -2.4f))));
+    public static final DeferredItem<Item> ETHEREAL_DIAMOND_PICKAXE = ITEMS.register("ethereal_diamond_pickaxe",
+            ()-> new PickaxeItem(SNToolTiers.ETHEREAL_DIAMOND, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(SNToolTiers.ETHEREAL_DIAMOND, 1, -2.8f))));
+    public static final DeferredItem<Item> ETHEREAL_DIAMOND_AXE = ITEMS.register("ethereal_diamond_axe",
+            ()-> new AxeItem(SNToolTiers.ETHEREAL_DIAMOND, new Item.Properties()
+                    .attributes(AxeItem.createAttributes(SNToolTiers.ETHEREAL_DIAMOND, 5f, -3.0f))));
+    public static final DeferredItem<Item> ETHEREAL_DIAMOND_SHOVEL = ITEMS.register("ethereal_diamond_shovel",
+            ()-> new ShovelItem(SNToolTiers.ETHEREAL_DIAMOND, new Item.Properties()
+                    .attributes(ShovelItem.createAttributes(SNToolTiers.ETHEREAL_DIAMOND, 1.5f, -3.0f))));
+    public static final DeferredItem<Item> ETHEREAL_DIAMOND_HOE = ITEMS.register("ethereal_diamond_hoe",
+            ()-> new HoeItem(SNToolTiers.ETHEREAL_DIAMOND, new Item.Properties()
+                    .attributes(HoeItem.createAttributes(SNToolTiers.ETHEREAL_DIAMOND, -3.0f, 0f))));
+
 
 
 

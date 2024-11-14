@@ -28,6 +28,18 @@
   "item.sporenexus.fungal_diamond_shovel": "§eFungal Diamond Shovel",
   "item.sporenexus.fungal_diamond_hoe": "§eFungal Diamond Hoe",
 
+  "item.sporenexus.infernal_diamond_sword": "§cInfernal Diamond Sword",
+  "item.sporenexus.infernal_diamond_pickaxe": "§cInfernal Diamond Pickaxe",
+  "item.sporenexus.infernal_diamond_axe": "§cInfernal Diamond Axe",
+  "item.sporenexus.infernal_diamond_shovel": "§cInfernal Diamond Shovel",
+  "item.sporenexus.infernal_diamond_hoe": "§cInfernal Diamond Hoe",
+
+  "item.sporenexus.ethereal_diamond_sword": "§dEthereal Diamond Sword",
+  "item.sporenexus.ethereal_diamond_pickaxe": "§dEthereal Diamond Pickaxe",
+  "item.sporenexus.ethereal_diamond_axe": "§dEthereal Diamond Axe",
+  "item.sporenexus.ethereal_diamond_shovel": "§dEthereal Diamond Shovel",
+  "item.sporenexus.ethereal_diamond_hoe": "§dEthereal Diamond Hoe",
+
 
 
 
@@ -66,7 +78,9 @@
 
   "block.sporenexus.fungalsteel_block": "Fungalsteel Block",
 
-  "block.sporenexus.fungal_diamond_block": "§eFungal Diamond Block",
+  "block.sporenexus.fungal_diamond_block": "§eBlock of Fungal Diamond",
+  "block.sporenexus.infernal_diamond_block": "§cBlock of Infernal Diamond",
+  "block.sporenexus.ethereal_diamond_block": "§dBlock of Ethereal Diamond",
 
   "block.sporenexus.fungal_lantern": "Fungal Lantern",
 

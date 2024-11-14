@@ -59,6 +59,8 @@ public class SNBlockTagProvider extends BlockTagsProvider {
                 .add(SNBlocks.FUNGALSTEEL_BLOCK.get())
 
                 .add(SNBlocks.FUNGAL_DIAMOND_BLOCK.get())
+                .add(SNBlocks.INFERNAL_DIAMOND_BLOCK.get())
+                .add(SNBlocks.ETHEREAL_DIAMOND_BLOCK.get())
 
                 .add(SNBlocks.SPORE_SPREADER.get())
                 .add(SNBlocks.FUNGAL_PROPAGATOR.get())
@@ -66,7 +68,11 @@ public class SNBlockTagProvider extends BlockTagsProvider {
 
         this.tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(SNBlocks.FUNGALSTEEL_BLOCK.get())
-                .add(SNBlocks.FUNGAL_DIAMOND_BLOCK.get());
+                .add(SNBlocks.FUNGAL_DIAMOND_BLOCK.get())
+                .add(SNBlocks.INFERNAL_DIAMOND_BLOCK.get());
+
+        this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
+                .add(SNBlocks.ETHEREAL_DIAMOND_BLOCK.get());
 
 
         this.tag(BlockTags.MINEABLE_WITH_HOE)
