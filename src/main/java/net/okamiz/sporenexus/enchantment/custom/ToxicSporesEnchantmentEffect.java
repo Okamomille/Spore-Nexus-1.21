@@ -8,12 +8,9 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.monster.Zombie;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.enchantment.EnchantedItemInUse;
 import net.minecraft.world.item.enchantment.effects.EnchantmentEntityEffect;
 import net.minecraft.world.phys.Vec3;
-import net.neoforged.neoforge.event.entity.player.PlayerEvent;
 
 public record ToxicSporesEnchantmentEffect(int level) implements EnchantmentEntityEffect {
     public static MapCodec<ToxicSporesEnchantmentEffect> CODEC = RecordCodecBuilder.mapCodec(instance ->
