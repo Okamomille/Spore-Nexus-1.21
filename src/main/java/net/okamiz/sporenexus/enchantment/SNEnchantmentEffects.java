@@ -6,6 +6,7 @@ import net.minecraft.world.item.enchantment.effects.EnchantmentEntityEffect;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.okamiz.sporenexus.SporeNexusMod;
+import net.okamiz.sporenexus.enchantment.custom.BioluminescenceEnchantmentEffect;
 import net.okamiz.sporenexus.enchantment.custom.LightningStrikerEnchantmentEffect;
 import net.okamiz.sporenexus.enchantment.custom.ToxicSporesEnchantmentEffect;
 
@@ -21,6 +22,9 @@ public class SNEnchantmentEffects {
 
     public static final Supplier<MapCodec<? extends EnchantmentEntityEffect>> TOXIC_SPORES =
             registerEnchantmentEffect("toxic_spores", ToxicSporesEnchantmentEffect.CODEC);
+
+    public static final Supplier<MapCodec<? extends EnchantmentEntityEffect>> BIOLUMINESCENCE =
+            registerEnchantmentEffect("bioluminescence", BioluminescenceEnchantmentEffect.CODEC);
 
 
 

@@ -1,0 +1,32 @@
+{
+  "description": {
+    "translate": "enchantment.sporenexus.bioluminescence"
+  },
+  "exclusive_set": "#minecraft:exclusive_set/armor",
+  "supported_items": "#minecraft:head_armor",
+  "primary_items": "#minecraft:head_armor",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 20,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 50,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 8,
+  "slots": [
+    "head"
+  ],
+  "effects": {
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "sporenexus:bioluminescence",
+          "level": 1
+        }
+      }
+    ]
+  }
+}
