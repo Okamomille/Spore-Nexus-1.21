@@ -6,6 +6,7 @@ import net.neoforged.neoforge.capabilities.RegisterCapabilitiesEvent;
 import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import net.okamiz.sporenexus.block.SNBlocks;
 import net.okamiz.sporenexus.block.entity.SNBlockEntities;
+import net.okamiz.sporenexus.enchantment.SNEnchantmentEffects;
 import net.okamiz.sporenexus.item.SNCreativeTabs;
 import net.okamiz.sporenexus.item.SNItems;
 import net.okamiz.sporenexus.screen.SNMenuTypes;
@@ -55,6 +56,8 @@ public class SporeNexusMod {
         SNBlockEntities.register(modEventBus);
 
         SNMenuTypes.register(modEventBus);
+
+        SNEnchantmentEffects.register(modEventBus);
 
         modEventBus.addListener(this::registerCapabilities);
 

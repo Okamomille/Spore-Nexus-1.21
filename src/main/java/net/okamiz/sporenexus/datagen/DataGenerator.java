@@ -35,5 +35,7 @@ public class DataGenerator {
 
         generator.addProvider(event.includeClient(), new SNItemModelProvider(packOutput, existingFileHelper));
         generator.addProvider(event.includeClient(), new SNBlockStateProvider(packOutput, existingFileHelper));
+
+        generator.addProvider(event.includeServer(), new SNDataRegistryProvider(packOutput, lookupProvider));
     }
 }
