@@ -21,12 +21,14 @@ public class SNEnchantments {
         var enchantment = context.lookup(Registries.ENCHANTMENT);
         var items = context.lookup(Registries.ITEM);
 
+        /*
         register(context, LIGHTNING_STRIKER, Enchantment.enchantment(Enchantment.definition(items.getOrThrow(ItemTags.WEAPON_ENCHANTABLE),
                 items.getOrThrow(ItemTags.SWORD_ENCHANTABLE), 5 , 2,
                 Enchantment.dynamicCost(5, 8),Enchantment.dynamicCost(25, 8), 3, EquipmentSlotGroup.MAINHAND))
                 .exclusiveWith(enchantment.getOrThrow(EnchantmentTags.DAMAGE_EXCLUSIVE))
                 .withEffect(EnchantmentEffectComponents.POST_ATTACK, EnchantmentTarget.ATTACKER,
                         EnchantmentTarget.VICTIM, new LightningStrikerEnchantmentEffect(1)));
+   */
     }
 
 
